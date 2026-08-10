@@ -67,11 +67,24 @@ reload period, firing arc and range band.
 | Lance Turret | 10 | | Void Missile Launcher | 100 |
 | Heavy Macrobattery | 15 | | Hangar Bay | 10 |
 
+### Fleet brackets
+
+Line minimums and Capital maximums scale with the roster's points total, enforced by the
+builder rather than left to the honour system:
+
+| Fleet size | Min Line | Max Capital |
+|---|---|---|
+| 1,000 | 4 | 1 |
+| 1,500 | 5 | 2 |
+| 2,000 | 6 | 3 |
+| 2,500 | 7 | 4 |
+| 3,000 | 8 | 5 |
+
 ### Roster limits
 
-- 3 of each hull class
+- 5 of each Line Ship type — Escort squadrons, Frigate squadrons, Assault Barges, Cruisers
+- 3 of each Capital Ship type — Grand Cruiser, Battle Barge, Battleship, Battle Carrier
 - 1 of any Gloriana, the Abyss, or the Phalanx
-- 5 squadrons each of Escorts and Frigates
 - Void Missile Launchers: 1 on a Grand Cruiser or Battle Barge, 2 on a Battleship or
   Battle Carrier, counted across both broadsides
 
@@ -100,7 +113,11 @@ XIII Legion Ultramarines.cat              standard play
 XIII Legion Ultramarines - Campaign.cat   campaign play
 ```
 
-Pick one when you create a roster; do not mix them. The campaign catalogue is the same
+The game system offers exactly two forces — **Open Play** and **Great Crusade Campaign** —
+and the catalogues are locked to them. A campaign catalogue's ships carry the Campaign
+Fleet category and simply do not appear under Open Play; a standard catalogue's ships carry
+Open Play Fleet and do not appear under Campaign. You cannot mix the two systems in one
+roster even by accident. The campaign catalogue is the same
 fleet, with a **Campaign Record** attached to every ship — Veteran Level, Battle Honours
 (maximum 4, +5 pts each) and Battle Scars (no limit, −5 pts each), recorded against that
 hull rather than floating loose on the roster. Carrier Honours only appear on ships that
