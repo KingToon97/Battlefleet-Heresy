@@ -28,8 +28,15 @@ them. No release or packaged build is required.
 ## What's in the data
 
 - 1 game system (`Battlefleet Heresy.gst`)
+- 2 shared libraries — `Open Play.cat` and `Campaigns of the Void.cat`
 - 18 Legion catalogues for standard play, one per Legion
 - 18 matching campaign catalogues, one per Legion
+
+The libraries hold the common line of battle (Escort, Frigate, Assault Barge, Cruiser) and
+the rules cards. Each Legion catalogue imports its system's library and adds only what is
+its own: the Legion trait, its named characters and Primarch, its capital ships and its
+Gloriana. Pick the system, then the Legion — the same shape as choosing Astartes and then
+Ultramarines.
 
 ### Ship construction
 
@@ -113,7 +120,7 @@ XIII Legion Ultramarines.cat              standard play
 XIII Legion Ultramarines - Campaign.cat   campaign play
 ```
 
-The game system offers exactly two forces — **Open Play** and **Great Crusade Campaign** —
+The game system offers exactly two forces — **Open Play** and **Campaigns of the Void** —
 and the catalogues are locked to them. A campaign catalogue's ships carry the Campaign
 Fleet category and simply do not appear under Open Play; a standard catalogue's ships carry
 Open Play Fleet and do not appear under Campaign. You cannot mix the two systems in one
