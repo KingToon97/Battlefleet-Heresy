@@ -8,7 +8,7 @@
  <characteristicTypes>
  <characteristicType id="d130e705-611e-5a0a-bd7d-ea8e848fdb2e" name="BS" />
  <characteristicType id="84a55377-edbc-5825-a2bf-70c6155018f2" name="Prow" />
- <characteristicType id="5f595433-7397-5c4b-9d4a-8f35d83a2b29" name="Broadside" />
+ <characteristicType id="5f595433-7397-5c4b-9d4a-8f35d83a2b29" name="Side" />
  <characteristicType id="cd9ec76e-f959-5560-8845-9ab242f16e71" name="Stern" />
  <characteristicType id="ef713781-2034-5fb4-83d1-e49d1d683694" name="HP" />
  <characteristicType id="84309751-688d-50ef-8940-d8d042261a56" name="VS" />
