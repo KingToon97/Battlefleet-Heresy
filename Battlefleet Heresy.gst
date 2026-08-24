@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="86405571-5289-597b-b308-a9a2d68c00b9" name="Battlefleet Heresy" revision="19" battleScribeVersion="2.03" authorName="Battlefleet Heresy Community Data" authorContact="" authorUrl="">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="86405571-5289-597b-b308-a9a2d68c00b9" name="Battlefleet Heresy" revision="21" battleScribeVersion="2.03" authorName="Battlefleet Heresy Community Data" authorContact="" authorUrl="">
  <costTypes>
   <costType id="570b7f63-4fc7-515c-9c96-5b5c25501f85" name="pts" defaultCostLimit="-1.0" hidden="false" />
  </costTypes>
@@ -56,11 +56,13 @@
   <categoryEntry id="aa8f9cca-79d6-4483-b466-901fa59a2823" name="Primarch" hidden="false" />
   <categoryEntry id="194a7f31-dced-445a-b273-cca4996c8570" name="Retinue Character" hidden="false" />
   <categoryEntry id="52616092-abd8-519e-a6fb-94b622114fa5" name="Rules" hidden="false" />
+  <categoryEntry id="0f45a78b-a2a6-5340-9edb-27a637bb9ab2" name="Squadron" hidden="false" />
  </categoryEntries>
  <forceEntries>
   <forceEntry id="6190d752-db79-5076-8b85-3025cae9911c" name="Fleet" hidden="false">
    <categoryLinks>
     <categoryLink id="9df65621-e650-5255-8fd5-b481a5df5d5e" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="false" />
+    <categoryLink id="e1e98a1d-fe00-56d9-8baf-36b56f2691a8" name="Squadron" hidden="false" targetId="0f45a78b-a2a6-5340-9edb-27a637bb9ab2" primary="false" />
     <categoryLink id="e471c89c-25c1-5900-b9e6-7076337096d1" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="false">
      <modifiers>
       <modifier type="increment" field="bff85e27-4383-5baf-a2e5-1e7915aebf46" value="1.0">
@@ -277,13 +279,13 @@
    <description>Torpedo Tubes fitted to a Destroyer have Reload (1) rather than Reload (2).</description>
   </rule>
   <rule id="b00e13cb-eb88-50c1-b468-fd81d592e0c0" name="Universal Ship Upgrades" hidden="false">
-   <description>Open to every ship below Gloriana class, whatever its Legion or role. Glorianas, the Abyss and the Phalanx may not take them. Each may be bought once per ship, in any combination. Each costs a share of the ship's own points, rounded to the nearest 5: • Veteran Crew 25% — +1 BS, to a maximum of BS 5. • Servitor Autoloaders 20% — one chosen weapon type aboard reduces its Reload by 1, to Reload (0). • Adamantium Belt Armour 20% — +1 Side Armour, to a maximum of AV 14, and −2″ Speed to a minimum of 4″. • Plasma Drive Overhaul 12% — +2″ Speed. • Emergency Shield Capacitors 10% — re-roll failed Void Shield regeneration rolls. • Phosphex Shell Magazines 8% — a penetrating hit from any Heavy Macro-Cannon Battery aboard inflicts 1 Critical Damage. • Blast-Shielded Magazines 8% — a Magazine Explosion costs 1 less Damage Control, to a minimum of 0.</description>
+   <description>Open to every ship below Gloriana class, whatever its Legion or role. Glorianas, the Abyss and the Phalanx may not take them. Each may be bought once per ship, in any combination. Each costs a share of the ship's own points, rounded to the nearest 5: • Veteran Crew 25% — +1 BS, to a maximum of BS 5. • Servitor Autoloaders 20% — one chosen weapon type aboard reduces its Reload by 1, to Reload (0). • Adamantium Belt Armour 20% — +1 Side Armour, to a maximum of AV 14, and −2″ Speed to a minimum of 4″. • Plasma Drive Overhaul 12% — +2″ Speed. • Emergency Shield Capacitors 10% — +1 to Void Shield regeneration rolls. • Phosphex Shell Magazines 8% — a penetrating hit from any Heavy Macro-Cannon Battery aboard inflicts 1 Critical Damage. • Blast-Shielded Magazines 8% — a Magazine Explosion costs 1 less Damage Control, to a minimum of 0.</description>
   </rule>
   <rule id="0591ff9a-8270-5c08-8d3e-0615e5b1fc75" name="Veteran Crew and Accuracy" hidden="false">
    <description>Any ship may take a Veteran Crew once: +1 Ballistic Skill for the battle. It costs 25% of the ship's own points value, rounded to the nearest 5. No ship exceeds BS 5. A ship takes at most one +1 BS from position or command — the holding-station broadside bonus and accuracy auras never stack with one another — and a Veteran Crew's +1 is a paid upgrade that stacks on top of one such bonus. For commanders, see Characters &amp; Primarchs.</description>
   </rule>
   <rule id="770afd1f-4a8d-537a-8e05-7698eb2f9ed2" name="Void Shields" hidden="false">
-   <description>A ship's Void Shields are an envelope, not a stack of layers. The VS characteristic is how many shields it carries, and every shield has an Armour Value of its own: &lt;b&gt;AV 12&lt;/b&gt; on a Line Ship, &lt;b&gt;AV 13&lt;/b&gt; on a Capital Ship, and &lt;b&gt;AV 14&lt;/b&gt; on a Gloriana, the Abyss or the Phalanx. • Collapsing a shield: a shot must &lt;b&gt;penetrate&lt;/b&gt; it — beat its Armour Value, as it would a hull facing. Equalling the AV is a glance and does nothing. A shot that penetrates collapses one shield and is stopped there. • Further shots that round test against the next shield, if any. A ship with no shield left takes hits on the hull as normal. • Regeneration: at the start of the ship's next activation roll a D6 for each shield collapsed — &lt;b&gt;3+&lt;/b&gt; on a Line Ship, &lt;b&gt;4+&lt;/b&gt; on a Capital Ship. On a success it comes back up; on a failure that shield is burnt out for the rest of the battle. • Shields carried: Line Ships and most Capital Ships 1, Battleships 2, Glorianas 3, the Abyss and the Phalanx 4. • Torpedo Tubes, Vortex Torpedoes and Melta Mines ignore shields entirely and strike the hull whether they hold or not.</description>
+   <description>A ship's Void Shields are an envelope, not a stack of layers. The VS characteristic is how many shields it carries, and every shield has an Armour Value of its own: &lt;b&gt;AV 12&lt;/b&gt; on a Line Ship, &lt;b&gt;AV 13&lt;/b&gt; on a Capital Ship, and &lt;b&gt;AV 14&lt;/b&gt; on a Gloriana, the Abyss or the Phalanx. • Collapsing a shield: a shot must &lt;b&gt;penetrate&lt;/b&gt; it — beat its Armour Value, as it would a hull facing. Equalling the AV is a glance and does nothing. A shot that penetrates collapses one shield and is stopped there. • Further shots that round test against the next shield, if any. A ship with no shield left takes hits on the hull as normal. • Regeneration: at the start of the ship's next activation roll a D6 for each shield collapsed — &lt;b&gt;4+&lt;/b&gt;, whatever the hull. On a success it comes back up; on a failure that shield is burnt out for the rest of the battle. • Shields carried: Line Ships and most Capital Ships 1, Battleships 2, Glorianas 3, the Abyss and the Phalanx 4. • Torpedo Tubes, Vortex Torpedoes and Melta Mines ignore shields entirely and strike the hull whether they hold or not.</description>
   </rule>
  </sharedRules>
 </gameSystem>
