@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="86405571-5289-597b-b308-a9a2d68c00b9" name="Battlefleet Heresy" revision="21" battleScribeVersion="2.03" authorName="Battlefleet Heresy Community Data" authorContact="" authorUrl="">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="86405571-5289-597b-b308-a9a2d68c00b9" name="Battlefleet Heresy" revision="24" battleScribeVersion="2.03" authorName="Battlefleet Heresy Community Data" authorContact="" authorUrl="">
  <costTypes>
   <costType id="570b7f63-4fc7-515c-9c96-5b5c25501f85" name="pts" defaultCostLimit="-1.0" hidden="false" />
  </costTypes>
@@ -12,6 +12,7 @@
     <characteristicType id="cd9ec76e-f959-5560-8845-9ab242f16e71" name="Stern" />
     <characteristicType id="ef713781-2034-5fb4-83d1-e49d1d683694" name="HP" />
     <characteristicType id="84309751-688d-50ef-8940-d8d042261a56" name="VS" />
+    <characteristicType id="a4ea0950-7ff5-5955-bca9-c19d25fe10cf" name="Shield AV" />
     <characteristicType id="25d0e01e-8e74-55b3-8a2a-17773c881625" name="Speed" />
     <characteristicType id="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0" name="Turn" />
     <characteristicType id="2f6312dd-493e-53c6-96e2-d901afca0e81" name="Crew" />
@@ -79,7 +80,11 @@
     <categoryLink id="b80c9f2b-64ac-58f1-b31a-42fed90cb5b6" name="Abyss" hidden="false" targetId="ef2c0dba-998f-50b3-ad88-26fd14c1b664" primary="false" />
     <categoryLink id="aa6356a6-b2f7-5bd6-8180-6d19fba7c103" name="Void Fortress" hidden="false" targetId="ce7b6b8c-a73d-5de4-8907-756a7e5c453d" primary="false" />
     <categoryLink id="3e1a8d6d-b8a2-5f69-beed-ec0e0910d340" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="false" />
-    <categoryLink id="12f33bb1-c1f5-595f-8e5a-94a3a859ce7c" name="Flagship" hidden="false" targetId="9a05d1db-3fb3-5329-a5a0-257d3cb53d11" primary="false" />
+    <categoryLink id="12f33bb1-c1f5-595f-8e5a-94a3a859ce7c" name="Flagship" hidden="false" targetId="9a05d1db-3fb3-5329-a5a0-257d3cb53d11" primary="false">
+     <constraints>
+      <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8aed57af-0dc4-573a-a62f-a5b4779bc652" type="max" />
+     </constraints>
+    </categoryLink>
     <categoryLink id="07cba41c-9a65-51eb-b84f-d7d01bf0e098" name="Aircraft" hidden="false" targetId="7cd71328-c157-589e-aab5-17a0288b00a6" primary="false" />
     <categoryLink id="cf4bddb6-13d3-57cd-bd79-9a121a7d8944" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="false" />
     <categoryLink id="54fd5d5e-e41d-5724-930b-0b0643e409f0" name="Primarch" hidden="false" targetId="aa8f9cca-79d6-4483-b466-901fa59a2823" primary="false" />
@@ -159,7 +164,7 @@
    <description>Fired once per battle, then spent. It takes no Reload tokens.</description>
   </rule>
   <rule id="9a9f5faa-7186-5bdc-ae2c-fccd347364f0" name="Keyword: Quad Warp Lance Turret" hidden="false">
-   <description>The Abyss and the Phalanx alone mount Quad Warp Lance Turrets: Str 12, AP D, 4 shots, 60″, Reload (3), Devastating (3). They ignore Void Shields entirely and bear into every arc. • Structural Integrity: after a turret resolves its attacks, roll a D6. On a 1 or a 6 it suffers a Magazine Explosion. Each turret rolls separately, hit or miss. • Unstable Core: a Magazine Explosion from this weapon costs the ship 3 Hull Points in place of the normal loss. Every other effect still applies, and Blast-Shielded Magazines reduces only the Damage Control, not the 3 Hull Points.</description>
+   <description>The Furious Abyss alone mounts Quad Warp Lance Turrets: Str 12, AP D, 4 shots, 60″, Reload (3), Devastating (3). They ignore Void Shields entirely and bear into the forward 180° only — they cannot be brought to bear astern. • Structural Integrity: after a turret resolves its attacks, roll a D6. On a 1 or a 6 it suffers a Magazine Explosion. Each turret rolls separately, hit or miss. • Unstable Core: a Magazine Explosion from this weapon costs the ship 3 Hull Points in place of the normal loss. Every other effect still applies, and Blast-Shielded Magazines reduces only the Damage Control, not the 3 Hull Points.</description>
   </rule>
   <rule id="a46e50ef-8ede-570d-b475-c0d9d2c54d97" name="Keyword: Reload (X)" hidden="false">
    <description>Reload applies to a weapon TYPE on a given MOUNT, not to a single turret. When a ship fires a weapon that has Reload (X), place X Reload tokens against that weapon type on that mount: every weapon of that type on that mount is spent together and none of them may fire while a token remains. So a ship mounting four Triple Lance Turrets on its Dorsal fires all four or none, and all four reload together. The same weapon type on a different mount reloads separately — a ship may fire its Port battery in one round and turn to fire its Starboard in the next. Remove one token at the end of each battle round. A weapon may not fire in any round it began with a token against it. Reload (0) fires every round, Reload (1) every second round, Reload (2) every third and Reload (3) every fourth. The Reload Ordnance order removes one token early, bringing that mount's weapon back a round sooner.</description>
