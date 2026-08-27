@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b34316e6-6614-5a2a-898d-c5936fa01b34" name="19th Legion Raven Guard" revision="48" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="36" library="false">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="b34316e6-6614-5a2a-898d-c5936fa01b34" name="19th Legion Raven Guard" revision="50" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="37" library="false">
  <selectionEntries>
   <selectionEntry id="53c28038-bb91-54f6-b479-7f9a8d0fdab8" name="Destroyer - Cobra-class Squadron" hidden="false" collective="false" import="true" type="unit">
    <constraints>
@@ -35,7 +35,7 @@
         <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
         <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
         <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-        <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+        <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
         <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
        </characteristics>
       </profile>
@@ -59,16 +59,6 @@
         <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
        </characteristics>
       </profile>
-      <profile id="3c81fc48-9ecb-52f0-9773-6f6fe0c4a0d9" name="Defence Battery" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-       <characteristics>
-        <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-        <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-        <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-        <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3</characteristic>
-        <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-        <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-       </characteristics>
-      </profile>
       <profile id="aee36cff-bd6e-5a2a-b427-db6cc9b6019e" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
        <characteristics>
         <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The Navy's torpedo boat, and the pattern every other destroyer is measured against.</characteristic>
@@ -77,6 +67,11 @@
       <profile id="6f9cf832-acd4-58a6-8fe8-0957a7415844" name="Wolf Pack" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
        <characteristics>
         <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Destroyer. Destroyers of one squadron within 6″ may combine their Torpedo Tubes against a single target, adding +1 to penetration. Torpedoes only — gunnery is never combined.</characteristic>
+       </characteristics>
+      </profile>
+      <profile id="6de22b0b-59a2-53ab-82fb-60438087b4bc" name="Defence Batteries (1)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+       <characteristics>
+        <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 1 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
        </characteristics>
       </profile>
      </profiles>
@@ -318,16 +313,6 @@
         <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
        </characteristics>
       </profile>
-      <profile id="c9a95559-3387-5708-9f7d-0a494c19e2f8" name="Defence Battery" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-       <characteristics>
-        <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-        <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-        <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-        <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3</characteristic>
-        <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-        <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-       </characteristics>
-      </profile>
       <profile id="07f458c4-fd6f-5ca1-b2ef-9c7c18f7969b" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
        <characteristics>
         <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">A gunnery refit that trades the torpedo tube for a heavier screen.</characteristic>
@@ -336,6 +321,11 @@
       <profile id="50c88455-595a-52bf-8b97-f5247e3fb718" name="Wolf Pack" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
        <characteristics>
         <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Destroyer. Destroyers of one squadron within 6″ may combine their Torpedo Tubes against a single target, adding +1 to penetration. Torpedoes only — gunnery is never combined.</characteristic>
+       </characteristics>
+      </profile>
+      <profile id="84906327-569f-52a4-9726-c5328e53f6ae" name="Defence Batteries (1)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+       <characteristics>
+        <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 1 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
        </characteristics>
       </profile>
      </profiles>
@@ -563,7 +553,7 @@
         <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
         <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
         <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
-        <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+        <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
         <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
        </characteristics>
       </profile>
@@ -597,16 +587,6 @@
         <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Armourbane; One Use. Carries 1 mine. Laid on a 32mm base instead of shooting. Triggers when any part of a non-Frigate ship passes over it: every ship within 3″ — including the ship that triggered it — suffers one hit resolved against its Armour, ignoring Void Shields. Any mine within 3″ detonates too, and may chain further. Aircraft pass over mines safely. Remove the mine once the attack is resolved.</characteristic>
        </characteristics>
       </profile>
-      <profile id="ecfda1d8-4470-5881-9c16-e6d2566a5d4f" name="Defence Battery ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-       <characteristics>
-        <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-        <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-        <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-        <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-        <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-        <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-       </characteristics>
-      </profile>
       <profile id="2faa527b-acad-5258-97cf-7ae35a7807b5" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
        <characteristics>
         <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Stripped for the torpedo run, screening guns cut to the bone.</characteristic>
@@ -615,6 +595,11 @@
       <profile id="d02e7dde-10a4-5c63-a59f-d2a0fe45ee04" name="Screen" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
        <characteristics>
         <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Frigate. Enemy ships suffer −1 BS when targeting a friendly Capital Ship within 3″ of one or more friendly Frigates. Screen protects only Capital Ships, never the Frigate itself, and multiple instances never stack — the maximum is −1 BS.</characteristic>
+       </characteristics>
+      </profile>
+      <profile id="89cd8e5b-2044-5ef4-9569-a37c3216fdbe" name="Defence Batteries (2)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+       <characteristics>
+        <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 2 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
        </characteristics>
       </profile>
      </profiles>
@@ -854,16 +839,6 @@
         <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
        </characteristics>
       </profile>
-      <profile id="6e86bbdf-8110-534e-9476-1c946857f11f" name="Defence Battery ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-       <characteristics>
-        <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-        <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-        <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-        <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-        <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-        <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-       </characteristics>
-      </profile>
       <profile id="d3bc7042-8c9c-58b1-808c-cc7b597a979d" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
        <characteristics>
         <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">A minelayer variant that denies ground rather than holding it.</characteristic>
@@ -875,13 +850,18 @@
         <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
         <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
         <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
-        <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+        <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
         <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
        </characteristics>
       </profile>
       <profile id="dd22744a-d5b3-59b9-b822-67a4aef12ec3" name="Screen" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
        <characteristics>
         <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Frigate. Enemy ships suffer −1 BS when targeting a friendly Capital Ship within 3″ of one or more friendly Frigates. Screen protects only Capital Ships, never the Frigate itself, and multiple instances never stack — the maximum is −1 BS.</characteristic>
+       </characteristics>
+      </profile>
+      <profile id="0f733be0-dcb5-5565-ba9a-6a9ece7aca34" name="Defence Batteries (2)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+       <characteristics>
+        <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 2 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
        </characteristics>
       </profile>
      </profiles>
@@ -1107,7 +1087,7 @@
         <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
         <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
         <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
-        <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+        <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
         <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
        </characteristics>
       </profile>
@@ -1131,16 +1111,6 @@
         <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
        </characteristics>
       </profile>
-      <profile id="1a1692c4-bd7b-5208-8778-c7d135c643a6" name="Defence Battery ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-       <characteristics>
-        <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-        <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-        <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-        <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-        <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-        <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-       </characteristics>
-      </profile>
       <profile id="8cbaa1a5-d289-5432-8376-e6bfe4960a66" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
        <characteristics>
         <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The workhorse escort of the Imperial Navy, all broadside and endurance.</characteristic>
@@ -1149,6 +1119,11 @@
       <profile id="ed723435-684e-5810-8c51-dcd7246a3cff" name="Screen" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
        <characteristics>
         <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Frigate. Enemy ships suffer −1 BS when targeting a friendly Capital Ship within 3″ of one or more friendly Frigates. Screen protects only Capital Ships, never the Frigate itself, and multiple instances never stack — the maximum is −1 BS.</characteristic>
+       </characteristics>
+      </profile>
+      <profile id="76243686-22d6-5b47-ab38-63c8f7e14df0" name="Defence Batteries (2)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+       <characteristics>
+        <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 2 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
        </characteristics>
       </profile>
      </profiles>
@@ -1365,7 +1340,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -1375,7 +1350,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -1399,16 +1374,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="01f5c622-cd54-56c8-ba67-69d1dee4cb5e" name="Defence Battery ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="d74eba4d-1a14-5a0b-ad2c-391f65968d59" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The classic fast hunter: a torpedo prow, a lance spine and enough broadside to finish what it starts.</characteristic>
@@ -1417,6 +1382,11 @@
     <profile id="5be2b525-87ed-5125-b578-86bbcd527da3" name="Steadfast" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Light Cruiser. This ship adds +1 to its Evade rolls.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="af3608de-c67f-5760-bd1e-419dd7041f32" name="Defence Batteries (3)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 3 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -1591,7 +1561,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -1615,16 +1585,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="ec7c3b1c-3e23-567e-99b1-81370cf2567d" name="Defence Battery ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="8319c254-986f-559f-af24-525d9ab6c3a9" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">A heavier-gunned patrol vessel built for long independent cruises.</characteristic>
@@ -1633,6 +1593,11 @@
     <profile id="0046bf3c-a6c3-54cc-8d6c-901fa715f548" name="Steadfast" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Light Cruiser. This ship adds +1 to its Evade rolls.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="3894d47a-3c8c-530d-95d6-0619ace7762e" name="Defence Batteries (3)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 3 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -1827,7 +1792,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -1851,16 +1816,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="cad7b182-e5e2-508f-8d8a-e146ab823dc5" name="Defence Battery ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="fed71a38-86a3-51bc-abf0-336b2042c856" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">A carrier conversion, its holds given over to gunships.</characteristic>
@@ -1874,6 +1829,11 @@
     <profile id="568d19af-683f-5d1c-8216-1255524dcb21" name="Engage the Enemy" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Strike Cruiser. This ship may re-roll failed damage rolls during boarding actions.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="c2e788af-aee1-5db9-b074-3b5118fdb1c3" name="Defence Batteries (3)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 3 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -2197,7 +2157,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -2207,7 +2167,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -2231,16 +2191,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="ed04f227-dee8-5f5f-b637-1ea625c59526" name="Defence Battery ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="94dc14f8-bbd3-52b8-983c-3b85b7bef7e9" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The standard Legion strike cruiser: pod rails forward and the guns to clear a landing zone.</characteristic>
@@ -2254,6 +2204,11 @@
     <profile id="f51416a6-420a-5de7-b098-38aea85c9707" name="Engage the Enemy" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Strike Cruiser. This ship may re-roll failed damage rolls during boarding actions.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="568ffe49-f191-5406-ba26-cc836fa52730" name="Defence Batteries (3)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 3 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -2543,7 +2498,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">6</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">8</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">12</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">10″</characteristic>
@@ -2557,7 +2512,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -2567,7 +2522,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -2591,16 +2546,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="d8503653-036d-5f1d-950b-4400bc5bca65" name="Defence Battery ×4" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="b80d499a-48f1-56c3-8861-74203a5e60b7" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">A carrier cruiser, her broadside cut back to make room for the bays.</characteristic>
@@ -2614,6 +2559,11 @@
     <profile id="1a1a51ed-c852-5602-96db-0c094320b8d7" name="Enduring Hull" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Cruiser. This ship succeeds on Damage Control rolls on a 3+ rather than 4+.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="d9f11a17-e2c1-5069-9b1a-ab41bd6e80c0" name="Defence Batteries (4)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 4 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -2838,7 +2788,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">6</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">8</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">12</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">10″</characteristic>
@@ -2862,7 +2812,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -2872,7 +2822,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -2896,16 +2846,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="3e6a7673-50b0-543f-8bfe-e167b7949e05" name="Defence Battery ×4" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="4203da1c-fa85-5f91-89d7-703a760063b6" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">A Lunar rebuilt around a nova cannon, and feared out of all proportion to her numbers.</characteristic>
@@ -2914,6 +2854,11 @@
     <profile id="0bc90593-c82a-5853-bbdc-06b2806fa29a" name="Enduring Hull" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Cruiser. This ship succeeds on Damage Control rolls on a 3+ rather than 4+.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="c6fc3838-ef36-5807-89d6-ae833e7cf655" name="Defence Batteries (4)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 4 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -3073,7 +3018,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">6</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">8</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">12</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">10″</characteristic>
@@ -3087,7 +3032,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -3097,7 +3042,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -3121,16 +3066,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="580db361-cc12-5b1f-8f86-bf573562dae6" name="Defence Battery ×4" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="14350c34-72c0-56b8-b734-21e7987c248a" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The lance cruiser, built to gut armour at range.</characteristic>
@@ -3139,6 +3074,11 @@
     <profile id="5afb9eba-ef5b-5188-8569-6e70b4d29176" name="Enduring Hull" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Cruiser. This ship succeeds on Damage Control rolls on a 3+ rather than 4+.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="97b94aa1-031e-51d7-9c55-4658a509aba5" name="Defence Batteries (4)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 4 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -3298,7 +3238,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">6</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">8</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">12</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">10″</characteristic>
@@ -3312,7 +3252,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -3322,7 +3262,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -3346,16 +3286,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="534c44b0-6840-53d3-9e31-8fc8fc96565a" name="Defence Battery ×4" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="e2ee2d35-a508-5e7b-b3e1-278104fe19eb" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The most numerous cruiser in the Imperium, and the most balanced: torpedoes, lances and a full broadside.</characteristic>
@@ -3364,6 +3294,11 @@
     <profile id="4da6ed44-aeee-5c9c-8076-ef0b0d10fc98" name="Enduring Hull" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Cruiser. This ship succeeds on Damage Control rolls on a 3+ rather than 4+.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="81242a0a-ad6e-5508-8977-1d02925668d8" name="Defence Batteries (4)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 4 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -3523,7 +3458,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">6</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">8</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">12</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">10″</characteristic>
@@ -3537,7 +3472,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -3547,7 +3482,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -3571,16 +3506,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="01010fdc-a617-5692-875b-8c16785db1c6" name="Defence Battery ×4" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="eb2f711f-2e90-5992-901a-f287362a2318" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">A heavy-gun refit, trading torpedoes for weight of shot.</characteristic>
@@ -3589,6 +3514,11 @@
     <profile id="b31a5618-1749-58d5-88d9-778773e92f80" name="Enduring Hull" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Cruiser. This ship succeeds on Damage Control rolls on a 3+ rather than 4+.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="46c8c8c0-cf5a-511c-b9a1-481b8f0fa021" name="Defence Batteries (4)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 4 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -3762,7 +3692,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -3772,7 +3702,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -3796,16 +3726,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="e4b6e29d-2c73-5af6-b91e-4bdba9825443" name="Defence Battery ×5" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="52a6f3db-f25a-5768-82c9-e633db548b2a" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">A Lunar's broadside married to a Mars's lance batteries — a compromise that outlived the designs it borrowed from.</characteristic>
@@ -3814,6 +3734,11 @@
     <profile id="15dcaa31-3487-5855-b102-8a8a64853804" name="Battleline Momentum" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Battlecruiser. This ship may fire normally while under All Ahead Full, ignoring the restriction that would otherwise limit it to Defence Batteries.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="e7fc29d2-0c54-5a96-96c9-a35480b2248b" name="Defence Batteries (5)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 5 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -4178,7 +4103,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -4188,7 +4113,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -4212,16 +4137,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="3b7be6d4-512d-5935-b8ec-cae8a594546e" name="Defence Battery ×5" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="1ea2016f-6527-5845-b8f0-7f1bb4958b41" name="Launch Bays (2)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship carries 2 Launch Bays, sited on her broadsides. Each holds one aircraft squadron, bought separately. See Launch Bays &amp; Aircraft.</characteristic>
@@ -4235,6 +4150,11 @@
     <profile id="904f6137-b999-5a7b-91ee-c4408d2c7d1e" name="Battleline Momentum" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Battlecruiser. This ship may fire normally while under All Ahead Full, ignoring the restriction that would otherwise limit it to Defence Batteries.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="55bc37d8-2f74-5b75-8955-c2d1be88f09c" name="Defence Batteries (5)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 5 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -4589,7 +4509,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -4599,7 +4519,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -4623,16 +4543,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="ad32ff31-34e8-5ce5-8e16-d9748f8c76e3" name="Defence Battery ×5" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="2b198919-88c7-574a-bb7f-864ccb6938dd" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">A gunnery battlecruiser, lances and broadside in equal measure and no nova cannon to reload around.</characteristic>
@@ -4641,6 +4551,11 @@
     <profile id="13b7753b-142f-5cac-b3fc-8de1fcaaa2d9" name="Battleline Momentum" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Battlecruiser. This ship may fire normally while under All Ahead Full, ignoring the restriction that would otherwise limit it to Defence Batteries.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="9d5c1974-b973-53a8-bb8a-85e8b3e01a84" name="Defence Batteries (5)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 5 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -4981,7 +4896,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">11</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">11</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">12</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">8″</characteristic>
@@ -4995,7 +4910,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -5005,7 +4920,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -5029,16 +4944,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="c6785b0a-4882-518c-a962-bbd717870fc3" name="Defence Battery ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="37b3ffb0-e94a-5fa7-b4ed-c8ccd218e935" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">A broadside grand cruiser, everything given over to weight of fire.</characteristic>
@@ -5047,6 +4952,11 @@
     <profile id="ba981dee-2b82-59e3-bddf-8f82d3b7f6a9" name="Fire Control Coordination" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Grand Cruiser. This ship may split its fire without suffering the −1 BS penalty for doing so. All other restrictions on Splitting Fire still apply.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="bfa38b2d-c4f3-50ba-bbeb-b03421ad8ee5" name="Defence Batteries (6)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 6 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -5387,7 +5297,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">11</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">11</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">12</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">8″</characteristic>
@@ -5401,7 +5311,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -5411,7 +5321,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -5435,16 +5345,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="12a62c87-690d-5126-b26a-8d7e6100ca11" name="Defence Battery ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="a7846dbb-39d4-5789-9ad0-2651abbec518" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">A grand cruiser rebuilt around her launch bays.</characteristic>
@@ -5458,6 +5358,11 @@
     <profile id="9bb4c59a-5ea6-5935-a36c-29e9ba40aa3a" name="Fire Control Coordination" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Grand Cruiser. This ship may split its fire without suffering the −1 BS penalty for doing so. All other restrictions on Splitting Fire still apply.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="987555f4-c5d3-5799-ab6c-4a0ba57baf5a" name="Defence Batteries (6)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 6 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -5974,7 +5879,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">11</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">11</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">12</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">8″</characteristic>
@@ -5998,7 +5903,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -6008,7 +5913,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -6032,16 +5937,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="0257ea74-b7c4-5fa2-aa22-7532b0ac9af6" name="Defence Battery ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="c934033c-b64a-553c-b471-9075ea1ccf80" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">An old ramming pattern, her prow reinforced for the charge.</characteristic>
@@ -6050,6 +5945,11 @@
     <profile id="c02672be-89cb-5225-867b-a5bd73d558f7" name="Fire Control Coordination" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Grand Cruiser. This ship may split its fire without suffering the −1 BS penalty for doing so. All other restrictions on Splitting Fire still apply.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="a8dd6726-09ab-5eb4-97d2-e228f7b806f1" name="Defence Batteries (6)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 6 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -6390,7 +6290,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">11</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">11</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">12</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">8″</characteristic>
@@ -6404,7 +6304,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -6414,7 +6314,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -6438,16 +6338,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="b65536e0-7744-5531-8ca0-66386f1a47b9" name="Defence Battery ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="b402c391-a3b2-55c7-9081-0e923d241d69" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The lance pattern, her spine given over to heavy turrets.</characteristic>
@@ -6456,6 +6346,11 @@
     <profile id="6842b0f2-504e-5cb4-9e6c-d375c0f7c3a7" name="Fire Control Coordination" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Grand Cruiser. This ship may split its fire without suffering the −1 BS penalty for doing so. All other restrictions on Splitting Fire still apply.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="a8696a52-6186-5330-8c4c-49c7eb3a5d71" name="Defence Batteries (6)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 6 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -6830,7 +6725,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -6850,7 +6745,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -6874,16 +6769,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="1ac614c7-3894-5f58-8af9-52b483606a78" name="Defence Battery ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="c3dd7fe3-3284-595a-a121-79fb816e4d25" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Built to shatter orbital defences before the drop.</characteristic>
@@ -6892,6 +6777,11 @@
     <profile id="15075fec-b17e-5499-bfa8-31697d40675a" name="Relentless Assault" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Battle Barge. This ship's Drop Pod Launchers are not One Shot. They may be used again under their normal Reload rules.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="73d560ca-63c5-5bb5-a7f6-740debb29c00" name="Defence Batteries (6)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 6 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -7297,7 +7187,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -7321,16 +7211,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="cc48d642-c2d2-5b89-b8bd-be1483a7b7d8" name="Defence Battery ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="1b615dff-7894-505d-8849-4d2790de1836" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every hold given over to the landing: pods forward, bays amidships.</characteristic>
@@ -7344,6 +7224,11 @@
     <profile id="6d392271-44ac-5db3-b376-710d7b753d3a" name="Relentless Assault" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Battle Barge. This ship's Drop Pod Launchers are not One Shot. They may be used again under their normal Reload rules.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="2a21c863-5aa9-5e0b-bbdc-3f5bdd5a1737" name="Defence Batteries (6)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 6 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -7925,7 +7810,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -7935,7 +7820,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -7969,16 +7854,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="d6aa6309-4cf1-53d4-82e9-a4673ff687fe" name="Defence Battery ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="c9c05646-7ffc-50c5-bbd8-e5ef6a147098" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The Legion battle barge as most Legions build her: pod rails, guns and bays enough to take a world.</characteristic>
@@ -7992,6 +7867,11 @@
     <profile id="92479ec0-b7ec-5bf9-830f-ed60a21a35e5" name="Relentless Assault" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Battle Barge. This ship's Drop Pod Launchers are not One Shot. They may be used again under their normal Reload rules.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="334662b4-2099-554b-a9cf-c171b679f0e2" name="Defence Batteries (6)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 6 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -8539,7 +8419,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">14</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">13</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">12</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">15</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">16</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">2</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">6″</characteristic>
@@ -8563,7 +8443,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -8573,7 +8453,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2). Magazine Explosion costs this ship 1 additional Hull Point</characteristic>
      </characteristics>
     </profile>
@@ -8597,16 +8477,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="858340e6-0eef-558c-a0a2-b177177d1f18" name="Defence Battery ×8" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="8a7b12ff-75fb-5c14-adb7-3c2b6564419e" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Built around a nova cannon, with the lance batteries to cover its reload.</characteristic>
@@ -8615,6 +8485,11 @@
     <profile id="050cb543-7792-5b76-9c88-1552e8ec83ba" name="Bulwark of the Line" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Battleship. Apply −1 to Damage Table rolls made against this ship.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="d49e1319-79e8-5436-be35-38de2989cf30" name="Defence Batteries (8)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 8 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -8956,7 +8831,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">14</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">13</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">12</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">15</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">16</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">2</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">6″</characteristic>
@@ -8985,7 +8860,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -8995,7 +8870,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2). Magazine Explosion costs this ship 1 additional Hull Point</characteristic>
      </characteristics>
     </profile>
@@ -9019,16 +8894,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="8ae9932b-8000-5e64-9f0f-c98aa5676825" name="Defence Battery ×10" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="f3d1218d-28b5-5679-8fd3-8c8af02029ff" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The Navy's battleship of the line: a nova cannon forward, triple lance turrets aloft, a heavy broadside and six bays amidships.</characteristic>
@@ -9042,6 +8907,11 @@
     <profile id="0d22392f-ae73-5e4d-aff0-c996bdb9f81f" name="Bulwark of the Line" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Battleship. Apply −1 to Damage Table rolls made against this ship.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="eb8a9a28-a338-53c3-9970-92c88b56afed" name="Defence Batteries (10)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 10 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -9574,7 +9444,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">14</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">13</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">12</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">15</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">16</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">2</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">6″</characteristic>
@@ -9598,7 +9468,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -9608,7 +9478,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -9632,16 +9502,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="074c8dab-6a28-5cb5-be17-f049fa989e71" name="Defence Battery ×8" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="ab77e6db-1083-55a1-a728-ace1c206e5d6" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">A flexible flagship pattern, guns and bays in equal measure.</characteristic>
@@ -9655,6 +9515,11 @@
     <profile id="c295dde5-246c-5211-833a-214fd7c8a7e9" name="Bulwark of the Line" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Battleship. Apply −1 to Damage Table rolls made against this ship.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="24dedf67-6926-5e2d-9d8e-8002cb0d3e7e" name="Defence Batteries (8)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 8 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -10172,7 +10037,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">14</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">13</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">12</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">15</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">16</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">2</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">6″</characteristic>
@@ -10186,7 +10051,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -10196,7 +10061,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -10220,16 +10085,6 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="736d2cbf-db51-53f9-b5ff-0f7b31946549" name="Defence Battery ×8" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
-     </characteristics>
-    </profile>
     <profile id="0fcd236c-e188-5cfb-8234-d14836a6687d" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The line battleship: torpedoes forward, lances aloft and a broadside that ends arguments.</characteristic>
@@ -10238,6 +10093,11 @@
     <profile id="98fbb6ba-eb84-5f74-8fb5-b4543464724b" name="Bulwark of the Line" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Battleship. Apply −1 to Damage Table rolls made against this ship.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="b78c1feb-7520-540f-bce0-5efbbbf60a41" name="Defence Batteries (8)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 8 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -10579,7 +10439,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">14</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">13</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">12</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">15</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">16</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">2</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">6″</characteristic>
@@ -10603,7 +10463,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
     </profile>
@@ -10613,7 +10473,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2). Magazine Explosion costs this ship 1 additional Hull Point</characteristic>
      </characteristics>
     </profile>
@@ -10623,7 +10483,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
      </characteristics>
     </profile>
@@ -10633,18 +10493,8 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
-     </characteristics>
-    </profile>
-    <profile id="86607924-91f0-5b7b-a6b0-462f6d8d0150" name="Defence Battery ×8" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
      </characteristics>
     </profile>
     <profile id="40bb7fb0-78cb-564d-9803-1501361ee6b1" name="Pattern" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -10655,6 +10505,11 @@
     <profile id="0a3a627d-c9ee-5825-9466-041590a28e70" name="Bulwark of the Line" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Battleship. Apply −1 to Damage Table rolls made against this ship.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="08c6930d-4ac4-5b71-a9e1-0f30f5e9336c" name="Defence Batteries (8)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 8 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -10996,7 +10851,7 @@
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">14</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">14</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">13</characteristic>
-      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">18</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">20</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">3</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">14</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">7″</characteristic>
@@ -11015,7 +10870,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">6</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use.Bypasses Void Shields. The enemy may not use the Return Fire Reaction against attacks from this ship in any round these strike</characteristic>
      </characteristics>
     </profile>
@@ -11065,7 +10920,7 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2). All arcs — Gloriana Reactors</characteristic>
      </characteristics>
     </profile>
@@ -11075,18 +10930,8 @@
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">46″</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2). All arcs — Gloriana Reactors</characteristic>
-     </characteristics>
-    </profile>
-    <profile id="3b088a73-bcaf-5202-952a-1264bef3411a" name="Defence Battery ×8" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">6</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">12″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Skyfire; Interceptor. Aircraft to 12″; ships within 6″</characteristic>
      </characteristics>
     </profile>
     <profile id="c9d5a468-c0ac-569b-94ae-7da653cc3549" name="Launch Bays (5)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -11097,6 +10942,11 @@
     <profile id="74099dbe-abbf-5270-8e51-3d69cb2f49c3" name="Pride of the Legion" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Type: Gloriana. This ship ignores the Crippled and Depleted −1 BS penalties, and friendly ships within 12″ may re-roll a failed Damage Control roll once each battle round. She must be the fleet's Flagship, one per battle, and may be fielded only at 2,000 points or more.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="eef73c0b-22dc-5fd4-aafc-cd5940708885" name="Defence Batteries (8)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 8 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
      </characteristics>
     </profile>
    </profiles>
