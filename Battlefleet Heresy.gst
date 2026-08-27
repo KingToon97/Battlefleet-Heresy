@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="86405571-5289-597b-b308-a9a2d68c00b9" name="Battlefleet Heresy" revision="34" battleScribeVersion="2.03" authorName="Battlefleet Heresy Community Data" authorContact="" authorUrl="">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="86405571-5289-597b-b308-a9a2d68c00b9" name="Battlefleet Heresy" revision="36" battleScribeVersion="2.03" authorName="Battlefleet Heresy Community Data" authorContact="" authorUrl="">
  <costTypes>
   <costType id="570b7f63-4fc7-515c-9c96-5b5c25501f85" name="pts" defaultCostLimit="-1.0" hidden="false" />
  </costTypes>
@@ -81,7 +81,7 @@
      <modifiers>
       <modifier type="increment" field="fc0d7884-763c-51cd-af8d-b8d9ce9a4c21" value="1.0">
        <repeats>
-        <repeat field="limit::points" scope="force" childId="any" shared="true" roundUp="false" value="1000.0" repeats="1" includeChildSelections="false" includeChildForces="false" />
+        <repeat field="limit::570b7f63-4fc7-515c-9c96-5b5c25501f85" scope="roster" childId="any" shared="true" roundUp="false" value="1000.0" repeats="1" includeChildSelections="false" includeChildForces="false" />
        </repeats>
       </modifier>
      </modifiers>
@@ -240,7 +240,7 @@
    <description>A ship may scuttle itself when its current Hull Points are one quarter or less of its starting total, rounding the threshold up — so a 16 HP Gloriana may scuttle at 4 or fewer and a 6 HP Cruiser at 2 or fewer. • When issued: at any point in the ship's own activation. • Effect: the ship is destroyed at once and automatically suffers a Catastrophic Explosion — do not roll the D6 that normally decides it. Resolve the blast for its class as normal. • Losses: every Character, Primarch and remaining Crew aboard is lost with her. • Restrictions: the decision cannot be cancelled once declared. A scuttled ship is not a wreck and leaves none behind. A ship destroyed by another ship's blast does not itself scuttle, so no chain of scuttles can occur; it rolls to explode as normal.</description>
   </rule>
   <rule id="3c2a1dd9-e97f-5d58-9c86-f1e28ee2e36f" name="Ship Classes" hidden="false">
-   <description>The Imperial hull progression: Destroyer → Frigate → Light Cruiser → Cruiser → Grand Cruiser → Battleship → Gloriana. Strike Cruisers and Battle Barges are Astartes assault warships and sit outside that progression; the Abyss is its own super-capital category, and the Phalanx its own Void Fortress class. Line Ships are the Destroyer, Frigate, Light Cruiser, Strike Cruiser and Cruiser. Capital Ships are the Grand Cruiser, Battle Barge, Battleship, Gloriana and Abyss. Void Fortress is the topmost class and the Phalanx alone; it counts as a Capital Ship for every rule that names one, except where its own datasheet says otherwise. A roster may include &lt;b&gt;no more than 3&lt;/b&gt; of any one datasheet; Glorianas, the Abyss and the Phalanx remain limited to one, and Battleships to one per 1,000 points.</description>
+   <description>The Imperial hull progression: Destroyer → Frigate → Light Cruiser → Cruiser → Grand Cruiser → Battleship → Gloriana. Strike Cruisers and Battle Barges are Astartes assault warships and sit outside that progression; the Abyss is its own super-capital category, and the Phalanx its own Void Fortress class. Line Ships are the Destroyer, Frigate, Light Cruiser, Strike Cruiser and Cruiser. Capital Ships are the Grand Cruiser, Battle Barge, Battleship, Gloriana and Abyss. Void Fortress is the topmost class and the Phalanx alone; it counts as a Capital Ship for every rule that names one, except where its own datasheet says otherwise. A roster may include &lt;b&gt;no more than 3&lt;/b&gt; of any one datasheet; Glorianas, the Abyss and the Phalanx remain limited to one, and Battleships to one per full 1,000 points of the agreed game size — one at 1,000, two at 2,000, three at 3,000. Set a points limit on the roster or the cap cannot be evaluated.</description>
   </rule>
   <rule id="852a1127-f69f-5454-baa4-1a319e88af55" name="Ship Construction" hidden="false">
    <description>Ships are taken as Hull Patterns with fixed armament; see Hull Patterns. Aircraft are bought separately, one squadron per Launch Bay, and boarding forces are bought from the ship's own Crew.</description>
