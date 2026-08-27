@@ -4,7 +4,7 @@ Fan-made data and rules for **Battlefleet Heresy**, a game of Horus Heresy void 
 Battlefleet Gothic-style fleet combat built on Horus Heresy vehicle mechanics: armour
 facings, Hull Points and a damage table, scaled up to ships of the line.
 
-Eighteen Legion fleets, thirty-one named ship classes, alternating activation, and a
+Eighteen Legion fleets, thirty named ship classes, alternating activation, and a
 positioning game where getting caught in the wrong arc is fatal.
 
 ---
@@ -46,7 +46,6 @@ weapon-by-weapon construction: a Lunar is a Lunar, printed as it was built.
 | Light Cruiser – Dauntless-class | 120 | 5 | 1 | 12 | 3 | 12″ | 90° | 4 |
 | Strike Cruiser – Vanguard pattern | 125 | 6 | 1 | 12 | 3 | 12″ | 90° | 5 |
 | Strike Cruiser – Nova pattern | 150 | 6 | 1 | 12 | 3 | 12″ | 90° | 5 |
-| Strike Cruiser – Bombardment pattern | 180 | 6 | 1 | 12 | 3 | 12″ | 90° | 5 |
 | Cruiser – Dictator-class | 160 | 6 | 1 | 12 | 4 | 10″ | 45° | 5 |
 | Cruiser – Tyrant-class | 165 | 6 | 1 | 12 | 4 | 10″ | 45° | 5 |
 | Cruiser – Gothic-class | 205 | 6 | 1 | 12 | 4 | 10″ | 45° | 5 |
@@ -71,7 +70,7 @@ weapon-by-weapon construction: a Lunar is a Lunar, printed as it was built.
 | Abyss – Furious Abyss | 1,100 | 18 | 4 | 14 | 12 | 6″ | 45° | 12 |
 | Void Fortress – Phalanx | 1,230 | 18 | 4 | 14 | 16 | 6″ | 45° | 12 |
 
-All thirty-one standard datasheets, plus the eighteen Glorianas, the Abyss and the Phalanx. Squadron classes are taken
+All thirty standard datasheets, plus the eighteen Glorianas, the Abyss and the Phalanx. Squadron classes are taken
 1–3 at a time.
 
 ### Ship Types
