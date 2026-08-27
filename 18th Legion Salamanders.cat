@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="30a0ab31-f493-52ee-84e4-caa4b160f5a0" name="18th Legion Salamanders" revision="50" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="37" library="false">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="30a0ab31-f493-52ee-84e4-caa4b160f5a0" name="18th Legion Salamanders" revision="55" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="42" library="false">
  <selectionEntries>
   <selectionEntry id="9f851231-8616-5304-b439-fef2ef715e18" name="Destroyer - Cobra-class Squadron" hidden="false" collective="false" import="true" type="unit">
    <constraints>
@@ -124,21 +124,6 @@
         <constraint type="max" value="5.0" field="selections" scope="parent" shared="false" id="369f627a-3ef1-5d74-8505-e9ab4f4bb806" percentValue="false" includeChildSelections="false" includeChildForces="false" />
        </constraints>
        <selectionEntries>
-        <selectionEntry id="e95c15fe-23ee-5590-a5dd-a1817ee4eda3" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-         <constraints>
-          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="95d3d7e9-ea82-5479-b45d-cf361d258e5a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-         </constraints>
-         <profiles>
-          <profile id="c354c049-f55d-5c61-9a77-cc82937cac9a" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-           <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-           </characteristics>
-          </profile>
-         </profiles>
-         <costs>
-          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="5.0" />
-         </costs>
-        </selectionEntry>
         <selectionEntry id="561d1ad3-8887-5f15-8c68-9b997d28cc62" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
          <constraints>
           <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="b9e75e5e-53ff-5ab5-9528-680b592295cf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -152,21 +137,6 @@
          </profiles>
          <costs>
           <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="5.0" />
-         </costs>
-        </selectionEntry>
-        <selectionEntry id="a6785fc8-d333-5e3f-be50-0513dd9d91cd" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-         <constraints>
-          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="395df426-d024-524e-b70e-be0cb7cd98c7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-         </constraints>
-         <profiles>
-          <profile id="f9bd47cc-c581-5bde-b1ef-65f43eec22b4" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-           <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-           </characteristics>
-          </profile>
-         </profiles>
-         <costs>
-          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
          </costs>
         </selectionEntry>
         <selectionEntry id="40a8f3dd-0e05-5a54-ab52-ce48052d70bd" name="Adamantium Belt Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -220,7 +190,7 @@
        <profiles>
         <profile id="5585551c-9c07-5a51-bb0f-cd9d5a42e620" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. &lt;b&gt;Reduce the Hull Point loss from a Magazine Explosion by 1&lt;/b&gt;, to a minimum of 0. On a Triple Lance Turret ship that cancels the additional Hull Point the weapon inflicts, so a Magazine Explosion costs 1 Hull Point rather than 2. On a Quad Warp Lance Turret it costs 2 rather than 3. The Crew loss still applies. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -241,21 +211,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="38bbc6ca-8ce2-5fc1-a419-1c313422a6a5" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="8231e488-e30b-5a06-9bb7-d027f5f4513f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="8546b29f-6c39-5055-ae0f-0a99bb855b43" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Reload value of every weapon and system aboard this ship by 1, to a minimum of Reload 0 — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1), Reload (1) becomes Reload (0). A weapon reduced to Reload (0) has no cooldown and may fire every applicable battle round. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -378,21 +333,6 @@
         <constraint type="max" value="5.0" field="selections" scope="parent" shared="false" id="9baa7447-799a-538a-a022-c0771e559567" percentValue="false" includeChildSelections="false" includeChildForces="false" />
        </constraints>
        <selectionEntries>
-        <selectionEntry id="116c9b72-5e22-54a5-9388-55f0eca32ce2" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-         <constraints>
-          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="cc2f631a-5ba8-5b3b-9d7a-38fedb73d53c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-         </constraints>
-         <profiles>
-          <profile id="480db054-4bfb-509a-82a4-638a2db0e082" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-           <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-           </characteristics>
-          </profile>
-         </profiles>
-         <costs>
-          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="5.0" />
-         </costs>
-        </selectionEntry>
         <selectionEntry id="9dfee83a-40ec-57bc-8115-ebebf9102802" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
          <constraints>
           <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="04136d00-e264-56e8-9f81-1452d3adae67" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -401,21 +341,6 @@
           <profile id="e2eb2ddf-87cb-5d54-b4f5-4e183ec76a26" name="Emergency Shield Capacitors" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
            <characteristics>
             <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">+1 to Void Shield regeneration rolls. It confers no other benefit and can never raise a ship above its normal number of Void Shields; a shield burnt out despite the bonus stays burnt out for the rest of the battle. Once per ship.</characteristic>
-           </characteristics>
-          </profile>
-         </profiles>
-         <costs>
-          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="5.0" />
-         </costs>
-        </selectionEntry>
-        <selectionEntry id="c3edd229-bbb3-5c4e-a1f6-57a7acd333f0" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-         <constraints>
-          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="b1ec4ea6-e27d-509a-a1d1-e65966125245" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-         </constraints>
-         <profiles>
-          <profile id="5b43c381-effa-5bc5-b340-47f34034e04f" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-           <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
            </characteristics>
           </profile>
          </profiles>
@@ -474,7 +399,7 @@
        <profiles>
         <profile id="ed9f9b75-09b7-5c73-95c5-19b9f591735d" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. &lt;b&gt;Reduce the Hull Point loss from a Magazine Explosion by 1&lt;/b&gt;, to a minimum of 0. On a Triple Lance Turret ship that cancels the additional Hull Point the weapon inflicts, so a Magazine Explosion costs 1 Hull Point rather than 2. On a Quad Warp Lance Turret it costs 2 rather than 3. The Crew loss still applies. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -495,21 +420,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="3e5787da-b2ce-50c3-9359-925337c6d40a" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="f6aeea80-dcd2-5243-9026-91a7ff118f97" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="6be3c1e3-f42f-5f45-8a5d-395dcf5bd99a" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Reload value of every weapon and system aboard this ship by 1, to a minimum of Reload 0 — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1), Reload (1) becomes Reload (0). A weapon reduced to Reload (0) has no cooldown and may fire every applicable battle round. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -650,21 +560,6 @@
         <constraint type="max" value="5.0" field="selections" scope="parent" shared="false" id="6ed15dd8-baf9-5ccf-b37e-ebe4d7e4b16e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
        </constraints>
        <selectionEntries>
-        <selectionEntry id="291fb50a-eca0-5f53-9567-83d9851dbe70" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-         <constraints>
-          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="9d8821d4-d730-59c7-bc69-fc80615230dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-         </constraints>
-         <profiles>
-          <profile id="d2fd6a27-46f3-52d2-b16a-113f8281332a" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-           <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-           </characteristics>
-          </profile>
-         </profiles>
-         <costs>
-          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="5.0" />
-         </costs>
-        </selectionEntry>
         <selectionEntry id="c0d9e321-8355-5225-a3b0-a5b60d8704b7" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
          <constraints>
           <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="9a024ff0-162a-5b6d-a776-f52ac553572d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -678,21 +573,6 @@
          </profiles>
          <costs>
           <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="5.0" />
-         </costs>
-        </selectionEntry>
-        <selectionEntry id="ce16923c-9dc5-593b-b8fe-1d2fc47abbc1" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-         <constraints>
-          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="ef615481-0f1e-5563-9836-232a31facbbf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-         </constraints>
-         <profiles>
-          <profile id="00d9e8ce-1a04-53ce-b2ab-76e642fe0066" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-           <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-           </characteristics>
-          </profile>
-         </profiles>
-         <costs>
-          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
          </costs>
         </selectionEntry>
         <selectionEntry id="aa6ffe97-9126-5d42-875b-f1ab2329f562" name="Adamantium Belt Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -746,7 +626,7 @@
        <profiles>
         <profile id="40b1c970-8f06-56db-90ca-6fc0d7d811c5" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. &lt;b&gt;Reduce the Hull Point loss from a Magazine Explosion by 1&lt;/b&gt;, to a minimum of 0. On a Triple Lance Turret ship that cancels the additional Hull Point the weapon inflicts, so a Magazine Explosion costs 1 Hull Point rather than 2. On a Quad Warp Lance Turret it costs 2 rather than 3. The Crew loss still applies. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -767,21 +647,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="c4ce18f5-7aa7-5145-80c1-a71fe1818860" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="56a6e8b1-6aee-5838-88d7-edb9b4ae16fe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="0807c77f-e83c-5342-84af-2bbb740d18ae" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Reload value of every weapon and system aboard this ship by 1, to a minimum of Reload 0 — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1), Reload (1) becomes Reload (0). A weapon reduced to Reload (0) has no cooldown and may fire every applicable battle round. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -912,21 +777,6 @@
         <constraint type="max" value="5.0" field="selections" scope="parent" shared="false" id="a2f28c84-da72-5dee-a7e6-614c9657fdd5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
        </constraints>
        <selectionEntries>
-        <selectionEntry id="d99c25be-173e-5d59-861b-99735d261ed5" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-         <constraints>
-          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="aba5852d-5025-5a1f-8b3d-bd5e66433a35" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-         </constraints>
-         <profiles>
-          <profile id="f54a349b-256a-546a-83d3-927a917b8b77" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-           <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-           </characteristics>
-          </profile>
-         </profiles>
-         <costs>
-          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="5.0" />
-         </costs>
-        </selectionEntry>
         <selectionEntry id="25f4b8b3-d841-527b-96a0-33a3a6312626" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
          <constraints>
           <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="ba593499-bdc7-5940-99f7-adc12451db95" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -940,21 +790,6 @@
          </profiles>
          <costs>
           <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
-         </costs>
-        </selectionEntry>
-        <selectionEntry id="7d364a79-2a2d-5eba-9deb-be3135c9765a" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-         <constraints>
-          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="61fb84fc-99ad-529a-abcc-efe2961a4ead" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-         </constraints>
-         <profiles>
-          <profile id="ab1c714e-d17d-5bf6-baa1-2bcf6e0c44b7" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-           <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-           </characteristics>
-          </profile>
-         </profiles>
-         <costs>
-          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
          </costs>
         </selectionEntry>
         <selectionEntry id="031c22a1-a2e4-5b5e-b454-1f402a8586bb" name="Adamantium Belt Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -1008,7 +843,7 @@
        <profiles>
         <profile id="4296411d-2d0f-5d18-bd5d-9490227cbf33" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. &lt;b&gt;Reduce the Hull Point loss from a Magazine Explosion by 1&lt;/b&gt;, to a minimum of 0. On a Triple Lance Turret ship that cancels the additional Hull Point the weapon inflicts, so a Magazine Explosion costs 1 Hull Point rather than 2. On a Quad Warp Lance Turret it costs 2 rather than 3. The Crew loss still applies. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -1029,21 +864,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="7068b2fb-0711-5cab-bfae-53d0b5b5b386" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="4bbc9e44-ea2c-575c-b625-39c7200c4077" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="df04d7d1-1da2-5cd8-ab32-e7bb8af85f5b" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Reload value of every weapon and system aboard this ship by 1, to a minimum of Reload 0 — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1), Reload (1) becomes Reload (0). A weapon reduced to Reload (0) has no cooldown and may fire every applicable battle round. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -1174,21 +994,6 @@
         <constraint type="max" value="5.0" field="selections" scope="parent" shared="false" id="468e1cf7-9ec2-5f13-8c13-522d40d833be" percentValue="false" includeChildSelections="false" includeChildForces="false" />
        </constraints>
        <selectionEntries>
-        <selectionEntry id="98b52a3a-2ed7-55f8-8a4b-ed356a523030" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-         <constraints>
-          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="d684b12f-07b5-5953-b2bd-dadfa0a79a18" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-         </constraints>
-         <profiles>
-          <profile id="fc4c3ec5-54bd-5695-b35e-c0faf6b069db" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-           <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-           </characteristics>
-          </profile>
-         </profiles>
-         <costs>
-          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="5.0" />
-         </costs>
-        </selectionEntry>
         <selectionEntry id="1f16cfa8-663f-563b-9f22-c29f15b86faf" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
          <constraints>
           <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="2e35b3cb-9c1d-58f1-93df-fb230ebeb116" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -1202,21 +1007,6 @@
          </profiles>
          <costs>
           <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
-         </costs>
-        </selectionEntry>
-        <selectionEntry id="2e5bb39f-a55a-5c00-a633-c6f865c6acc9" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-         <constraints>
-          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="d7f949ec-8fee-500f-9222-ff2346fadad3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-         </constraints>
-         <profiles>
-          <profile id="9433f22a-f4c6-5e3b-8764-d181e2ecc325" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-           <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-           </characteristics>
-          </profile>
-         </profiles>
-         <costs>
-          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
          </costs>
         </selectionEntry>
         <selectionEntry id="d5116e07-cefc-5fc3-9bcf-469a9f934e49" name="Adamantium Belt Armour" hidden="false" collective="false" import="true" type="upgrade">
@@ -1270,7 +1060,7 @@
        <profiles>
         <profile id="67b72cb5-9eb4-5cfe-b903-19695838e917" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. &lt;b&gt;Reduce the Hull Point loss from a Magazine Explosion by 1&lt;/b&gt;, to a minimum of 0. On a Triple Lance Turret ship that cancels the additional Hull Point the weapon inflicts, so a Magazine Explosion costs 1 Hull Point rather than 2. On a Quad Warp Lance Turret it costs 2 rather than 3. The Crew loss still applies. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -1291,21 +1081,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="19bbd440-ddf8-5b18-b5e3-ad6b153f9285" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="e747b36a-0389-57ac-98ff-45bb4486a385" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="9d7cd94e-7b92-575b-b39d-056418332e38" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Reload value of every weapon and system aboard this ship by 1, to a minimum of Reload 0 — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1), Reload (1) becomes Reload (0). A weapon reduced to Reload (0) has no cooldown and may fire every applicable battle round. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -1476,27 +1251,12 @@
        <profiles>
         <profile id="607ddb46-b1f6-5ed5-8b6c-5eebea0f0f58" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="cc559149-d0f9-5186-82fc-2f4bd7601988" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="60ac5edd-c608-51cc-9d6b-9cfe99a3efca" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="d8f8cc09-dcee-53f2-8907-fbe438075db5" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="30.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="0ddc7329-c3dc-5a9d-85bc-af20adfd2095" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -1512,21 +1272,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="7a2f471c-4d60-582f-9b02-fff6012b0f97" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="af771af7-884f-5e88-9c66-4e0f8373d26b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="8ed6c6a7-5e15-57e1-95aa-cd4c31335e6e" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -1687,27 +1432,12 @@
        <profiles>
         <profile id="81c2d90b-b2d1-5838-902f-67c11168278c" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="5.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="c0101768-c8b9-5862-bd52-e2a62bfadbfb" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="a441e7aa-53e1-572b-8e7f-dd653d132a98" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="a01221a3-b080-5245-8298-bb9e3fe02f0b" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="5.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="2bfa25eb-86fd-5a6e-b434-2872b9817643" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -1723,21 +1453,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="e07fa82c-7f7a-5a9f-afba-8e877dcbcbcf" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="94716c2d-d51b-5aa6-b5a4-83f9467d315d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="1313c2e5-a864-5c05-85bb-04866dde9fec" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -2041,21 +1756,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="5d455b34-1790-537d-951f-c37a4a1dbda8" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="eaef50db-1a21-5310-bb57-7efb7830fbfc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="b7a197ea-2415-565c-aab8-9bb6dc2306df" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="da1697e9-4fe9-5cf1-a20c-6a7e29950a17" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="e9a91a48-07ea-54b0-8456-2eda3154618a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -2069,21 +1769,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="b1745672-477f-59dd-a569-51ac1f0f59c6" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="439bade8-8a35-5eb3-858b-a2ecf615770c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="3f992f56-2f9d-5af8-96d7-2a5f6868a71f" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="30.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -2416,21 +2101,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="f801539e-bf97-591b-8d64-bd34a41ace80" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="e966e84c-da4a-53e6-81e8-3ee921e7bdd7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="7cf36bd6-de1b-5ca6-bfbd-fc19a73358f8" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="c0e9cd74-45ed-5142-a2a0-3e1c8bcb319f" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="84de8001-0838-58ba-9558-92261fa00db6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -2444,21 +2114,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="0ad72ebf-d4ae-5636-bdbe-5381ed091269" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="eff43fda-42f0-5530-9ac4-bb126f4508af" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="8a158c74-bb61-5079-82dc-17e3c9e48bbc" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -2502,7 +2157,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">12</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">10″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">5</characteristic>
      </characteristics>
     </profile>
@@ -2717,27 +2372,12 @@
        <profiles>
         <profile id="8d311e44-f691-5d19-9393-0652fc430638" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="7e08deae-dcbe-50db-a196-715d412985c6" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="89e79cab-1941-5321-8282-eca3ca1e5c56" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="4d93d90a-a1ba-52eb-a7b7-af6c40df8044" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="74dcf83c-784d-5931-8b39-4ecf5fec7966" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -2753,21 +2393,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="92712a45-20c9-5cbd-bb6e-ce4cd32a248e" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="9af5c03c-e86d-5e10-8497-7605597a83a8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="5760bd90-adc6-5713-88d3-62a6350edd44" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="30.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -2792,7 +2417,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">12</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">10″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">5</characteristic>
      </characteristics>
     </profile>
@@ -2947,27 +2572,12 @@
        <profiles>
         <profile id="9ed21302-044b-5b2a-88a7-0bac512fff43" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="29a07aee-a03f-5930-9bb4-46971a29d268" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="d4044a8b-1e75-5081-94ed-05c410b179c4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="24e97e3f-f777-5d39-bc39-65bc109022c8" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="736f913b-2218-51b2-a0d3-e89877aa2c89" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -2983,21 +2593,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="6f81a433-33dc-53bc-9d83-c4f5ba8b6e73" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="c4307c9a-4b77-540f-886e-c7dbe14122d6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="6f85809e-650c-52d7-a6ee-fe8e6e1f6ce1" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -3022,7 +2617,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">12</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">10″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">5</characteristic>
      </characteristics>
     </profile>
@@ -3167,27 +2762,12 @@
        <profiles>
         <profile id="7c9d5459-7d18-526f-ad00-bc21eff472c8" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="2337e00d-ecaf-543d-88fe-2f45a2f83d2c" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="a934b285-13d0-5085-b240-f1bd9e497935" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="85367e2a-08cc-559c-bb8e-5a8d28ac706b" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="51f31f88-e6ba-50f1-ae73-4552c818d83c" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -3203,21 +2783,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="a626eebb-b92f-58ab-a222-461f4ee2830a" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="4bd9bccf-30c4-5d36-981b-7087703e4dcd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="e105ccf8-6f55-5231-8ac1-054cf2d0d32b" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -3242,7 +2807,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">12</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">10″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">5</characteristic>
      </characteristics>
     </profile>
@@ -3387,27 +2952,12 @@
        <profiles>
         <profile id="5569c004-bb3e-5741-96fc-f030d03d0c13" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="599e1ce0-4ffb-51f0-8834-774f43e23c27" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="4e554672-007e-5376-8715-4f794f7a903f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="e3936236-f5c7-5389-9bdc-73993f8b5ed8" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="4245c1bc-511c-5fd4-b714-ee0cc08773dc" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -3423,21 +2973,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="1799995e-9a3b-5b32-8eb2-b82065194896" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="70a96033-a943-5409-880b-44f6adae287a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="30a94058-818a-5c1d-871d-8bc78a47544a" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -3462,7 +2997,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">12</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">10″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">5</characteristic>
      </characteristics>
     </profile>
@@ -3607,27 +3142,12 @@
        <profiles>
         <profile id="3349ac17-069a-5134-9d4d-2a7b7da41559" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="0cd0be97-ee84-5342-a311-d4e2bfab1e13" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="0139f946-a60e-576a-8822-4fc5c6764b57" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="b3896403-bfed-591c-90a1-3539a696ca82" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="b70efbb9-ed1c-5aef-9d61-4ab1d3f0b7cb" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -3643,21 +3163,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="3775752e-62fd-5a5f-9568-ff5eeaa06689" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="9b6a0148-d870-53bd-9d55-aa11f4d368bd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="a7fa7ab0-c00b-5d7d-8fcf-d355a93be557" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -3682,7 +3187,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">9″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">6</characteristic>
      </characteristics>
     </profile>
@@ -3909,27 +3414,12 @@
        <profiles>
         <profile id="ae282286-1083-58a3-ace2-ec29ea34c873" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="4aa8ad7b-2e67-5a31-a104-baec33251fdd" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="d0cc33fb-d3e9-53c1-9718-c206c9c89c4a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="5e73a270-462d-5788-ab85-ea9b986059ce" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="0c08675c-8b50-53cd-b3ae-7d031e199bd4" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -3945,21 +3435,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="30.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="f7813ace-2c7d-5972-9279-7568a593f212" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="dcb9c291-d956-54b1-a67d-6bc92365c372" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="85b3976f-e749-5c62-8f60-17d73d650eb8" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="60.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -4083,7 +3558,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">9″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">6</characteristic>
      </characteristics>
     </profile>
@@ -4325,27 +3800,12 @@
        <profiles>
         <profile id="e5eb847f-4ecf-5a67-b20b-c05b18c50094" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="42f7881f-b858-5cf2-8a29-354b8c377464" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="ec10903e-21ec-5608-bb2f-0440dddd5288" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="10246b7d-0a35-55e6-8df2-f6861132a16d" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="e5f86f36-396c-567c-a27d-2e12fc537d91" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -4361,21 +3821,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="f6132679-ee11-59e1-8f08-45f6816bf9ab" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="cf3486b2-4808-5af8-a6e1-6f73558b8446" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="3bf03741-7c72-538b-be6d-39f4f6ee5761" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="50.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -4499,7 +3944,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">9″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">6</characteristic>
      </characteristics>
     </profile>
@@ -4726,27 +4171,12 @@
        <profiles>
         <profile id="2d8a65c5-1571-5c94-be13-8777ff41f6e5" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="8ee8d807-02cf-55f3-8baf-8a133570a586" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="964ce467-0152-5700-90ef-8761bad9166c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="4d2d531a-5654-55f3-99a1-16c9eaa42f3c" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="ebe25ff5-6c6a-5fa2-952c-5f613e31713a" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -4762,21 +4192,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="25cf45e7-218c-597a-a87e-51fd3666697a" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="1b6c9e4d-6cbb-5cd0-a972-a8ba7d9ad6f7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="5b193287-cf37-5311-81d9-d33beb508c09" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -4900,7 +4315,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">8″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">7</characteristic>
      </characteristics>
     </profile>
@@ -5127,27 +4542,12 @@
        <profiles>
         <profile id="6caf3db9-ed15-50f4-b899-9e9cae3c76a0" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="23c5418f-68b6-5634-8fc6-3b3ec3566d2b" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="d2bd061e-1b6f-5f3a-a9b3-c48df48dc4f6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="2df90d45-7411-506b-b18e-d6ff61993eec" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="dffb69c6-cf0c-5968-b247-6ce41cf852c9" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -5163,21 +4563,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="6cfde895-7724-5f43-a67b-22031ec5fd5e" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="2202b69e-acb8-5393-9084-e54bcf9ac5ca" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="0efd30be-129a-5d88-b6b2-9740019d8e5e" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="50.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -5301,7 +4686,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">8″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">7</characteristic>
      </characteristics>
     </profile>
@@ -5709,27 +5094,12 @@
        <profiles>
         <profile id="8331f467-8af3-5d2f-9707-cd27fb41316e" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="0df2e0f3-5591-5628-97a6-e1829812ba1c" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="1badd25f-3a7e-5056-8647-bf31c3af75b0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="e351f596-4f7e-5ce7-9b77-4fafffe0fd4e" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="c643f80c-f116-5da6-8514-f84cf40f4ab8" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -5745,21 +5115,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="042a592c-46a5-58ef-bfc5-69dfdfe75714" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="c2b65526-bc0d-5875-9d80-85e81ecd6bde" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="b97ee3a4-5fee-5e2b-b443-bd3665bd5118" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -5883,7 +5238,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">8″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">7</characteristic>
      </characteristics>
     </profile>
@@ -6120,27 +5475,12 @@
        <profiles>
         <profile id="060cad43-93ab-5220-89f7-995ed4e4ac2b" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="30e8570c-020e-5bb7-b987-9c3baa34ef30" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="d8be99d5-e1c2-5697-b6d1-808362d9f45b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="a9008896-71a8-53f9-ae34-c5cde76aab1e" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="b5f94291-e922-5f5b-9042-fdf36b020c12" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -6156,21 +5496,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="028c4ecf-9e06-5156-875c-4f08e7c81161" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="50264c01-c4a7-597f-988c-8bf6d10c1208" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="7afaa114-c5c9-5603-8ca5-95cd53b8957a" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="70.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -6294,7 +5619,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">8″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">7</characteristic>
      </characteristics>
     </profile>
@@ -6521,27 +5846,12 @@
        <profiles>
         <profile id="eae6b109-07f3-5626-a786-d4482aa76483" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="532f0a87-5eae-5c0f-819b-2f4e10ea718a" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="2a411320-dae8-577f-8ddc-621ef6365d5b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="463e731b-5dcd-568c-9158-814794585b74" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="31ac3676-d6d0-5875-8f81-ae65d4db234c" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -6557,21 +5867,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="e2fb1d35-b13d-5f44-a50d-30b207391c4e" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="81807355-4e1a-50cb-8217-a5ab373a432b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="10f72ba6-a4d2-5813-b251-0fb00885c6fa" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="70.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -6695,7 +5990,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">8″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">9</characteristic>
      </characteristics>
     </profile>
@@ -7051,27 +6346,12 @@
        <profiles>
         <profile id="10b8386d-f811-5876-bf9e-39ec97796eee" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="f796e33b-da5b-5fae-8798-4f7d80ccb9c8" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="51be4b77-30bb-5d21-90d0-010aeda4ea35" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="70ea18e4-620c-5556-be2d-76e5e8e5df01" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="5a74a6ff-e231-5a69-b524-a4f3a2476ccc" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -7087,21 +6367,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="30.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="8f2a4486-9219-5e8a-b117-201b864e26b5" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="3e46fa0e-2b4f-5e9f-aa17-2a235cc46f2e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="414c6df5-1d94-5b9a-bc76-f73e5685610e" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="60.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -7157,7 +6422,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">8″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">9</characteristic>
      </characteristics>
     </profile>
@@ -7674,27 +6939,12 @@
        <profiles>
         <profile id="edd28614-8949-58b8-8e7d-afe1596e68d0" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="f3e72622-6828-5326-aaf6-15ec23699c02" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="fd2e60c4-38c2-5723-bc47-4c6d4478f5d4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="aa846c42-6556-57eb-899e-1f59d19571fb" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="16444890-03cb-5549-afd5-c9a7dacaf8f4" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -7710,21 +6960,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="11042696-5178-56df-a9e8-42e31fc50bd0" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="07e05998-0ded-5d9a-b91c-fae1eefacd90" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="8bd22556-e284-51bc-a2e9-d66a3a1ec652" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="50.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -7780,7 +7015,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">8″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">9</characteristic>
      </characteristics>
     </profile>
@@ -8317,27 +7552,12 @@
        <profiles>
         <profile id="9990a991-8861-51de-a77c-aaecead02c11" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="199def53-096c-597c-a945-8de55dbcb394" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="47f591c8-5b2b-556c-b02b-e5d8f87e2b22" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="a3fb3ace-edac-54e3-8afc-3a80bafe2da3" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="707d47c7-1e3e-5c50-b77f-33edf2dc7ff4" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -8353,21 +7573,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="a4d3124d-2954-5e63-aae9-42ca6b07d158" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="7a5f3d4b-bca0-50af-b688-dc3c6ddc8a9a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="6950c4d1-26ed-562f-9247-5aad17bda732" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="50.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -8423,7 +7628,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">2</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">6″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">8</characteristic>
      </characteristics>
     </profile>
@@ -8760,12 +7965,12 @@
        <profiles>
         <profile id="de76fbac-06c4-58a3-8287-7565e022cd0d" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="60.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="8d709dd6-6ff3-512c-a034-12c12f4c29e4" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
@@ -8775,7 +7980,7 @@
        <profiles>
         <profile id="ac1de8ca-90de-5868-b3ab-ac327c2f58ff" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. &lt;b&gt;Reduce the Hull Point loss from a Magazine Explosion by 1&lt;/b&gt;, to a minimum of 0. On a Triple Lance Turret ship that cancels the additional Hull Point the weapon inflicts, so a Magazine Explosion costs 1 Hull Point rather than 2. On a Quad Warp Lance Turret it costs 2 rather than 3. The Crew loss still applies. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8796,21 +8001,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="50.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="2435bba6-9511-55df-a8a0-2aee3e1e90dd" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="db2dcf1d-440f-5e54-b295-c074418d64a0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="bbb0cc5a-06a4-5ff3-b2de-a1a9238c8366" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="95.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -8835,7 +8025,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">2</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">6″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">8</characteristic>
      </characteristics>
     </profile>
@@ -9373,12 +8563,12 @@
        <profiles>
         <profile id="62c81941-832a-5cb9-9081-39e2823e3262" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="70392f7a-8faa-5d77-9267-e4611ac1c02c" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
@@ -9388,7 +8578,7 @@
        <profiles>
         <profile id="3777d7e3-b3a5-5969-b7df-58c904b6be76" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. &lt;b&gt;Reduce the Hull Point loss from a Magazine Explosion by 1&lt;/b&gt;, to a minimum of 0. On a Triple Lance Turret ship that cancels the additional Hull Point the weapon inflicts, so a Magazine Explosion costs 1 Hull Point rather than 2. On a Quad Warp Lance Turret it costs 2 rather than 3. The Crew loss still applies. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9409,21 +8599,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="097ef470-cf82-5bfa-bb03-21f54d50583a" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="9b5ac77e-09c3-552b-9ae3-12668176c25a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="9791dd6a-6233-5d3f-9b8d-ed00b63ca601" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="90.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -9448,7 +8623,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">2</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">6″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">8</characteristic>
      </characteristics>
     </profile>
@@ -9966,27 +9141,12 @@
        <profiles>
         <profile id="db91b0d7-6db4-5c5b-954e-80e50e8a60b3" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="3aec7dc7-f7fe-5364-95c1-998df2497b9d" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="1878d7cd-6891-5787-a7be-4e8d0da61a40" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="3dad50c7-b8cf-5a37-aca1-cec8650c003b" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="06e21154-0e66-5e1f-9da0-e065b4e196e8" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -10002,21 +9162,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="aed564c9-eef7-5046-87d5-e2a960d81999" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="9bf740f1-5ab6-5ab5-8bd4-f65d3a810568" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="1934e537-7aed-5135-b244-8fd767c02a12" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10041,7 +9186,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">2</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">6″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">8</characteristic>
      </characteristics>
     </profile>
@@ -10368,27 +9513,12 @@
        <profiles>
         <profile id="f1039331-c975-5e4c-b9e6-728d121f818c" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="b36002b1-9650-54d3-95ee-8370e74a8cd8" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="7246df33-6ad3-55ca-9bd8-925794e9396b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="c132420f-6bfe-5a0e-88af-9ee122609cdc" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="5988d9d7-5bc6-5f66-9c94-a18fab3be408" name="Emergency Shield Capacitors" hidden="false" collective="false" import="true" type="upgrade">
@@ -10404,21 +9534,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="af0bc8a6-5cbe-569f-83f5-fd58158309a3" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="9fcd58c9-7f01-5d93-b5a7-ee8737a7dcb6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="82554845-2e1a-5be1-8054-82df92c553b3" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="85.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10443,7 +9558,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">2</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">13</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">6″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">8</characteristic>
      </characteristics>
     </profile>
@@ -10780,12 +9895,12 @@
        <profiles>
         <profile id="15272971-73db-5fab-a8ca-076053114f9e" name="Phosphex Shell Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target takes 1 Critical Damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Heavy Macro-Cannon Battery aboard fires phosphex: whenever one penetrates armour, the target loses &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. Requires at least one Heavy Macro-Cannon Battery. Every Death Guard Capital Ship carries Phosphex Shell Magazines free of charge.</characteristic>
          </characteristics>
         </profile>
        </profiles>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="60.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="e1f83dbe-a5f1-532d-91dc-fa720e202041" name="Blast-Shielded Magazines" hidden="false" collective="false" import="true" type="upgrade">
@@ -10795,7 +9910,7 @@
        <profiles>
         <profile id="be07e37b-b657-5ea8-8acf-a11c8c203ddc" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Reduce the Damage Control caused by a Magazine Explosion by 1, to a minimum of 0. A Twin Lance Turret that would suffer 1 Damage Control instead suffers 0 and ignores the effect; a Triple Lance Turret that would suffer 2 instead suffers 1. No other effect of a Magazine Explosion is prevented or reduced. Once per ship. Not available to Gloriana class or above.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. &lt;b&gt;Reduce the Hull Point loss from a Magazine Explosion by 1&lt;/b&gt;, to a minimum of 0. On a Triple Lance Turret ship that cancels the additional Hull Point the weapon inflicts, so a Magazine Explosion costs 1 Hull Point rather than 2. On a Quad Warp Lance Turret it costs 2 rather than 3. The Crew loss still applies. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10816,21 +9931,6 @@
        </profiles>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="bf798b2f-c219-5d13-bdd1-3c6fea554333" name="Servitor Autoloaders" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="80618c62-dc73-500f-a855-298b94162195" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="61e81906-ce89-5ecf-98a1-7238ffa19c18" name="Servitor Autoloaders" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Choose one weapon type aboard this ship when you buy this upgrade and note it on the roster. That weapon type reduces its Reload value by 1, to a minimum of Reload (0) — Reload (3) becomes Reload (2), Reload (2) becomes Reload (1). A weapon at Reload (1) already fires every battle round and gains nothing. Once per ship. Not available to Gloriana class or above.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="95.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10855,7 +9955,7 @@
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">3</characteristic>
       <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">14</characteristic>
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">7″</characteristic>
-      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">45°</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">10</characteristic>
      </characteristics>
     </profile>

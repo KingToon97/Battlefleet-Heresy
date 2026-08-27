@@ -46,29 +46,29 @@ weapon-by-weapon construction: a Lunar is a Lunar, printed as it was built.
 | Light Cruiser – Dauntless-class | 120 | 5 | 1 | 12 | 3 | 12″ | 90° | 4 |
 | Strike Cruiser – Vanguard pattern | 125 | 6 | 1 | 12 | 3 | 12″ | 90° | 5 |
 | Strike Cruiser – Nova pattern | 150 | 6 | 1 | 12 | 3 | 12″ | 90° | 5 |
-| Cruiser – Dictator-class | 160 | 8 | 1 | 12 | 4 | 10″ | 45° | 5 |
-| Cruiser – Tyrant-class | 165 | 8 | 1 | 12 | 4 | 10″ | 45° | 5 |
-| Cruiser – Gothic-class | 205 | 8 | 1 | 12 | 4 | 10″ | 45° | 5 |
-| Cruiser – Lunar-class | 205 | 8 | 1 | 12 | 4 | 10″ | 45° | 5 |
-| Cruiser – Dominator-class | 215 | 8 | 1 | 12 | 4 | 10″ | 45° | 5 |
-| Battlecruiser – Overlord-class | 235 | 10 | 1 | 13 | 5 | 9″ | 45° | 6 |
-| Battlecruiser – Mars-class | 245 | 10 | 1 | 13 | 5 | 9″ | 45° | 6 |
-| Battlecruiser – Armageddon-class | 310 | 10 | 1 | 13 | 5 | 9″ | 45° | 6 |
-| Grand Cruiser – Exorcist-class | 215 | 12 | 1 | 13 | 6 | 8″ | 45° | 7 |
-| Grand Cruiser – Avenger-class | 260 | 12 | 1 | 13 | 6 | 8″ | 45° | 7 |
-| Grand Cruiser – Repulsive-class | 340 | 12 | 1 | 13 | 6 | 8″ | 45° | 7 |
-| Grand Cruiser – Vengeance-class | 340 | 12 | 1 | 13 | 6 | 8″ | 45° | 7 |
-| Battle Barge – Invasion pattern | 260 | 12 | 1 | 13 | 6 | 8″ | 45° | 9 |
-| Battle Barge – Standard pattern | 260 | 12 | 1 | 13 | 6 | 8″ | 45° | 9 |
-| Battle Barge – Bombardment pattern | 300 | 12 | 1 | 13 | 6 | 8″ | 45° | 9 |
-| Battleship – Oberon-class | 410 | 16 | 2 | 13 | 8 | 6″ | 45° | 8 |
-| Battleship – Retribution-class | 430 | 16 | 2 | 13 | 8 | 6″ | 45° | 8 |
-| Battleship – Emperor-class | 440 | 16 | 2 | 13 | 10 | 6″ | 45° | 8 |
-| Battleship – Victory-class | 470 | 16 | 2 | 13 | 8 | 6″ | 45° | 8 |
-| Battleship – Apocalypse-class | 480 | 16 | 2 | 13 | 8 | 6″ | 45° | 8 |
-| Gloriana | 695–945 | 20 | 3 | 14 | 10–12 | 7–9″ | 45° | 10–14 |
-| Abyss – Furious Abyss | 1,100 | 25 | 4 | 14 | 12 | 6″ | 45° | 12 |
-| Void Fortress – Phalanx | 1,230 | 30 | 6 | 14 | 24 | 3″ | 45° | 20 |
+| Cruiser – Dictator-class | 160 | 8 | 1 | 12 | 4 | 10″ | 90° | 5 |
+| Cruiser – Tyrant-class | 165 | 8 | 1 | 12 | 4 | 10″ | 90° | 5 |
+| Cruiser – Gothic-class | 205 | 8 | 1 | 12 | 4 | 10″ | 90° | 5 |
+| Cruiser – Lunar-class | 205 | 8 | 1 | 12 | 4 | 10″ | 90° | 5 |
+| Cruiser – Dominator-class | 215 | 8 | 1 | 12 | 4 | 10″ | 90° | 5 |
+| Battlecruiser – Overlord-class | 235 | 10 | 1 | 13 | 5 | 9″ | 90° | 6 |
+| Battlecruiser – Mars-class | 245 | 10 | 1 | 13 | 5 | 9″ | 90° | 6 |
+| Battlecruiser – Armageddon-class | 310 | 10 | 1 | 13 | 5 | 9″ | 90° | 6 |
+| Grand Cruiser – Exorcist-class | 215 | 12 | 1 | 13 | 6 | 8″ | 90° | 7 |
+| Grand Cruiser – Avenger-class | 260 | 12 | 1 | 13 | 6 | 8″ | 90° | 7 |
+| Grand Cruiser – Repulsive-class | 340 | 12 | 1 | 13 | 6 | 8″ | 90° | 7 |
+| Grand Cruiser – Vengeance-class | 340 | 12 | 1 | 13 | 6 | 8″ | 90° | 7 |
+| Battle Barge – Invasion pattern | 260 | 12 | 1 | 13 | 6 | 8″ | 90° | 9 |
+| Battle Barge – Standard pattern | 260 | 12 | 1 | 13 | 6 | 8″ | 90° | 9 |
+| Battle Barge – Bombardment pattern | 300 | 12 | 1 | 13 | 6 | 8″ | 90° | 9 |
+| Battleship – Oberon-class | 410 | 16 | 2 | 13 | 8 | 6″ | 90° | 8 |
+| Battleship – Retribution-class | 430 | 16 | 2 | 13 | 8 | 6″ | 90° | 8 |
+| Battleship – Emperor-class | 440 | 16 | 2 | 13 | 10 | 6″ | 90° | 8 |
+| Battleship – Victory-class | 470 | 16 | 2 | 13 | 8 | 6″ | 90° | 8 |
+| Battleship – Apocalypse-class | 480 | 16 | 2 | 13 | 8 | 6″ | 90° | 8 |
+| Gloriana | 695–945 | 20 | 3 | 14 | 10–12 | 7–9″ | 90° | 10–14 |
+| Abyss – Furious Abyss | 1,100 | 25 | 4 | 14 | 12 | 6″ | 90° | 12 |
+| Void Fortress – Phalanx | 1,230 | 30 | 6 | 14 | 24 | 3″ | 90° | 20 |
 
 All thirty standard datasheets, plus the eighteen Glorianas, the Abyss and the Phalanx. Squadron classes are taken
 1–3 at a time.
