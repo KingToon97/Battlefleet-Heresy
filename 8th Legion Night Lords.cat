@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="fe3120f6-1905-5115-9ceb-d93802d2cd70" name="8th Legion Night Lords" revision="55" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="42" library="false">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="fe3120f6-1905-5115-9ceb-d93802d2cd70" name="8th Legion Night Lords" revision="57" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="44" library="false">
  <selectionEntries>
   <selectionEntry id="e03ecd7d-df78-5ac9-b364-345fe4bd84ea" name="Destroyer - Cobra-class Squadron" hidden="false" collective="false" import="true" type="unit">
    <constraints>
@@ -1701,24 +1701,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="5b27fae0-0a63-544c-bb1c-5e4799c7931b" name="Atramentar" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="03e8c77a-ba6b-5ea8-9047-1623432e8f8b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="6fe5b372-d2ad-5a9a-880b-4d77f2cb15bf" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="55ee21be-03f3-5c9a-85a2-d84264d65614" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="1f38b02a-2faa-558b-a216-f58a528d31c0" name="Hull Upgrades" hidden="false">
@@ -2044,24 +2026,6 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="c63dd99a-8ce1-5349-8eb1-cae6b30f36d5" name="Atramentar" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="b26247bd-ff52-51ed-b32f-3210f6687a51" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="c20fd85d-887e-5c8d-862c-59b60a103d2c" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="e7241546-1ae3-5ca0-9871-1c51712f5dd3" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -3327,7 +3291,7 @@
            <profiles>
             <profile id="d630782a-8241-5a33-861b-de1be2786733" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -3335,7 +3299,7 @@
             <categoryLink id="a564775d-3f84-571b-b85f-a9b0c4e7eb9c" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -3518,24 +3482,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="0a7ff0ab-8d13-524b-a7d5-38d98cba0f1a" name="Atramentar" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="2e85a8b7-22c7-55b1-bc6d-a7d750d2f0b7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="2d84fe8e-6bb9-54b2-b7a8-d9082dd213c9" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="49fcea63-c7d3-57fa-a8e7-a3a8aa918ad3" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -3713,7 +3659,7 @@
            <profiles>
             <profile id="fa4bb9d4-23a1-5788-a674-eda3634a2470" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -3721,7 +3667,7 @@
             <categoryLink id="c8f76a67-151e-5615-a8e2-819bf138f1a4" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -3904,24 +3850,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="e575f60b-decd-5fe2-a854-a62c8a526014" name="Atramentar" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="8d5dae1c-4912-5aff-b6f6-a64ca91611a2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="e7887dc8-81bc-500e-9f7b-845b34c0c98c" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="77e85d3d-e61b-53a4-84c9-3a0b1b20f66f" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -4084,7 +4012,7 @@
            <profiles>
             <profile id="d4c33af2-db61-5f46-a21f-81f157b2e784" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4092,7 +4020,7 @@
             <categoryLink id="64592494-e39f-57b5-8a6d-aae1cb30e989" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -4275,24 +4203,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="875d9619-e9fd-58ed-868e-10e43af1f630" name="Atramentar" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="9783f5aa-7c96-5fba-9cef-539b5a48fb46" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="ac95b3cf-e922-5be1-a9c2-2914cb681e0a" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="11af33cd-1e7b-5861-9d5e-5736c8fd4e17" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -4455,7 +4365,7 @@
            <profiles>
             <profile id="b886dc4c-442f-503b-a5b1-f5603a27fccb" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4463,7 +4373,7 @@
             <categoryLink id="99b7d166-5f0a-5e99-bfe6-1a1d4833bedb" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -4646,24 +4556,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="336b6d69-e7d7-50e3-baf3-a51fb7ac24e1" name="Atramentar" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="12e8d980-60b5-532d-b387-f2a00028efbf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="8ac558b4-d0dc-5378-b319-28aef7a37607" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="3d4f7c5b-3f63-59fd-bd5e-3097a52b6ca6" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -4831,7 +4723,7 @@
            <profiles>
             <profile id="afdc45e5-3ba7-5912-976b-b5f696306667" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4839,7 +4731,7 @@
             <categoryLink id="5807615f-70c2-5ad3-ac28-8a3f649e1eb2" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -5198,24 +5090,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="605d3d76-1cfc-52b8-a2d6-96454c792882" name="Atramentar" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="27009a06-91dd-508c-abdb-64e6c3eccaf6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="baf1e837-d92d-5ebb-90e7-f51852d118b0" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="4177d71a-ec63-5617-ac6d-18c6a4a3e551" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -5388,7 +5262,7 @@
            <profiles>
             <profile id="67573f1c-0b31-5aca-8b8c-5705bc57e10c" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -5396,7 +5270,7 @@
             <categoryLink id="91f4b924-0be1-5a6f-9e8c-7ba53fa57a2f" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -5579,24 +5453,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="84603318-3ced-5f2e-9c9f-dcd3b673e9cd" name="Atramentar" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="047a5985-8dac-5ffe-ba08-427c537af86d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="02d3ddae-649b-57bb-9175-cced3e7f6b71" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="5e7a4b7a-c1e3-596d-ab0e-4e4c678f0ef8" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -5759,7 +5615,7 @@
            <profiles>
             <profile id="944fd6b6-e35c-541f-a309-fdd4d4c9cc3d" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -5767,7 +5623,7 @@
             <categoryLink id="a788c86a-172f-518a-9a05-6a5b38879744" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -5945,24 +5801,6 @@
        </profiles>
        <categoryLinks>
         <categoryLink id="bd0a6ad7-baad-5271-9b12-8e4a703f94cd" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="d3602ece-77c0-5282-bf84-88f818156a73" name="Atramentar" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="32a294dc-dae2-5dd0-98db-2b9d4ee00a2e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="f87b0986-ba91-57e5-a02b-5d045e182dd9" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="4a5cfa01-2247-5247-b036-475bf1b1b7b0" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
@@ -6160,7 +5998,7 @@
            <profiles>
             <profile id="3db222a9-692b-5014-8a70-a49437b6bc97" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -6168,7 +6006,7 @@
             <categoryLink id="d67e706b-2c96-52bb-96ef-e060f8b83c1e" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -6279,24 +6117,6 @@
        </profiles>
        <categoryLinks>
         <categoryLink id="01ec3561-c580-5dd9-8b2a-34fe9c414836" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="d1f21b42-97be-5992-ba74-94980078a7cb" name="Atramentar" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="26466f44-5f19-5197-887d-1cb1fee99649" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="bcee2471-eb97-5b2e-8ccb-f0897aedb3f0" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="67e3e3d0-74ca-5283-8f37-43bb9aa9c041" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
@@ -6577,7 +6397,7 @@
            <profiles>
             <profile id="b577b75e-28b0-5feb-830b-035424340d26" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -6585,7 +6405,7 @@
             <categoryLink id="3cfd9442-ec94-5a0e-843c-b8d5288462ed" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -6872,24 +6692,6 @@
        </profiles>
        <categoryLinks>
         <categoryLink id="c499d1d5-2c31-5dfe-b30f-c9eba7fc6e6a" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="415859db-6e0a-5cfc-9cd1-289fccde7dd3" name="Atramentar" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="6524b123-47db-5eaf-84fb-a4576520a11b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="f46fb3bb-84b5-5e8d-8f53-fcc8450d59d5" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="5778a441-b9d4-5e76-943a-a0a4af7a000b" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
@@ -7190,7 +6992,7 @@
            <profiles>
             <profile id="723966f8-b9c3-530b-a52c-c7aba03b11aa" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -7198,7 +7000,7 @@
             <categoryLink id="07c5a233-b82a-5c33-9e18-8d5e8ddb1252" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -7490,24 +7292,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="ae6e0b98-d885-52a7-8cb8-121830793ce1" name="Atramentar" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="ce7aca57-15f7-5783-a79b-eb82f2668399" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="22071412-f682-5ab8-8a14-91790b1c5594" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="94237380-f032-55d4-9260-cf58b7ba902b" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="f557c647-0271-59a1-b4fd-e4e36c1175ea" name="Hull Upgrades" hidden="false">
@@ -7779,7 +7563,7 @@
            <profiles>
             <profile id="e543e7fb-3ef9-585d-9777-debed6e809a0" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -7787,7 +7571,7 @@
             <categoryLink id="0197eef8-c409-575a-969b-f340b7baf9aa" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -7910,7 +7694,7 @@
        <profiles>
         <profile id="20a2de43-bb1f-56ef-882a-7ed03a90b251" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Terror Made Manifest: during a Boarding action involving Atramentar, each successful Night Lords Boarding roll imposes a further &lt;b&gt;−1&lt;/b&gt; on the enemy's subsequent Boarding rolls, cumulatively, for the remainder of that action — −1 after the first success, −2 after the second, and so on. The penalty ends with the action. It stacks with Sevatar's Prince of Crows rather than replacing it. Battleships and the Nightfall only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7918,7 +7702,7 @@
         <categoryLink id="180d6203-b2ea-5a62-aeda-b680e491a834" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -8201,7 +7985,7 @@
            <profiles>
             <profile id="2e6e57bb-181d-50f4-bc6c-4fb60e8e1a87" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -8209,7 +7993,7 @@
             <categoryLink id="dfe3b5fb-eafa-5461-beb9-de0b896fc841" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -8508,7 +8292,7 @@
        <profiles>
         <profile id="5969822c-2440-5aef-9f29-40c6b2514a21" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Terror Made Manifest: during a Boarding action involving Atramentar, each successful Night Lords Boarding roll imposes a further &lt;b&gt;−1&lt;/b&gt; on the enemy's subsequent Boarding rolls, cumulatively, for the remainder of that action — −1 after the first success, −2 after the second, and so on. The penalty ends with the action. It stacks with Sevatar's Prince of Crows rather than replacing it. Battleships and the Nightfall only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8516,7 +8300,7 @@
         <categoryLink id="4614a0ab-0852-5815-a49d-3449bac7a4cf" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -8779,7 +8563,7 @@
            <profiles>
             <profile id="4b3c51e4-fd8e-59e8-8920-87404fe2b1d2" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -8787,7 +8571,7 @@
             <categoryLink id="32766318-38c5-51b7-a25b-2f80329e05a2" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -9086,7 +8870,7 @@
        <profiles>
         <profile id="b92e9973-c157-51da-81bd-ec10659fcb99" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Terror Made Manifest: during a Boarding action involving Atramentar, each successful Night Lords Boarding roll imposes a further &lt;b&gt;−1&lt;/b&gt; on the enemy's subsequent Boarding rolls, cumulatively, for the remainder of that action — −1 after the first success, −2 after the second, and so on. The penalty ends with the action. It stacks with Sevatar's Prince of Crows rather than replacing it. Battleships and the Nightfall only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9094,7 +8878,7 @@
         <categoryLink id="6ffd0622-9317-5c36-82c6-fa53f7e65f76" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -9327,7 +9111,7 @@
            <profiles>
             <profile id="6ba710d9-ce22-507d-ab47-8d9ffcb38833" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -9335,7 +9119,7 @@
             <categoryLink id="9ab98e69-7ef7-5ff8-bc0f-b501edceb4bc" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -9458,7 +9242,7 @@
        <profiles>
         <profile id="b6233129-6c50-5b72-8cd9-818d405ca1b3" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Terror Made Manifest: during a Boarding action involving Atramentar, each successful Night Lords Boarding roll imposes a further &lt;b&gt;−1&lt;/b&gt; on the enemy's subsequent Boarding rolls, cumulatively, for the remainder of that action — −1 after the first success, −2 after the second, and so on. The penalty ends with the action. It stacks with Sevatar's Prince of Crows rather than replacing it. Battleships and the Nightfall only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9466,7 +9250,7 @@
         <categoryLink id="e44eb567-4122-5e9c-8a5f-8d5217baa159" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -9709,7 +9493,7 @@
            <profiles>
             <profile id="03ee1a22-092c-5eae-b246-bf84316987fa" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -9717,7 +9501,7 @@
             <categoryLink id="b1d2bc28-833a-567f-a274-95bb7a155b93" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -9840,7 +9624,7 @@
        <profiles>
         <profile id="30d77280-3422-5c11-9fb5-83bdef9aaf74" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Terror Made Manifest: during a Boarding action involving Atramentar, each successful Night Lords Boarding roll imposes a further &lt;b&gt;−1&lt;/b&gt; on the enemy's subsequent Boarding rolls, cumulatively, for the remainder of that action — −1 after the first success, −2 after the second, and so on. The penalty ends with the action. It stacks with Sevatar's Prince of Crows rather than replacing it. Battleships and the Nightfall only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9848,7 +9632,7 @@
         <categoryLink id="381d553e-53f7-5182-86a5-e5985c8f6895" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10299,7 +10083,7 @@
        <profiles>
         <profile id="ba50288e-94b8-4462-a020-f38456eeb7be" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10307,7 +10091,7 @@
         <categoryLink id="97b0e553-ba2c-4153-8558-dc1078539108" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="ad1ac6f1-a5a4-4632-9b90-b0847c2956bc" name="Konrad Curze" hidden="false" collective="false" import="true" type="upgrade">
@@ -10317,7 +10101,7 @@
        <profiles>
         <profile id="8ef9f7e6-8473-4038-af91-4c1e260d8e82" name="Konrad Curze" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Primarch. Terror Made Manifest: An enemy ship suffering the Legion's −1 BS may not be issued Reactions while it is affected.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Primarch. Visions of Darkness: at the start of each battle round Curze may choose to invoke this ability. If he does: • &lt;b&gt;Movement&lt;/b&gt; — Curze's ship does not move at its normal place in the alternating sequence; it moves after every enemy ship has completed its Movement activation. • &lt;b&gt;Shooting&lt;/b&gt; — Curze's ship shoots first in the Shooting step, whichever fleet would otherwise have the first activation; the normal alternating sequence resumes afterwards. • &lt;b&gt;Cost&lt;/b&gt; — for that round every other friendly Night Lords ship suffers &lt;b&gt;−1 to Fleet Order rolls&lt;/b&gt;. Curze's own ship does not. If he does not invoke it, the fleet activates normally. Curze grants the normal Primarch allowance of 3 Fleet Orders.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10326,7 +10110,7 @@
         <categoryLink id="c98b936f-96d5-492b-a131-51b406d8623f" name="Primarch" hidden="false" targetId="aa8f9cca-79d6-4483-b466-901fa59a2823" primary="false" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="245.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="260.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10417,7 +10201,7 @@
        <profiles>
         <profile id="91735696-66bc-58e6-ba10-82dd073e7d12" name="Atramentar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. An enemy ship that loses a duel to this unit fires at −1 BS until the end of the following battle round.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Terror Made Manifest: during a Boarding action involving Atramentar, each successful Night Lords Boarding roll imposes a further &lt;b&gt;−1&lt;/b&gt; on the enemy's subsequent Boarding rolls, cumulatively, for the remainder of that action — −1 after the first success, −2 after the second, and so on. The penalty ends with the action. It stacks with Sevatar's Prince of Crows rather than replacing it. Battleships and the Nightfall only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10425,7 +10209,7 @@
         <categoryLink id="63663804-8728-5e59-b51d-ae04bdeabbd9" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10449,7 +10233,7 @@
        <profiles>
         <profile id="9c3b448e-5cb0-4107-b969-602fd8cd1087" name="Sevatar" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: When this ship inflicts Critical Damage on an enemy, that enemy suffers −1 on its next Damage Control roll.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Prince of Crows: whenever a friendly Night Lords ship boards an enemy ship, that enemy suffers &lt;b&gt;−1 to its Boarding rolls&lt;/b&gt; for that Boarding action. Fleet-wide, and offensive only — it never applies when an enemy boards a Night Lords ship.</characteristic>
          </characteristics>
         </profile>
         <profile id="f14d91b9-891b-4709-aefa-c7244c140bae" name="Primarch Retinue" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -10462,7 +10246,7 @@
         <categoryLink id="09e6642b-22e7-47d8-bfdd-e9ee2109d27c" name="Retinue Character" hidden="false" targetId="194a7f31-dced-445a-b273-cca4996c8570" primary="false" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="c3a7c56f-c841-4ad9-9998-5f6427248f29" name="Gendor Skraivok" hidden="false" collective="false" import="true" type="upgrade">
@@ -10495,9 +10279,9 @@
     <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="770.0" />
    </costs>
   </selectionEntry>
-  <selectionEntry id="6a6bc338-51df-55aa-995f-af811fb8ac4c" name="8th Legion - Terror in the Void" hidden="false" collective="false" import="true" type="upgrade">
+  <selectionEntry id="6a6bc338-51df-55aa-995f-af811fb8ac4c" name="8th Legion - Terror Tactics" hidden="false" collective="false" import="true" type="upgrade">
    <infoLinks>
-    <infoLink id="7cd26a3c-5db6-54aa-94f3-0cd619dced19" name="8th Legion - Terror in the Void" hidden="false" type="rule" targetId="d35acd4a-3cce-52ab-af56-cdd12778c91c" />
+    <infoLink id="7cd26a3c-5db6-54aa-94f3-0cd619dced19" name="8th Legion - Terror Tactics" hidden="false" type="rule" targetId="d35acd4a-3cce-52ab-af56-cdd12778c91c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="fd686004-91e5-51dc-8b1d-1a589b87d99d" name="Rules" hidden="false" targetId="52616092-abd8-519e-a6fb-94b622114fa5" primary="true" />
@@ -10625,8 +10409,8 @@
  <sharedSelectionEntries />
  <sharedSelectionEntryGroups />
  <sharedRules>
-  <rule id="d35acd4a-3cce-52ab-af56-cdd12778c91c" name="8th Legion - Terror in the Void" hidden="false">
-   <description>When an enemy ship suffers Critical Damage from a friendly ship, it fires at −1 BS until the end of the battle round.</description>
+  <rule id="d35acd4a-3cce-52ab-af56-cdd12778c91c" name="8th Legion - Terror Tactics" hidden="false">
+   <description>An enemy ship within &lt;b&gt;8″&lt;/b&gt; of one or more friendly Night Lords ships suffers &lt;b&gt;−1 BS&lt;/b&gt;. The penalty does not stack — an enemy either suffers it or does not, however many Night Lords ships are near.</description>
   </rule>
  </sharedRules>
 </catalogue>

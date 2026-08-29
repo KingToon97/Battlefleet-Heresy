@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="86405571-5289-597b-b308-a9a2d68c00b9" name="Battlefleet Heresy" revision="42" battleScribeVersion="2.03" authorName="Battlefleet Heresy Community Data" authorContact="" authorUrl="">
+<gameSystem xmlns="http://www.battlescribe.net/schema/gameSystemSchema" id="86405571-5289-597b-b308-a9a2d68c00b9" name="Battlefleet Heresy" revision="44" battleScribeVersion="2.03" authorName="Battlefleet Heresy Community Data" authorContact="" authorUrl="">
  <costTypes>
   <costType id="570b7f63-4fc7-515c-9c96-5b5c25501f85" name="pts" defaultCostLimit="-1.0" hidden="false" />
  </costTypes>
@@ -310,6 +310,12 @@
   </rule>
   <rule id="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" name="Defence Batteries" hidden="false">
    <description>Defence Batteries are not a weapon and are never fired in the Shooting step. They are a rating printed on the datasheet — &lt;b&gt;Defence Batteries (N)&lt;/b&gt; — exactly as Launch Bays are, and they do one thing: they answer the &lt;b&gt;Overwatch&lt;/b&gt; Fleet Order. • When a boarding craft, drop pod or attacking aircraft squadron runs at a ship whose fleet has Overwatch selected, that ship snap-fires its Defence Batteries at the incoming craft. • Roll one D6 per Defence Battery at &lt;b&gt;Strength 6&lt;/b&gt;: each &lt;b&gt;5+&lt;/b&gt; destroys one craft of the incoming squadron. Resolve before the craft attacks. • A ship may Overwatch once per battle round, however many craft come at it. • Defence Batteries have no range band, no arc and no target but incoming craft. They cannot shoot at ships, they cannot be split, and they contribute nothing to a broadside. • A ship with 0 Defence Batteries cannot Overwatch. Critical Damage that destroys a weapon system may be applied to Defence Batteries, reducing the rating by 1.</description>
+  </rule>
+  <rule id="ca8c1645-41c3-5802-bb63-6e8e0451c323" name="Keyword: Teleport" hidden="false">
+   <description>A ship with Teleport may send boarders directly aboard an enemy ship within &lt;b&gt;6″&lt;/b&gt; in the Ramming &amp;amp; Boarding step, with no craft, pod or base contact. • The normal delivery cap applies — no more than half the ship's own Crew, and it always keeps 1 aboard. • Boarders delivered by teleport count as delivered by teleport for the Boarding Actions modifier: +1 to every boarder's die in the first round. • &lt;b&gt;Overwatch cannot answer a teleport assault&lt;/b&gt;; there is no craft to shoot at. • &lt;b&gt;A teleport assault cannot pass a live Void Shield.&lt;/b&gt; The target must have no Void Shields remaining, or the attempt fails and the Crew are not committed.</description>
+  </rule>
+  <rule id="863a2338-b6cd-54d6-9377-77b1121ca68b" name="Keyword: Sonic" hidden="false">
+   <description>Each successful Armour Penetration by a Sonic weapon costs the target &lt;b&gt;1 Crew&lt;/b&gt; in addition to the hit's normal damage. &lt;b&gt;Sonic (2)&lt;/b&gt; costs 2 Crew instead. Sonic never converts into Hull Point loss or Critical Damage, and it applies once per penetrating hit however many Sonic sources the weapon has.</description>
   </rule>
  </sharedRules>
 </gameSystem>

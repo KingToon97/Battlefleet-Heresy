@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2d83fc75-51eb-5e7a-92bc-9e7c06d6ffd5" name="4th Legion Iron Warriors" revision="55" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="42" library="false">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2d83fc75-51eb-5e7a-92bc-9e7c06d6ffd5" name="4th Legion Iron Warriors" revision="59" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="44" library="false">
  <selectionEntries>
   <selectionEntry id="e0dfc01a-2d47-562a-b927-033905e7845f" name="Destroyer - Cobra-class Squadron" hidden="false" collective="false" import="true" type="unit">
    <constraints>
@@ -1701,24 +1701,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="66cfb049-0c79-53b1-ac13-367ecd3acefa" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="524cca3c-6b81-5063-adf2-bcbc55747f42" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="64befdfb-2743-5f15-90b6-0574352b9782" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="1efe1225-eb4a-5077-b020-c7e0743df68b" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="5d7f0896-da92-58f5-a02f-c00d90bb53d3" name="Hull Upgrades" hidden="false">
@@ -2044,24 +2026,6 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="26318c42-6b50-5a0e-8f5b-fbfc1c91cc45" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="b44717cd-cef9-5899-96f6-6dad02cf79e0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="ed659daf-fe8f-5c5c-95ff-8bf96742e512" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="485d1cbc-2beb-515c-b653-44e367f2059b" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -3327,7 +3291,7 @@
            <profiles>
             <profile id="70656e50-70aa-506f-a0a4-fb9023b8f3ba" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -3335,17 +3299,17 @@
             <categoryLink id="48dca14e-163d-5726-afad-1ca7067dc7f2" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="0c12e44d-5d06-5e66-8774-bf71536e231a" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="0c12e44d-5d06-5e66-8774-bf71536e231a" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45d80c75-4b4f-5618-9198-71e1fd96d52d" type="max" />
            </constraints>
            <profiles>
-            <profile id="18d9e3a2-4a57-53f9-9eb7-95237f4fe515" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="18d9e3a2-4a57-53f9-9eb7-95237f4fe515" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -3353,7 +3317,7 @@
             <categoryLink id="ed39aeea-05b2-53fe-a297-8be92e14a26d" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -3536,24 +3500,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="5cabe51f-5c61-5ca3-9233-79a2a748333b" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="5118cb4c-d0d7-5f3b-a89f-f510c90c49fe" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="7c1d99fc-4ed4-52d2-8d7e-ea5b24a0624c" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="59dcfee7-808c-5f3f-bb75-3467d0758a85" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -3731,7 +3677,7 @@
            <profiles>
             <profile id="808c39d6-7fe6-54b5-9946-4e4bc0ce7475" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -3739,17 +3685,17 @@
             <categoryLink id="3f1083cf-6863-5038-b640-0afda543ef10" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="7719a50d-31a8-5a2a-a36c-1bfd48b8ecd6" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="7719a50d-31a8-5a2a-a36c-1bfd48b8ecd6" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="379d0b3b-6250-5f7c-a442-844f7a1c3dde" type="max" />
            </constraints>
            <profiles>
-            <profile id="3dec02e8-b877-5703-88da-8ead4a5688c5" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="3dec02e8-b877-5703-88da-8ead4a5688c5" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -3757,7 +3703,7 @@
             <categoryLink id="e821b30b-aa37-5754-b740-29caf376529d" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -3940,24 +3886,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="c0e9af9d-7061-5822-8b80-5581c1608b60" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="d05bac0c-d806-55dd-8ef8-60aeae08d846" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="24a591db-7b0d-51ce-9ae4-c571edb5d41f" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="f57cd296-8b56-53cb-8bdc-a3ca828d8a17" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -4120,7 +4048,7 @@
            <profiles>
             <profile id="ccee21b4-0d10-5894-bf6e-3ee58d92e273" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4128,17 +4056,17 @@
             <categoryLink id="243e2816-6baa-5773-9dd4-af67d0343990" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="4b9eb43d-84c5-5edf-93c1-cac698beec13" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="4b9eb43d-84c5-5edf-93c1-cac698beec13" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2447cc0f-97a7-5100-a8b7-c849ee60cfec" type="max" />
            </constraints>
            <profiles>
-            <profile id="276690c4-2175-5296-8899-1cf0ae679232" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="276690c4-2175-5296-8899-1cf0ae679232" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4146,7 +4074,7 @@
             <categoryLink id="814ab7b9-2a0f-587c-9a03-d35ab941940b" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -4329,24 +4257,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="50fe3e69-74d2-54ab-bcaa-f6ae6c37bc79" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="924b4b95-f3cb-5058-a9a6-f7579f7b94aa" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="4b5550e2-90d4-5670-bf07-b380eec97047" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="fb1c4f80-d9dd-5517-80ef-3da0822748c6" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -4509,7 +4419,7 @@
            <profiles>
             <profile id="f2f8fdd6-d596-545c-b7aa-a068fb930dc2" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4517,17 +4427,17 @@
             <categoryLink id="1414da13-c29e-556c-a1fc-0ea70bbeeeaa" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="e6de184e-4b53-541c-8ea0-593924ee9000" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="e6de184e-4b53-541c-8ea0-593924ee9000" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="502ec1e5-6908-5a81-b575-f57a0cb89d95" type="max" />
            </constraints>
            <profiles>
-            <profile id="29cbb8d8-f6ff-5390-b5ec-cc054cdb7c39" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="29cbb8d8-f6ff-5390-b5ec-cc054cdb7c39" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4535,7 +4445,7 @@
             <categoryLink id="7cd01a07-dba8-5757-8bc3-32e9dd528161" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -4718,24 +4628,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="e37825e1-3f73-5009-bd8b-63b7293fb20c" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="c97b1cd7-f465-55a3-b87b-736201eaaf0f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="c2e1058e-8ec9-57fc-9dd1-910ad3902b9c" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="916a4dfc-1d11-57f9-95f7-d4fb1c84b0f2" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -4903,7 +4795,7 @@
            <profiles>
             <profile id="c24b4c3f-1500-53ae-ada9-c41f065567b9" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4911,17 +4803,17 @@
             <categoryLink id="7d62fb30-3b0a-5d6a-b3e7-c04603da83a3" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="68516192-4e06-5d08-8faa-ff307738e6c7" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="68516192-4e06-5d08-8faa-ff307738e6c7" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb913fc2-c8c8-5eff-9f5d-275105516269" type="max" />
            </constraints>
            <profiles>
-            <profile id="691ee82b-afde-5a8d-b99d-cd40ed1e3819" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="691ee82b-afde-5a8d-b99d-cd40ed1e3819" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4929,7 +4821,7 @@
             <categoryLink id="f64383d9-9e1f-5d0e-84dc-523caa491543" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -5288,24 +5180,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="7b3d6a15-6fb9-57b2-8a5c-bb3c359c781d" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="e933980c-14f2-5fb0-b3ab-11a9a8a75a33" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="7774ebcd-d8b2-5d88-8c54-8fb1afa37a64" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="8d827643-39eb-569f-be12-6a4c20493b04" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -5478,7 +5352,7 @@
            <profiles>
             <profile id="e05de05a-3da7-5ae2-9740-3b72b9190a0e" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -5486,17 +5360,17 @@
             <categoryLink id="44d74c58-c058-50cc-87f9-7e715de1df99" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="10174cbe-bf5d-57b6-a55c-7c99f3895494" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="10174cbe-bf5d-57b6-a55c-7c99f3895494" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="826238bf-faca-5579-a082-89749eadb88a" type="max" />
            </constraints>
            <profiles>
-            <profile id="f01d3d88-914b-56a2-8ba7-78d70dbc749c" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="f01d3d88-914b-56a2-8ba7-78d70dbc749c" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -5504,7 +5378,7 @@
             <categoryLink id="c677d59a-0be7-59de-836f-e8358b381de1" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -5687,24 +5561,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="61b8b8cb-2f30-51c1-bec8-663ca07533f7" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="b41de02c-5bc8-53a1-aac4-fa32e3f6b175" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="68e3f88f-4919-5a15-b64c-04503916d319" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="c05668a2-3418-5d27-97a4-43dd3bc927ad" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -5867,7 +5723,7 @@
            <profiles>
             <profile id="295cc7d7-b069-541f-b60c-8d5e75ce4619" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -5875,17 +5731,17 @@
             <categoryLink id="3685d42a-22b2-54e7-ae19-fcc9df81b63c" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="82831343-58f2-5a94-b774-c032da9cddd7" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="82831343-58f2-5a94-b774-c032da9cddd7" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47811e87-257b-5acc-a339-e128f342e404" type="max" />
            </constraints>
            <profiles>
-            <profile id="fb6f0d31-0f52-5f0c-bb01-693c75651ab5" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="fb6f0d31-0f52-5f0c-bb01-693c75651ab5" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -5893,7 +5749,7 @@
             <categoryLink id="48247690-ee78-51f4-b014-1c10667b146f" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -6071,24 +5927,6 @@
        </profiles>
        <categoryLinks>
         <categoryLink id="0e470a1b-2a9e-56d9-8298-9f80c6081631" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="7fe4fd99-c77e-53b6-8862-d7616dbe5e42" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="0bc2815e-0616-55d0-82c2-5cb114eccc3a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="7ff45848-7aa4-553a-b38e-5052b8a7d33d" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="aeb437df-2f50-5f81-aafe-8aa5d865868e" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
@@ -6286,7 +6124,7 @@
            <profiles>
             <profile id="51ee7508-da69-5d41-8c9b-60487762a605" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -6294,17 +6132,17 @@
             <categoryLink id="58d30ad9-74e4-5099-9f0e-a7a566335e61" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="638aabc2-f256-5ea5-bd7b-bcbf72712da6" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="638aabc2-f256-5ea5-bd7b-bcbf72712da6" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ba06569-cb88-58a0-b86d-886a486a489b" type="max" />
            </constraints>
            <profiles>
-            <profile id="6c3ac5ad-2620-5a03-b49e-40df701d9995" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="6c3ac5ad-2620-5a03-b49e-40df701d9995" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -6312,7 +6150,7 @@
             <categoryLink id="fe66cb3a-4c26-5927-b63a-6566526944d4" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -6423,24 +6261,6 @@
        </profiles>
        <categoryLinks>
         <categoryLink id="c56ca9f7-5faa-513c-ab09-8eb6eb8af882" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="c5a1fd2b-b056-5add-8d51-4cb3760ffc6a" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="96c5733c-6549-54be-9646-60ce2d973839" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="435f8aa7-1eae-506b-b965-0f5870832ba5" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="45afb3a8-7c04-5b33-925c-d179c6eeea61" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
@@ -6721,7 +6541,7 @@
            <profiles>
             <profile id="9417d84e-89a5-5b8b-86eb-99235328538c" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -6729,17 +6549,17 @@
             <categoryLink id="5877192b-a7f5-53ef-a2ec-fdf4c5afffe0" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="5752bcb7-2db3-51fb-a72d-968616906501" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="5752bcb7-2db3-51fb-a72d-968616906501" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9fa1cc7-b1d2-56a9-bbc2-3649a3a9677a" type="max" />
            </constraints>
            <profiles>
-            <profile id="14042b72-bf34-5611-86da-ffa753f15736" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="14042b72-bf34-5611-86da-ffa753f15736" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -6747,7 +6567,7 @@
             <categoryLink id="f7aaa895-acc1-5dc7-9abc-00604c254293" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -7034,24 +6854,6 @@
        </profiles>
        <categoryLinks>
         <categoryLink id="16c744d2-95e1-5124-8967-40a4e7e2dd5e" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="a71c2639-cb19-5842-a867-71711d1194fe" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="8b507b6b-0be7-5ab3-9f3a-7c8e547bb542" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="51974771-0e7f-5716-9537-108aeb7a1ef7" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="fbe78ac9-7316-56a2-9dd3-b1f7c16fd27a" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
@@ -7352,7 +7154,7 @@
            <profiles>
             <profile id="5a9f9020-3b9b-559e-b816-5f6e28775a78" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -7360,17 +7162,17 @@
             <categoryLink id="7b08c390-431c-513d-8123-0f4e9b778669" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="344f90ce-c564-5af7-9341-76716ec5094e" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="344f90ce-c564-5af7-9341-76716ec5094e" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6822bf00-254b-57c7-91d4-73f22c3a46aa" type="max" />
            </constraints>
            <profiles>
-            <profile id="ea8879cf-9e71-50c2-8753-dd26c6681489" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="ea8879cf-9e71-50c2-8753-dd26c6681489" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -7378,7 +7180,7 @@
             <categoryLink id="c5a19b89-8a37-52e2-8bcc-f99f2f49a4cf" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -7670,24 +7472,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="17b14e93-64a4-58e1-a8a7-b256580b3600" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="fb14626c-c3f4-544b-9ef7-3910ef065f38" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="6a64fcb4-b2e6-5951-97cc-fad1cad145f9" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="92174a9f-b263-5dde-aec3-36ca015c9acb" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="2a12b09f-f269-5a01-b5fd-ced39050f18a" name="Hull Upgrades" hidden="false">
@@ -7959,7 +7743,7 @@
            <profiles>
             <profile id="ff1e43bd-7cc5-5c8f-b109-4d2f0b4ecd4f" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -7967,17 +7751,17 @@
             <categoryLink id="be676eea-00b8-51a5-a01f-c65f57c7099c" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="6cf08edd-2bc4-51f9-8fd2-382f8ea01df3" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="6cf08edd-2bc4-51f9-8fd2-382f8ea01df3" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e60f5e73-3d46-572b-a753-211a0ba92fbe" type="max" />
            </constraints>
            <profiles>
-            <profile id="9c751f30-4fa5-515b-aa19-83847de41120" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="9c751f30-4fa5-515b-aa19-83847de41120" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -7985,7 +7769,7 @@
             <categoryLink id="8eb5bb14-c8dc-522a-aa3c-eb4871578a9f" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -8108,7 +7892,7 @@
        <profiles>
         <profile id="89856024-19f9-5298-860c-582557d1b4a2" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Iron Blood only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8116,7 +7900,7 @@
         <categoryLink id="c036abae-12f4-59e9-9545-79c1002e31e6" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -8399,7 +8183,7 @@
            <profiles>
             <profile id="332d20b5-242e-53d1-8410-d239bfc7cb5a" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -8407,17 +8191,17 @@
             <categoryLink id="e36fa5ca-6900-51d2-a2f3-b714c9f90191" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="5b10a644-7272-59ac-b000-04aaf3375c65" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="5b10a644-7272-59ac-b000-04aaf3375c65" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37d9f9ee-55d1-5898-8a5f-618f16707056" type="max" />
            </constraints>
            <profiles>
-            <profile id="fefef7b3-e2ac-5b14-8be3-3bc843197b1c" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="fefef7b3-e2ac-5b14-8be3-3bc843197b1c" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -8425,7 +8209,7 @@
             <categoryLink id="6ca0f358-676a-5118-94d9-484309793cfd" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -8724,7 +8508,7 @@
        <profiles>
         <profile id="6c6636ff-d150-5916-b99c-a92d504b047f" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Iron Blood only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8732,7 +8516,7 @@
         <categoryLink id="07ceeba9-268a-5959-bb2c-4ce8268f7772" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -8995,7 +8779,7 @@
            <profiles>
             <profile id="fe9346b3-4940-52dc-bd27-80780a0a1c1e" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -9003,17 +8787,17 @@
             <categoryLink id="48b41993-063e-5571-95f3-0d49275be549" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="b94dd9ad-64a7-5158-b947-3ae8f78e4194" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="b94dd9ad-64a7-5158-b947-3ae8f78e4194" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed5320f7-482f-5226-be75-1e8124f3e36f" type="max" />
            </constraints>
            <profiles>
-            <profile id="af307824-d263-5240-9d20-22a53b1726e0" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="af307824-d263-5240-9d20-22a53b1726e0" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -9021,7 +8805,7 @@
             <categoryLink id="d14f78a4-668a-5e58-80ec-27acd94c1c56" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -9320,7 +9104,7 @@
        <profiles>
         <profile id="98afbcbe-a098-52fb-bd9f-8e0c5d581761" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Iron Blood only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9328,7 +9112,7 @@
         <categoryLink id="e4b94bab-85e3-547a-b342-14ab9b201f63" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -9561,7 +9345,7 @@
            <profiles>
             <profile id="e544514b-a5e7-5dc9-af5e-bbe4043dbe07" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -9569,17 +9353,17 @@
             <categoryLink id="2950e72e-ff4a-5d72-a91f-60107bc5faf4" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="c97ea3c6-e0bd-5215-acba-fca99eedae26" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="c97ea3c6-e0bd-5215-acba-fca99eedae26" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb60325b-70cc-515f-9a1b-e58d8e591ca0" type="max" />
            </constraints>
            <profiles>
-            <profile id="47e9eaf4-29d9-597e-ab67-c3ed9b188843" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="47e9eaf4-29d9-597e-ab67-c3ed9b188843" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -9587,7 +9371,7 @@
             <categoryLink id="43d11d4e-75a0-5e8a-bd84-3b7e443e2b2d" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -9710,7 +9494,7 @@
        <profiles>
         <profile id="fed6bd00-ff7e-5f3b-bd7f-83cbba868644" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Iron Blood only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9718,7 +9502,7 @@
         <categoryLink id="410a71f4-62b8-55eb-a258-514492a3727b" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -9961,7 +9745,7 @@
            <profiles>
             <profile id="dfe40f8e-aa65-5375-97cf-86c1a2e9ac84" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -9969,17 +9753,17 @@
             <categoryLink id="a2f2743c-3c39-5d7e-b112-185819364884" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
            </costs>
           </selectionEntry>
-          <selectionEntry id="11eea4c3-1141-5004-8e75-8d2e25b29818" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+          <selectionEntry id="11eea4c3-1141-5004-8e75-8d2e25b29818" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
            <constraints>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="499712a9-34ed-5e2f-98c8-51f0f99f2978" type="max" />
            </constraints>
            <profiles>
-            <profile id="25782d12-3b14-5fe9-85c8-d7e937645ded" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+            <profile id="25782d12-3b14-5fe9-85c8-d7e937645ded" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -9987,7 +9771,7 @@
             <categoryLink id="3ac96414-89b8-5ff6-8a12-12a91bb54375" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -10110,7 +9894,7 @@
        <profiles>
         <profile id="c3d9b01d-255c-5717-8821-ea3c75c94595" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Iron Blood only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10118,7 +9902,7 @@
         <categoryLink id="56809d61-dfaf-5eac-a95a-d6abab28a233" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10218,7 +10002,7 @@
     <profile id="e7d4da1c-5070-5b39-b597-0f16864909ad" name="Gloriana - Iron Blood" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
       <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
-      <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">14</characteristic>
+      <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">15</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">14</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">13</characteristic>
       <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">20</characteristic>
@@ -10231,27 +10015,17 @@
     </profile>
     <profile id="429e0b9e-3a1e-5894-8155-198190857315" name="Master of Siege" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
-      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">+2 on Damage Table against Anchorage, Defence Stations, and immobile/Adrift ships. Launch Bays (3).</characteristic>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">+2 on Damage Table against Anchorage, Defence Stations, and immobile/Adrift ships. Launch Bays (2).</characteristic>
      </characteristics>
     </profile>
-    <profile id="8b0a1697-9457-5017-9d7e-946e1ba225e2" name="Olympia Siege Cannon" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="8b0a1697-9457-5017-9d7e-946e1ba225e2" name="Olympia Siege Cannon ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">12</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">D</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">48″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Resolves as a Nova Cannon.On a 4+ the target takes 1 Critical Damage</characteristic>
-     </characteristics>
-    </profile>
-    <profile id="bd5263d1-0277-5f11-8075-739842efa706" name="Nova Cannon ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">12</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">D</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Prow only. Devastating (3)</characteristic>
      </characteristics>
     </profile>
     <profile id="f66b05f4-875b-5165-9547-949e1c7d737b" name="Vortex Torpedo ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
@@ -10264,7 +10038,7 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use; Devastating (3); Volatile. Bypasses Void Shields entirely, resolving against the hull facing struck. Prow mount only</characteristic>
      </characteristics>
     </profile>
-    <profile id="3fb5bf08-ecbb-5dfa-a7d8-1d7bc31c5e6e" name="Heavy Macro-Cannon Battery ×5" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="3fb5bf08-ecbb-5dfa-a7d8-1d7bc31c5e6e" name="Heavy Macro-Cannon Battery ×8" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Port</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
@@ -10274,7 +10048,7 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="8865e28b-8810-575a-a38d-765b7ccdb8c0" name="Heavy Macro-Cannon Battery ×5" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="8865e28b-8810-575a-a38d-765b7ccdb8c0" name="Heavy Macro-Cannon Battery ×8" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Starboard</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
@@ -10284,19 +10058,19 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="fb9a09de-5232-5280-a604-c493346927ad" name="Twin Lance Turret ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="fb9a09de-5232-5280-a604-c493346927ad" name="Triple Lance Turret ×4" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Dorsal</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2 each</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2). All arcs — Gloriana Reactors</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2). Magazine Explosion costs this ship 1 additional Hull Point</characteristic>
      </characteristics>
     </profile>
-    <profile id="ec4bd984-a913-588c-9faf-db15bfcfbd93" name="Launch Bays (3)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+    <profile id="ec4bd984-a913-588c-9faf-db15bfcfbd93" name="Launch Bays (2)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
-      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship carries 3 Launch Bays, sited on her broadsides. Each holds one aircraft squadron, bought separately. See Launch Bays &amp; Aircraft.</characteristic>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship carries 2 Launch Bays, sited on her broadsides. Each holds one aircraft squadron, bought separately. See Launch Bays &amp; Aircraft.</characteristic>
      </characteristics>
     </profile>
     <profile id="c9479cf1-5896-57b5-bb1c-4c87a1f85ac2" name="Pride of the Legion" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -10307,6 +10081,11 @@
     <profile id="a71f3834-7aeb-5e00-b79b-884a2adb6424" name="Defence Batteries (8)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 8 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="afed6f61-f828-521a-ab81-c34386b514a0" name="Armoured Prow" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The Iron Blood has +1 Prow Armour, already included in her AV 15 Prow.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -10339,14 +10118,14 @@
         <categoryLink id="6dfbda8a-5d78-58c8-adac-9f8b6e60d103" name="Upgrade" hidden="false" targetId="7610de76-9ef1-58ab-9c7b-f97ede66e61d" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="220.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="260.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Launch Bay Loadout" id="73d9fc79-293e-5082-a41b-6f6fdf3595de" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="3.0" field="selections" scope="parent" shared="false" id="ca336a80-aa75-5f02-a8fa-d3d94bae9658" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="ca336a80-aa75-5f02-a8fa-d3d94bae9658" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="1311a3a6-2387-58a1-81c9-02623ebb730d" name="Fury Interceptor Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -10569,7 +10348,7 @@
        <profiles>
         <profile id="c7cbea3a-ab4f-412e-b20f-f61ddead3368" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10577,17 +10356,17 @@
         <categoryLink id="0872e0c3-02e9-4e87-b07a-cab57a63439c" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="8bd37c59-0bf8-5fdb-b80e-d1ebb00abdb7" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntry id="8bd37c59-0bf8-5fdb-b80e-d1ebb00abdb7" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63752eda-7ba3-5d39-b08d-a07dd88a2290" type="max" />
        </constraints>
        <profiles>
-        <profile id="36542d17-af14-5269-80cf-b6db775cc8f4" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+        <profile id="36542d17-af14-5269-80cf-b6db775cc8f4" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10595,7 +10374,7 @@
         <categoryLink id="302d2c70-f2ed-5196-b55f-df9c66ef8b78" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="179df6d3-5b08-4f98-becf-55678b2b060d" name="Perturabo" hidden="false" collective="false" import="true" type="upgrade">
@@ -10605,7 +10384,7 @@
        <profiles>
         <profile id="ee83d303-5f16-414a-ba58-a4571453055c" name="Perturabo" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Primarch. Calculated Bombardment: Enemy ships within 18″ may not Evade attacks made by friendly Capital Ships that are themselves within 12″ of Perturabo.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Primarch. The Logos: all friendly Iron Warriors ships re-roll unmodified rolls of 1 on Hit rolls and on Armour Penetration rolls. The Logos does not permit re-rolls of Damage Table, Repair Engine, Boarding, Void Shield or any other roll. Perturabo grants the normal Primarch allowance of 3 Fleet Orders per battle round.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10614,7 +10393,7 @@
         <categoryLink id="ab11299d-7ebc-4fd8-9b84-e85037b7e67d" name="Primarch" hidden="false" targetId="aa8f9cca-79d6-4483-b466-901fa59a2823" primary="false" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="260.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="300.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10705,7 +10484,7 @@
        <profiles>
         <profile id="714014f5-51ed-512d-a06f-a7917f480e90" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. When defending its own ship, enemy dice facing this unit suffer −1 in addition to any other modifier.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Iron Blood only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10713,7 +10492,7 @@
         <categoryLink id="c2622213-8249-563c-a06e-29581839eddf" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10760,7 +10539,7 @@
        <profiles>
         <profile id="87a6681f-ca05-4728-ad8f-8f1cf7baebe5" name="Barban Falk" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: Once per battle round, this ship may re-roll one failed Penetration roll with each ranged weapon fired at a target within 18″.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Relentless Bombardment: whenever a friendly Iron Warriors ship rolls an unmodified 6 on an Armour Penetration roll, immediately make one additional Armour Penetration roll against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
          </characteristics>
         </profile>
         <profile id="55a77227-ace4-4f7d-82cb-569fc491ed47" name="Primarch Retinue" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -10773,17 +10552,17 @@
         <categoryLink id="89bb2c5f-6543-4eba-97dc-0b40daa23151" name="Retinue Character" hidden="false" targetId="194a7f31-dced-445a-b273-cca4996c8570" primary="false" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="de5c2b09-98ee-5d72-9013-2b7880ad43aa" name="Artemisa Helstrym" hidden="false" collective="false" import="true" type="upgrade">
+      <selectionEntry id="de5c2b09-98ee-5d72-9013-2b7880ad43aa" name="Forrix" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64ee4956-14ee-54aa-bed5-133839ffe1f4" type="max" />
        </constraints>
        <profiles>
-        <profile id="7c0529c4-f8df-5931-8716-786e76876fd8" name="Artemisa Helstrym" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+        <profile id="7c0529c4-f8df-5931-8716-786e76876fd8" name="Forrix" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Apex Hunter: at the start of each battle round, select one enemy ship. The Flagship gains +1 BS when shooting at that ship for the remainder of the round. This shares the single +1 pool of accuracy bonuses.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Unbroken Formation: once per battle round, each friendly Iron Warriors Capital Ship ignores the first successful Armour Penetration it suffers. An ignored penetration causes no Hull Point loss and cannot trigger Critical Damage. This applies to each friendly Capital Ship individually, once each per round.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10791,19 +10570,19 @@
         <categoryLink id="963fe052-71ea-549d-8c34-e006fd7c6323" name="Retinue Character" hidden="false" targetId="194a7f31-dced-445a-b273-cca4996c8570" primary="false" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
    <costs>
-    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="885.0" />
+    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="1050.0" />
    </costs>
   </selectionEntry>
-  <selectionEntry id="e723804f-ad14-5fa0-86fc-cb28be08db6a" name="4th Legion - Hammer of Olympia" hidden="false" collective="false" import="true" type="upgrade">
+  <selectionEntry id="e723804f-ad14-5fa0-86fc-cb28be08db6a" name="4th Legion - Attritional Warfare" hidden="false" collective="false" import="true" type="upgrade">
    <infoLinks>
-    <infoLink id="43b42ee7-e879-5a7c-93fd-024444d0668d" name="4th Legion - Hammer of Olympia" hidden="false" type="rule" targetId="73d63a56-7bcd-5f15-a3a7-4250c266b22b" />
+    <infoLink id="43b42ee7-e879-5a7c-93fd-024444d0668d" name="4th Legion - Attritional Warfare" hidden="false" type="rule" targetId="73d63a56-7bcd-5f15-a3a7-4250c266b22b" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="2e232a18-bb76-5ba6-9efd-8637b44ab609" name="Rules" hidden="false" targetId="52616092-abd8-519e-a6fb-94b622114fa5" primary="true" />
@@ -10931,8 +10710,8 @@
  <sharedSelectionEntries />
  <sharedSelectionEntryGroups />
  <sharedRules>
-  <rule id="73d63a56-7bcd-5f15-a3a7-4250c266b22b" name="4th Legion - Hammer of Olympia" hidden="false">
-   <description>The Flagship adds +1 Strength to all its ranged weapons when firing at an enemy within 18″.</description>
+  <rule id="73d63a56-7bcd-5f15-a3a7-4250c266b22b" name="4th Legion - Attritional Warfare" hidden="false">
+   <description>Iron Warriors ships ignore all negative modifiers to rolls on the Damage Table.</description>
   </rule>
  </sharedRules>
 </catalogue>
