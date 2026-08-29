@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e609bb75-f367-5340-bdde-9a490436bf97" name="9th Legion Blood Angels" revision="56" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="44" library="false">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="e609bb75-f367-5340-bdde-9a490436bf97" name="9th Legion Blood Angels" revision="57" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="44" library="false">
  <selectionEntries>
   <selectionEntry id="0b0cf6d7-5f90-5cc8-80bc-fc63c7984830" name="Destroyer - Cobra-class Squadron" hidden="false" collective="false" import="true" type="unit">
    <constraints>
@@ -1701,24 +1701,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="139ef036-dcc1-5a19-9a86-043355a0688c" name="Crimson Paladins" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="c0b69619-02c2-5c7d-b426-aa54011e6451" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="55f97861-20d4-51d2-a462-2643254fc62e" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="83febedc-aa42-51c5-acc0-e52bc4d6b6c9" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="5918add7-2f4c-5a86-8f47-6261bc0068cd" name="Hull Upgrades" hidden="false">
@@ -2044,24 +2026,6 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="b34f0576-0e69-5d0c-bdc8-180c314d7779" name="Crimson Paladins" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="19d50084-db6e-5f17-a192-8642850b858f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="6f05bc3e-9f46-594e-8043-4b311902aab8" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="1e20392a-daaa-5d69-8b70-bffc8e2f69bd" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -3309,7 +3273,7 @@
            <profiles>
             <profile id="bd279e12-a8f1-5adb-af2e-7aeb2ee4030d" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -3317,7 +3281,7 @@
             <categoryLink id="2aeffe6d-c385-51c8-b9a0-841f46e0f349" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="5cb7de75-2b23-538e-a2bd-3ff2a9e13fd7" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -3327,7 +3291,7 @@
            <profiles>
             <profile id="81144df7-26cf-5402-91fa-33c82e777eaf" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -3335,7 +3299,7 @@
             <categoryLink id="e263cca1-05ff-566a-9097-b3f01497e388" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -3518,24 +3482,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="cd797223-2fb0-517e-9628-54b6aee7cb1a" name="Crimson Paladins" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="9585dbed-e8f5-53fb-a281-1e84228ec66d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="13cc54ea-7675-5825-a5dc-e6e76f094467" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="e5a189a4-3025-52e5-8dfe-1ebee9f69acf" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -3695,7 +3641,7 @@
            <profiles>
             <profile id="ded4db3c-9c56-5497-a648-5e9d43946838" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -3703,7 +3649,7 @@
             <categoryLink id="9b418ed1-ef16-5f5c-8b27-2bd179b0912b" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="7dfd09a1-519f-5b13-a6ed-1c527072a967" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -3713,7 +3659,7 @@
            <profiles>
             <profile id="80f26a08-5e3e-532d-8239-11a03e1aad44" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -3721,7 +3667,7 @@
             <categoryLink id="448026a3-c38e-5727-80ee-529eb96e9af8" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -3904,24 +3850,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="9e78bac9-cae4-5464-9d87-96d86be26294" name="Crimson Paladins" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="e165b7d9-f6b5-5b35-9d3f-a8df1245729d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="a8e10d35-de69-5893-ab19-296d04ef8542" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="afc7eb0e-dca9-57ab-b2b7-2282b7cae843" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -4066,7 +3994,7 @@
            <profiles>
             <profile id="924a09d5-7d9f-5492-a969-c2ea321d7766" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4074,7 +4002,7 @@
             <categoryLink id="c67020d7-6d1e-5a34-afa5-973995603ad0" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="0a9483d1-d294-54b1-8d7b-ef2df4352069" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -4084,7 +4012,7 @@
            <profiles>
             <profile id="93d7f351-6759-57d5-861e-a9cc8222aa5d" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4092,7 +4020,7 @@
             <categoryLink id="6a61063d-b7b1-569b-946a-cad76711537a" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -4275,24 +4203,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="e0d5ddff-9dca-5374-83da-ad7d3992b14c" name="Crimson Paladins" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="5b55745d-c760-5802-bc70-12bcd88bf8f9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="0fd1b88b-440d-5a28-b9af-3e921087ba85" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="ce4f7509-07dc-5c59-ac2d-607a230d5090" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -4437,7 +4347,7 @@
            <profiles>
             <profile id="1bb0b62f-d8ce-5867-8505-d1c3c24afca2" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4445,7 +4355,7 @@
             <categoryLink id="62d471b1-2f0d-5020-9548-681ca6f1299d" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="15746312-2467-50e2-809a-d7a0072e76c7" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -4455,7 +4365,7 @@
            <profiles>
             <profile id="8e799faf-902f-5487-9af2-39ea755b15e8" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4463,7 +4373,7 @@
             <categoryLink id="0cf79260-f9f7-5c3b-af37-85f9bea86c95" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -4646,24 +4556,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="080b0fde-944a-56f1-8f23-df99b0205aef" name="Crimson Paladins" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="33040e45-eb6e-5256-83c3-6f97d6c20eb8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="8b2cc4a5-2a11-54a8-938c-bb1551be5eee" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="015e3b3d-7432-5e77-8df7-ef1e632c0e98" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -4813,7 +4705,7 @@
            <profiles>
             <profile id="f9169158-3132-5636-9f2e-01ab08ee15d7" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4821,7 +4713,7 @@
             <categoryLink id="3937588e-e66b-5243-8207-2a5bb1e71fbf" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="57a672d1-24ae-5f5c-bff0-f248195ba681" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -4831,7 +4723,7 @@
            <profiles>
             <profile id="f287d032-cdfa-500f-a39c-e3f63068d21e" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -4839,7 +4731,7 @@
             <categoryLink id="d6993ee5-4a0e-5118-ae3a-75fef56c32c9" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -5198,24 +5090,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="c0ceb26a-5c50-5bc8-bc2d-6d4099354a0e" name="Crimson Paladins" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="0f8d0eb8-9091-5695-928a-c75c7c938b69" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="d3e877ca-6399-5113-8283-15cb8249f2cd" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="a678f305-8824-5a4c-ba2c-f4b68c828a4c" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -5370,7 +5244,7 @@
            <profiles>
             <profile id="5d177497-9246-5945-b9f7-d1796a93b192" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -5378,7 +5252,7 @@
             <categoryLink id="f6e1922e-de2d-5ffe-8841-5d86a7b04d35" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="cd5954a2-8b35-5e45-9fca-4b0cde93575d" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -5388,7 +5262,7 @@
            <profiles>
             <profile id="1c6cd9c6-6ed5-5daf-8b0e-9ddfabdfc80a" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -5396,7 +5270,7 @@
             <categoryLink id="8dacafdc-09b5-5aea-bcd8-2e4f5c4edf9d" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -5579,24 +5453,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="ff7180fe-f3f3-5868-ae1e-9eba7681aeca" name="Crimson Paladins" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="e0825214-ec82-5791-ade5-4e8b04b3a6a7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="34470400-aab9-5673-ac4c-5ef5c1469fab" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="44b218ba-99ee-554b-bf3c-d647db93220f" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -5741,7 +5597,7 @@
            <profiles>
             <profile id="d534260e-8a88-5d57-8dc9-1c50ab960f75" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -5749,7 +5605,7 @@
             <categoryLink id="18952d59-2cd3-50f1-b452-2d536ba1cfc3" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="68db03e1-b92d-5e59-8124-7e3c712c4e41" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -5759,7 +5615,7 @@
            <profiles>
             <profile id="71410f3e-9b2a-566b-8caf-3308fd1b4952" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -5767,7 +5623,7 @@
             <categoryLink id="5edd0669-c974-578c-8aa8-bd45ef605948" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -5950,24 +5806,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="d1448e65-98c2-5fa8-8c28-2001f08726ef" name="Crimson Paladins" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="f1ee694f-a6ac-500f-bc28-904a1357bdb1" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="ffea45fb-8a3a-56cf-a43d-16171a4e3030" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="fdb92dc2-37d6-5401-85b9-1420fb852bec" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
@@ -6142,7 +5980,7 @@
            <profiles>
             <profile id="109e9da7-9d02-50fb-b4f4-d993df69f03e" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -6150,7 +5988,7 @@
             <categoryLink id="ec8fa320-7f8d-5b5a-9c8c-4d3b83f3464a" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="8fd7bf72-2f4e-5e48-a449-f92dc5a41836" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -6160,7 +5998,7 @@
            <profiles>
             <profile id="fc0bb7db-5e0b-51fb-b4df-c78f75966608" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -6168,7 +6006,7 @@
             <categoryLink id="3afcbf42-ed00-5b1a-b9c6-0514a8be90c1" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -6279,24 +6117,6 @@
        </profiles>
        <categoryLinks>
         <categoryLink id="fbbd14bd-b4fd-5f8f-986a-72754ba367e4" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
-      <selectionEntry id="0c861f9d-e7a3-55d3-9638-ea33c1a59d0f" name="Crimson Paladins" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="30d65d2c-b19f-51f6-9d0c-14c7577091bd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="e538e431-3d3c-5c48-ae23-8399791fb381" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="75343089-0c3c-5768-b145-b5cb1e03b2b6" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
@@ -6559,7 +6379,7 @@
            <profiles>
             <profile id="09404885-d692-52c4-b9bb-2fa34b96a7aa" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -6567,7 +6387,7 @@
             <categoryLink id="3466c0d5-c84b-5b6b-a1c4-f5272de878f5" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="cd3a24ff-4895-5d5c-9f06-bedbf6324109" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -6577,7 +6397,7 @@
            <profiles>
             <profile id="f7adc9cb-3c4d-53a6-8d89-4a2124754239" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -6585,7 +6405,7 @@
             <categoryLink id="88af8f02-e5d4-5f1b-b8f3-7ce865ca08b9" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -6877,24 +6697,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="db721fdd-8e3f-5b53-b0b9-37a6a4f3ea5d" name="Crimson Paladins" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="6138e4d9-30dd-50a0-9cf4-041122090843" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="97c5da9c-eb5f-511b-8a90-ba0ce54c156d" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="46668c8f-beef-5d8b-9e14-7d4f3e7d3138" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="5879259f-db5f-5eb2-af34-0169a8cb7698" name="Hull Upgrades" hidden="false">
@@ -7172,7 +6974,7 @@
            <profiles>
             <profile id="4528a007-4455-5145-8f29-fe3b7bf0a917" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -7180,7 +6982,7 @@
             <categoryLink id="b5c6bf39-0f90-5c46-ae7f-0385066166dc" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="a2d3521b-ebc9-5902-8c0a-415e6196d3ee" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -7190,7 +6992,7 @@
            <profiles>
             <profile id="d57811ae-b800-5976-aba8-f36ba258334d" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -7198,7 +7000,7 @@
             <categoryLink id="48bd6e03-71a3-5d68-aa47-d9fd8fdc7934" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -7490,24 +7292,6 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
-      <selectionEntry id="f99a6f9c-33c3-546e-81f1-bad0c27613ae" name="Crimson Paladins" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="72a39cea-5483-5459-8527-9be92bde1e2a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="71ed3f57-f8a3-5aac-8de1-991e293c86a7" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="8f44db7e-f3ff-5d04-847b-c7794f16925b" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
-       </costs>
-      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="e088ee50-fb4f-5bcb-8a53-f1b6e45a9890" name="Hull Upgrades" hidden="false">
@@ -7761,7 +7545,7 @@
            <profiles>
             <profile id="c97ce6ad-2744-5af5-a5fc-059015d49a22" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -7769,7 +7553,7 @@
             <categoryLink id="eb5fc799-8e62-5f49-a51e-833bdad3fbdb" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="7600f792-95d0-5739-8bed-6d07fa5de481" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -7779,7 +7563,7 @@
            <profiles>
             <profile id="2ef97bcc-b060-59fa-ac52-16f77d2d3a9a" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -7787,7 +7571,7 @@
             <categoryLink id="e7131455-51ae-5761-b3be-9143ac380f19" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -7910,7 +7694,7 @@
        <profiles>
         <profile id="513777df-5377-52a1-a50e-b467d21465b1" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. Encarmine Fury: +2 to its Boarding rolls, and each winning duel inflicts &lt;b&gt;1 additional Crew casualty&lt;/b&gt; on top of The Red Thirst and any other source. Crimson Paladins may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Red Tear only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7918,7 +7702,7 @@
         <categoryLink id="f20f020f-8a76-53d3-94a8-c93f2140ab09" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -8183,7 +7967,7 @@
            <profiles>
             <profile id="aee6bc98-4dca-5e84-a024-a55397898535" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -8191,7 +7975,7 @@
             <categoryLink id="88702a9c-c0b4-5b5b-a185-f9c6ffe064a7" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="a10cfbbc-f05e-5914-9288-b45423de795b" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -8201,7 +7985,7 @@
            <profiles>
             <profile id="31a3cced-ea69-5e0d-a2a1-ec1f18ddd893" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -8209,7 +7993,7 @@
             <categoryLink id="0351d208-b0c2-5438-842e-c5ed346571d9" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -8508,7 +8292,7 @@
        <profiles>
         <profile id="1c781ab6-ef77-5a62-91d5-fa02a394d017" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. Encarmine Fury: +2 to its Boarding rolls, and each winning duel inflicts &lt;b&gt;1 additional Crew casualty&lt;/b&gt; on top of The Red Thirst and any other source. Crimson Paladins may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Red Tear only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8516,7 +8300,7 @@
         <categoryLink id="6bac1f99-cf35-5033-afbf-0c98e9b3bdbc" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -8761,7 +8545,7 @@
            <profiles>
             <profile id="c49de884-219b-54da-b00e-b9cbdc0a02bd" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -8769,7 +8553,7 @@
             <categoryLink id="839821ce-8e2d-5d76-bf22-69ed4bf6bbf8" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="d7abd39e-86a5-50ea-9d11-48332955cec5" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -8779,7 +8563,7 @@
            <profiles>
             <profile id="5cd9653a-7128-5338-8b18-fe36c718c227" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -8787,7 +8571,7 @@
             <categoryLink id="e30f0ad1-db85-5de3-8344-f8f7888e34f2" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -9086,7 +8870,7 @@
        <profiles>
         <profile id="9166fdaf-af37-5d69-b659-dd830c9dcda7" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. Encarmine Fury: +2 to its Boarding rolls, and each winning duel inflicts &lt;b&gt;1 additional Crew casualty&lt;/b&gt; on top of The Red Thirst and any other source. Crimson Paladins may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Red Tear only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9094,7 +8878,7 @@
         <categoryLink id="d9f036af-8017-5bb5-ab14-0c4fc251f948" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -9309,7 +9093,7 @@
            <profiles>
             <profile id="b7da9490-8d27-55d1-b977-95437fdb790c" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -9317,7 +9101,7 @@
             <categoryLink id="38855760-ee56-5620-b54e-702d50c7e791" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="8b23a445-c0aa-5ad1-996d-7cbc907399f7" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -9327,7 +9111,7 @@
            <profiles>
             <profile id="37c1128a-519c-509a-9e2a-8455e8afd899" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -9335,7 +9119,7 @@
             <categoryLink id="10c161d8-8613-5d91-a9fc-31ff0b02a4be" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -9458,7 +9242,7 @@
        <profiles>
         <profile id="93a81d16-6a60-5684-bfa0-ca1b277a122e" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. Encarmine Fury: +2 to its Boarding rolls, and each winning duel inflicts &lt;b&gt;1 additional Crew casualty&lt;/b&gt; on top of The Red Thirst and any other source. Crimson Paladins may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Red Tear only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9466,7 +9250,7 @@
         <categoryLink id="8cbc219c-da29-5dd3-9fa9-e48c7c2cdf9a" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -9691,7 +9475,7 @@
            <profiles>
             <profile id="5e300b7f-350d-56f2-9f6b-905bd33fd6d7" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -9699,7 +9483,7 @@
             <categoryLink id="1ff4b43a-271d-5804-9c44-271f0acbddd7" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="907eb543-4f0f-551a-bb10-2377f19134de" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -9709,7 +9493,7 @@
            <profiles>
             <profile id="5764079d-fa9b-5fa8-9c20-8b4f174e57a1" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
              <characteristics>
-              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+              <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
              </characteristics>
             </profile>
            </profiles>
@@ -9717,7 +9501,7 @@
             <categoryLink id="0d7af033-541f-5543-8bf9-f45fcee554bb" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -9840,7 +9624,7 @@
        <profiles>
         <profile id="1ba492cf-2a1a-55d9-a082-7e1386f98278" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. Encarmine Fury: +2 to its Boarding rolls, and each winning duel inflicts &lt;b&gt;1 additional Crew casualty&lt;/b&gt; on top of The Red Thirst and any other source. Crimson Paladins may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Red Tear only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9848,7 +9632,7 @@
         <categoryLink id="2e0bb18a-091e-5a3b-9907-b8ac349d0b64" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -9948,7 +9732,7 @@
     <profile id="4c691058-c1d0-5884-9d63-e61e60f5daeb" name="Gloriana - Red Tear" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
       <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
-      <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">14</characteristic>
+      <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">15</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">14</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">13</characteristic>
       <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">20</characteristic>
@@ -9959,22 +9743,32 @@
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">12</characteristic>
      </characteristics>
     </profile>
+    <profile id="a46189b2-2245-57cf-acf7-ba73aa89318f" name="Nova Cannon ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+     <characteristics>
+      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
+      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">12</characteristic>
+      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">D</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">60″</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Prow only. Devastating (3)</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="4e618303-2db2-51f7-9cb4-2ead4fd2ee44" name="Vortex Torpedo ×4" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+     <characteristics>
+      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
+      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">12</characteristic>
+      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">D</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use; Devastating (3); Volatile. Bypasses Void Shields entirely, resolving against the hull facing struck. Prow mount only</characteristic>
+     </characteristics>
+    </profile>
     <profile id="1aca2ad8-d310-53ea-ae6f-b3d9473ad644" name="Encarmine Fury" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">In any round in which her boarding parties inflict a casualty, inflict one further casualty; stacks with The Red Thirst. Launch Bays (6).</characteristic>
      </characteristics>
     </profile>
-    <profile id="f4120996-ee44-5bdb-8955-d1589b011d77" name="Angelic Bombardment Cannon" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
-     <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">30″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); +2 on the Damage Table</characteristic>
-     </characteristics>
-    </profile>
-    <profile id="57650a4e-59f4-576b-97d9-ef2fa20a7d0f" name="Heavy Macro-Cannon Battery ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="57650a4e-59f4-576b-97d9-ef2fa20a7d0f" name="Heavy Macro-Cannon Battery ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Port</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
@@ -9984,7 +9778,7 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="f851b21f-76c0-5268-aec3-1a307f5366e9" name="Drop Pod Launcher ×4" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="f851b21f-76c0-5268-aec3-1a307f5366e9" name="Drop Pod Launcher ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Port</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">—</characteristic>
@@ -9994,7 +9788,7 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail.</characteristic>
      </characteristics>
     </profile>
-    <profile id="66260b06-1d00-576a-a3e4-8e47389b4e66" name="Heavy Macro-Cannon Battery ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="66260b06-1d00-576a-a3e4-8e47389b4e66" name="Heavy Macro-Cannon Battery ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Starboard</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
@@ -10004,7 +9798,7 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
      </characteristics>
     </profile>
-    <profile id="3ea39cda-6060-56b9-a079-216ffd115f2a" name="Drop Pod Launcher ×4" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="3ea39cda-6060-56b9-a079-216ffd115f2a" name="Drop Pod Launcher ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Starboard</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">—</characteristic>
@@ -10014,19 +9808,9 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail.</characteristic>
      </characteristics>
     </profile>
-    <profile id="fcedddcf-3a55-5262-945a-dfcc8db16247" name="Twin Lance Turret ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="51eaa675-65d8-541c-bd2f-1e06ab592e5e" name="Launch Bays (4)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
-      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Dorsal</characteristic>
-      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
-      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2 each</characteristic>
-      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2). All arcs — Gloriana Reactors</characteristic>
-     </characteristics>
-    </profile>
-    <profile id="51eaa675-65d8-541c-bd2f-1e06ab592e5e" name="Launch Bays (6)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-     <characteristics>
-      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship carries 6 Launch Bays, sited on her broadsides. Each holds one aircraft squadron, bought separately. See Launch Bays &amp; Aircraft.</characteristic>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship carries 4 Launch Bays, sited on her broadsides. Each holds one aircraft squadron, bought separately. See Launch Bays &amp; Aircraft.</characteristic>
      </characteristics>
     </profile>
     <profile id="725312e1-5a85-5537-b66c-9046b7ffa01a" name="Pride of the Legion" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -10037,6 +9821,21 @@
     <profile id="1a54618c-db2c-52b1-85e7-a67c1e492073" name="Defence Batteries (8)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This ship mounts 8 Defence Batteries. They fire only in answer to the Overwatch Fleet Order, at Strength 6, destroying one incoming craft on each 5+. See Defence Batteries.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="bf009c5c-b82b-5a45-ad88-64820c7fd75b" name="Encarmine Lance ×4" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+     <characteristics>
+      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Dorsal</characteristic>
+      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">11</characteristic>
+      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2 each</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2). Each penetrating hit also costs the target 1 Crew</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="f4730c43-5b47-5a33-a7c6-213e234ff2bb" name="Armoured Prow" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The Red Tear has +1 Prow Armour, already included in her AV 15 Prow.</characteristic>
      </characteristics>
     </profile>
    </profiles>
@@ -10076,7 +9875,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Launch Bay Loadout" id="712fe0aa-0fd6-5718-8b68-ec35a48a49dc" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="6.0" field="selections" scope="parent" shared="false" id="7110b50e-e20a-5488-8152-9725d2f71b20" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="4.0" field="selections" scope="parent" shared="false" id="7110b50e-e20a-5488-8152-9725d2f71b20" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="b29e2539-087a-57ec-ab9d-9f0162232a26" name="Fury Interceptor Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -10281,7 +10080,7 @@
        <profiles>
         <profile id="b6ddcd9a-1883-409a-85e2-5ec484357f7c" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10289,7 +10088,7 @@
         <categoryLink id="5b2f1fdf-b238-48fd-8a8f-0332162800e2" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="16f43d11-bc95-46c3-a644-5f814370ceaf" name="Raldoron" hidden="false" collective="false" import="true" type="upgrade">
@@ -10299,7 +10098,7 @@
        <profiles>
         <profile id="f2e76d9f-719b-4a2d-a8f0-06539132b2b6" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10307,7 +10106,7 @@
         <categoryLink id="7a3450d0-effa-423d-b5df-b325635ba020" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="c3c867d5-6729-4db2-8d6c-bed7387d3ffd" name="Sanguinius" hidden="false" collective="false" import="true" type="upgrade">
@@ -10317,7 +10116,7 @@
        <profiles>
         <profile id="a6c3fce9-bf1d-463e-bb1e-c01a005a11a6" name="Sanguinius" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Primarch. Angel of Wrath: Friendly ships within 12″ gain +1 to every boarding die when they initiate a boarding action.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Primarch. The Great Angel: all friendly Blood Angels ships may &lt;b&gt;re-roll failed Boarding rolls&lt;/b&gt;, and each winning duel inflicts &lt;b&gt;1 further Crew casualty&lt;/b&gt; on top of The Red Thirst — 2 additional casualties in total. Fleet-wide, with no range limit. Sanguinius grants the normal Primarch allowance of 3 Fleet Orders per battle round.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10326,7 +10125,7 @@
         <categoryLink id="cf2abbc9-3e78-465f-b6dd-3034ec3ac479" name="Primarch" hidden="false" targetId="aa8f9cca-79d6-4483-b466-901fa59a2823" primary="false" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="225.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="290.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10417,7 +10216,7 @@
        <profiles>
         <profile id="3602eeb6-348a-566b-b408-13b53c61cde2" name="Crimson Paladins" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2 to its boarding die. Maximum 1 per ship, and it does not count against the Terminator limit. This unit fights at +3 rather than +2 in any boarding action aboard a ship carrying Critical Damage, its own or the enemy's.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. Encarmine Fury: +2 to its Boarding rolls, and each winning duel inflicts &lt;b&gt;1 additional Crew casualty&lt;/b&gt; on top of The Red Thirst and any other source. Crimson Paladins may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Red Tear only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10425,7 +10224,19 @@
         <categoryLink id="b13a6833-925e-5b7b-91ad-00d595eb2950" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="6d292fdd-59e6-591d-8d0a-2a5c744bc774" name="Kharybdis Assault Claw" hidden="false" collective="false" import="true" type="upgrade">
+       <profiles>
+        <profile id="efbf0b93-e994-5cbd-98ea-987aef401b09" name="Kharybdis Assault Claw" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. Takes 2 rails and locks automatically — melta cutters breach any hull — delivering 2 Crew of boarders (a Dreadnought filling both places). One Shot: removed from play after its run.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="0.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10449,7 +10260,7 @@
        <profiles>
         <profile id="c6d081e5-0ceb-45a4-8c3c-4b6d1c650f04" name="Raldoron" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: This ship adds one boarding die when it initiates a boarding action.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. First Captain: all friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;. Fleet-wide, and it stacks with The Red Thirst.</characteristic>
          </characteristics>
         </profile>
         <profile id="0a94cb41-4a31-435f-96f2-42b6b00e116f" name="Primarch Retinue" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -10462,7 +10273,7 @@
         <categoryLink id="928b8d31-0704-421b-bfde-b3be3c9d0d6e" name="Retinue Character" hidden="false" targetId="194a7f31-dced-445a-b273-cca4996c8570" primary="false" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="71edaf40-042c-4e44-a8aa-e8cc2b70f14e" name="Azkaellon" hidden="false" collective="false" import="true" type="upgrade">
@@ -10472,7 +10283,7 @@
        <profiles>
         <profile id="6d6a8fc2-fc31-4121-8b5f-adb9513c0c29" name="Azkaellon" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: The first Crew casualty this ship suffers in each boarding action is ignored.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Character. Sanguinary Guard: friendly Blood Angels ships &lt;b&gt;ignore the first Crew casualty&lt;/b&gt; they would suffer in each Boarding action. Fleet-wide, once per action per ship.</characteristic>
          </characteristics>
         </profile>
         <profile id="a25128ca-4d91-4fb2-8635-9cf327e1e4ea" name="Primarch Retinue" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -10485,14 +10296,14 @@
         <categoryLink id="1c07a158-0a54-4e0c-a2dd-d6fe4a7818af" name="Retinue Character" hidden="false" targetId="194a7f31-dced-445a-b273-cca4996c8570" primary="false" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
    </selectionEntryGroups>
    <costs>
-    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="780.0" />
+    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="880.0" />
    </costs>
   </selectionEntry>
   <selectionEntry id="e1e13fb5-7246-5e4d-aece-f09c5805e5b8" name="9th Legion - The Red Thirst" hidden="false" collective="false" import="true" type="upgrade">
@@ -10626,7 +10437,7 @@
  <sharedSelectionEntryGroups />
  <sharedRules>
   <rule id="40968a28-a4c1-5a2c-9a20-818626318cbd" name="9th Legion - The Red Thirst" hidden="false">
-   <description>When a friendly boarding party wins a duel, it inflicts one additional Crew casualty.</description>
+   <description>Friendly Blood Angels ships add &lt;b&gt;+1 to their Boarding rolls&lt;/b&gt;, and whenever a friendly Blood Angels boarding party wins a duel it inflicts &lt;b&gt;1 additional Crew casualty&lt;/b&gt;. Fleet-wide.</description>
   </rule>
  </sharedRules>
 </catalogue>
