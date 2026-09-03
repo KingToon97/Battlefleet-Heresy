@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="7bc8f9f4-76bf-56fc-928e-af84e1fbf9ee" name="6th Legion Space Wolves" revision="59" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="47" library="false">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="7bc8f9f4-76bf-56fc-928e-af84e1fbf9ee" name="6th Legion Space Wolves" revision="68" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="50" library="false">
  <selectionEntries>
   <selectionEntry id="46d50526-a8a1-5b28-8961-af11e8871115" name="Destroyer - Cobra-class Squadron" hidden="false" collective="false" import="true" type="unit">
    <constraints>
@@ -99,7 +99,7 @@
      <selectionEntryGroups>
       <selectionEntryGroup name="Crew Upgrade" id="28fcfaea-810f-574a-b705-7d0876da1925" hidden="false" collective="false" import="true">
        <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="219e4cc1-8852-52c6-91d5-cd53f1d9566a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+        <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="219e4cc1-8852-52c6-91d5-cd53f1d9566a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
        </constraints>
        <selectionEntries>
         <selectionEntry id="5663b71f-3cd9-5760-ac6c-aa09f65dcd23" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -110,6 +110,21 @@
           <profile id="c44cbeb9-bb7f-5f71-9199-e2f16cd6e8d3" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
            <characteristics>
             <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+           </characteristics>
+          </profile>
+         </profiles>
+         <costs>
+          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
+         </costs>
+        </selectionEntry>
+        <selectionEntry id="c7782be9-f004-5d9b-87a6-dddb044c9bdf" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+         <constraints>
+          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="b1075ddd-f24d-55c8-9f6a-1dc6e0bebc6d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+         </constraints>
+         <profiles>
+          <profile id="1a781a04-ae46-5172-8d60-a9ead4c5d88d" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+           <characteristics>
+            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
            </characteristics>
           </profile>
          </profiles>
@@ -308,7 +323,7 @@
      <selectionEntryGroups>
       <selectionEntryGroup name="Crew Upgrade" id="1a2fff56-0959-5b36-bace-08d9e145b328" hidden="false" collective="false" import="true">
        <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="490645fe-83cf-5a1a-9f9f-326ab2105052" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+        <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="490645fe-83cf-5a1a-9f9f-326ab2105052" percentValue="false" includeChildSelections="false" includeChildForces="false" />
        </constraints>
        <selectionEntries>
         <selectionEntry id="1b2b0774-ac0e-5e05-80bc-d38819502377" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -319,6 +334,21 @@
           <profile id="1d438395-0b18-5389-a9f4-de6f47732367" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
            <characteristics>
             <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+           </characteristics>
+          </profile>
+         </profiles>
+         <costs>
+          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
+         </costs>
+        </selectionEntry>
+        <selectionEntry id="7a5facec-3d09-595c-b990-485d8cae8c0a" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+         <constraints>
+          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="25e38572-b21e-563d-8464-ede6532bf06d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+         </constraints>
+         <profiles>
+          <profile id="022ae5f4-f053-5d82-8d12-43c56e0fb5ac" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+           <characteristics>
+            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
            </characteristics>
           </profile>
          </profiles>
@@ -382,7 +412,7 @@
       </selectionEntryGroup>
      </selectionEntryGroups>
      <costs>
-      <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
+      <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
      </costs>
     </selectionEntry>
    </selectionEntries>
@@ -535,7 +565,7 @@
      <selectionEntryGroups>
       <selectionEntryGroup name="Crew Upgrade" id="30a87cee-cd0e-5a80-a20c-8dd2eac36aa1" hidden="false" collective="false" import="true">
        <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="80c2cf6c-6d8d-56f3-9f87-9d872cfa91c6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+        <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="80c2cf6c-6d8d-56f3-9f87-9d872cfa91c6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
        </constraints>
        <selectionEntries>
         <selectionEntry id="088bd6e1-9c22-54d6-bf61-d61df25ff45f" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -551,6 +581,21 @@
          </profiles>
          <costs>
           <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
+         </costs>
+        </selectionEntry>
+        <selectionEntry id="4b90f742-3176-58c8-8203-f39466242c95" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+         <constraints>
+          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="52fd8344-4966-55b8-bc38-94ffc2e506d5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+         </constraints>
+         <profiles>
+          <profile id="aa2a17d2-8cbe-5ec4-adc0-daa929ac93c1" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+           <characteristics>
+            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+           </characteristics>
+          </profile>
+         </profiles>
+         <costs>
+          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
          </costs>
         </selectionEntry>
        </selectionEntries>
@@ -752,7 +797,7 @@
      <selectionEntryGroups>
       <selectionEntryGroup name="Crew Upgrade" id="50e878cb-ea8e-5795-93a8-d3514d1d652c" hidden="false" collective="false" import="true">
        <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="69b9d0fc-9bcd-5869-bccc-ecf63dc7b9cd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+        <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="69b9d0fc-9bcd-5869-bccc-ecf63dc7b9cd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
        </constraints>
        <selectionEntries>
         <selectionEntry id="e3c970cc-90e9-59ce-a161-1453c8e812a2" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -763,6 +808,21 @@
           <profile id="5352279b-927d-56cd-9ceb-e9b0b32a913c" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
            <characteristics>
             <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+           </characteristics>
+          </profile>
+         </profiles>
+         <costs>
+          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
+         </costs>
+        </selectionEntry>
+        <selectionEntry id="f7d26fb5-6627-50f3-a1a2-1e346332e8fd" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+         <constraints>
+          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="2828df76-84fd-57c4-9cfa-ce47bf47af45" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+         </constraints>
+         <profiles>
+          <profile id="e3b56219-7eb9-5489-910f-c0741552dbad" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+           <characteristics>
+            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
            </characteristics>
           </profile>
          </profiles>
@@ -826,7 +886,7 @@
       </selectionEntryGroup>
      </selectionEntryGroups>
      <costs>
-      <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="90.0" />
+      <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="105.0" />
      </costs>
     </selectionEntry>
    </selectionEntries>
@@ -969,7 +1029,7 @@
      <selectionEntryGroups>
       <selectionEntryGroup name="Crew Upgrade" id="1855b078-b454-500f-a746-38b8cd39d942" hidden="false" collective="false" import="true">
        <constraints>
-        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="7c82fae4-d11a-5151-8e30-4c56405c6727" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+        <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="7c82fae4-d11a-5151-8e30-4c56405c6727" percentValue="false" includeChildSelections="false" includeChildForces="false" />
        </constraints>
        <selectionEntries>
         <selectionEntry id="4884df4a-e244-58dd-b99b-50d67f5f5865" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -980,6 +1040,21 @@
           <profile id="6234cce1-3271-5e08-840f-f6c0e3b101a7" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
            <characteristics>
             <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+           </characteristics>
+          </profile>
+         </profiles>
+         <costs>
+          <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
+         </costs>
+        </selectionEntry>
+        <selectionEntry id="05f14a5b-2e66-5865-a465-da0b93cb39a7" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+         <constraints>
+          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="939b8e65-cfb2-5b2d-893d-d43cbf3fadbc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+         </constraints>
+         <profiles>
+          <profile id="6e3960bd-a5e0-5e3b-bb2d-cbdf773edda1" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+           <characteristics>
+            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
            </characteristics>
           </profile>
          </profiles>
@@ -1043,7 +1118,7 @@
       </selectionEntryGroup>
      </selectionEntryGroups>
      <costs>
-      <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+      <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="95.0" />
      </costs>
     </selectionEntry>
    </selectionEntries>
@@ -1186,7 +1261,7 @@
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="344cbcd2-7254-5d21-8b5a-db91c57f22e5" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="bcc2b004-cbb9-5a39-aeed-901654fba99d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="bcc2b004-cbb9-5a39-aeed-901654fba99d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="048829a3-dce5-5345-b560-dfe34ae2eaeb" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -1205,6 +1280,21 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="30.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="aa96883b-492d-589e-9d37-50be6157d4b6" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="b6fb2e97-cfa2-5034-85be-76b4cb337863" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="cf0c74d4-ab6a-549e-aaf8-0ac1b1058aaf" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -1367,7 +1457,7 @@
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="7d88179b-7d3a-5c6f-ad0c-acd23b62296c" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="d6ebf960-1ed8-51e7-a3ba-2b588147eb5e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="d6ebf960-1ed8-51e7-a3ba-2b588147eb5e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="0c983767-3bfe-5805-bb67-539f390e9295" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -1386,6 +1476,21 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="ba8a3f51-68af-5256-b590-6a8c29672278" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="7dc519ff-931e-57b9-ae52-7615c9b579b0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="d0f84e24-383f-5f9c-bfe6-6a649345edce" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -1459,7 +1564,7 @@
     </selectionEntryGroup>
    </selectionEntryGroups>
    <costs>
-    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="85.0" />
+    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="70.0" />
    </costs>
   </selectionEntry>
   <selectionEntry id="6015cb76-6683-5597-9858-a77189be6f4e" name="Strike Cruiser - Nova pattern" hidden="false" collective="false" import="true" type="unit">
@@ -1488,7 +1593,7 @@
     </profile>
     <profile id="7dfd9a3f-5867-5544-aaa3-e941cdd71c07" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
-      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Crew point aboard counts as Legiones Astartes (+1), free; eligible for Astartes boarding upgrades.</characteristic>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Crew point aboard, and every Boarding Party carried, counts as Legiones Astartes (+1), free; eligible for Astartes boarding upgrades.</characteristic>
      </characteristics>
     </profile>
     <profile id="2593fa44-8a0a-59b5-9093-d6b33c71edc6" name="Drop Pod Launcher ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
@@ -1572,7 +1677,7 @@
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="bfbb36ee-dd62-5a5c-8a85-eebaa12f8eb7" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="6f53ede6-32f3-53cb-aced-6a07d2bdd922" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="6f53ede6-32f3-53cb-aced-6a07d2bdd922" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="f41246fd-e242-57fd-a9e7-a321d16babe5" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -1650,7 +1755,7 @@
         </profile>
         <profile id="23e112b4-9a66-5b5f-8de2-bb5e45168365" name="Assault Ram" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Crew of boarders rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Boarding Parties rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -1665,24 +1770,6 @@
       <constraint type="max" value="5.0" field="selections" scope="parent" shared="false" id="485a5f05-b45c-54b8-8428-5a43367b5e4c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="445c65fd-ee85-5a32-8b5f-65618e8bb6c9" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="5.0" field="selections" scope="parent" shared="false" id="8e7f1f94-ce86-5e47-a0bc-d0bd941c829d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="abc1cdfa-4fd1-5b53-879d-1ee776996956" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="37f1f7e6-9958-50f0-bbd9-a27d051e0dcb" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="40c0f93f-159c-5239-8bdd-01ecfbaf1b2b" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="5.0" field="selections" scope="parent" shared="false" id="b1d122a1-ebd0-5eef-b0bd-c6c8f83b05da" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -1690,7 +1777,7 @@
        <profiles>
         <profile id="762f41a5-ea23-583a-b9e8-1dfb954e2d14" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -1764,7 +1851,7 @@
        <profiles>
         <profile id="4923ce4c-bbe0-553f-bc27-e442ac51af8f" name="Dreadclaw Drop Pod" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Crew of boarders (+1 in the first round). Removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Boarding Party (+1 in the first round). Removed from play after its run.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -1805,7 +1892,7 @@
     </profile>
     <profile id="369d838f-cffa-5b89-aaf8-c7e175d81ce5" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
-      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Crew point aboard counts as Legiones Astartes (+1), free; eligible for Astartes boarding upgrades.</characteristic>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Crew point aboard, and every Boarding Party carried, counts as Legiones Astartes (+1), free; eligible for Astartes boarding upgrades.</characteristic>
      </characteristics>
     </profile>
     <profile id="2473adbb-f2ef-538c-9465-19e80bf91189" name="Drop Pod Launcher ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
@@ -1899,7 +1986,7 @@
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="fc480fe6-8863-5940-8a56-9f9405360307" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="bb62e416-922c-5b4f-932a-cc963ebf4661" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="bb62e416-922c-5b4f-932a-cc963ebf4661" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="2bf26cb2-9d1b-59d8-93a9-694f0b3599cc" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -1917,7 +2004,7 @@
         <categoryLink id="4030d9aa-2876-5714-b57b-5ac00f3834bd" name="Upgrade" hidden="false" targetId="7610de76-9ef1-58ab-9c7b-f97ede66e61d" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="30.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -1977,7 +2064,7 @@
         </profile>
         <profile id="d79e53e1-8451-518c-8cdf-f71b357aeae8" name="Assault Ram" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Crew of boarders rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Boarding Parties rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -1992,24 +2079,6 @@
       <constraint type="max" value="5.0" field="selections" scope="parent" shared="false" id="6e28acc8-f899-5fb2-a6ff-f02f60c986a8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="d9102cee-b74d-5662-a16f-df7ad1170448" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="5.0" field="selections" scope="parent" shared="false" id="249fe8c3-107d-5bb6-a79f-3545d81ae6d7" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="212b61df-64a1-5a7a-bc4e-5b02622cbcb6" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="e15d1a27-cd96-57b4-ac9b-86ab531b9ec2" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="dabc964d-75d8-596d-be38-b6fe781183bc" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="5.0" field="selections" scope="parent" shared="false" id="695faa60-c401-514c-bffc-d0e66318b2bf" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -2017,7 +2086,7 @@
        <profiles>
         <profile id="631bf7e5-d1ab-57c3-82d8-345024acc095" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -2091,7 +2160,7 @@
        <profiles>
         <profile id="021487b2-5cf2-53d3-88a8-f5f0f09d3d08" name="Dreadclaw Drop Pod" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Crew of boarders (+1 in the first round). Removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Boarding Party (+1 in the first round). Removed from play after its run.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -2103,7 +2172,7 @@
     </selectionEntryGroup>
    </selectionEntryGroups>
    <costs>
-    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="125.0" />
+    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="145.0" />
    </costs>
   </selectionEntry>
   <selectionEntry id="aa457c2e-d143-528a-9871-19441cde97a3" name="Cruiser - Dictator-class" hidden="false" collective="false" import="true" type="unit">
@@ -2259,7 +2328,7 @@
         </profile>
         <profile id="5e6eaf9d-1cba-5fd0-bd9a-f20dd5379c2d" name="Assault Ram" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Crew of boarders rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Boarding Parties rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -2271,7 +2340,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="5feee472-a83c-5245-8d4c-b0917c2bb969" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="19711575-f3b6-59f3-94ed-e77f3ae0c10e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="19711575-f3b6-59f3-94ed-e77f3ae0c10e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="9e23c0d2-99be-5a23-a21e-530aef988b93" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -2290,6 +2359,21 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="b1e17151-840e-5709-ad2d-46557f75089f" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="402c0023-d3ff-5bb1-a928-430a3e48474e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="82ce822f-ed98-5ecd-90a6-80a8c883a86c" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="30.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -2471,7 +2555,7 @@
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="8f40ae21-b728-5d5c-a49a-755957d7a26a" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="629b9aaf-4188-5ab1-8817-fa3810f8e86c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="629b9aaf-4188-5ab1-8817-fa3810f8e86c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="ee1403ce-fdf8-5725-8b85-1efcf1b7100c" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -2490,6 +2574,21 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="b4da0d8e-8b69-5a16-b762-796e5a3288aa" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="33296830-b5c0-5c47-a96d-41bc2bfd8ce4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="d0a0b617-8425-5a3d-942b-57db6a5b6812" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -2661,7 +2760,7 @@
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="69a6988a-a74e-583d-815c-e3a726284b13" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="ef76de0d-cd91-5767-a296-d729b11dba7b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="ef76de0d-cd91-5767-a296-d729b11dba7b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="c2f8da2d-1398-5372-8371-4c6f01d1942c" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -2680,6 +2779,21 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="50.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="e6c165aa-0eaa-5028-ad6d-f40544977bfe" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="ca478d30-9c50-51ef-a737-6ab64e22febb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="90562ad0-1986-55ce-9879-f4acc07ce257" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -2851,7 +2965,7 @@
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="a7b7afb0-003d-5ccb-87d6-59242951c088" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="c4f50c6b-00b4-51f5-986e-b170d1b2a58f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="c4f50c6b-00b4-51f5-986e-b170d1b2a58f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="73e53e06-11c4-52bf-8d78-620c155c91bb" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -2870,6 +2984,21 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="50.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="0887e70b-f51d-5495-b170-e405ec95d00b" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="2e633a5c-8695-5733-b8a7-7a36c47eb556" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="341eae47-5e29-54e7-a488-97f563dc7284" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -3041,7 +3170,7 @@
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="163cde2b-c0ba-58e1-bf71-793a8e8f933d" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="86542513-dd5a-527c-8657-0d6e79d1b086" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="86542513-dd5a-527c-8657-0d6e79d1b086" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="d0b36d7e-639e-57b3-9cc1-7dabe471637c" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -3059,7 +3188,22 @@
         <categoryLink id="aceb4e2d-76b3-5cc7-960c-5d00c77cab2c" name="Upgrade" hidden="false" targetId="7610de76-9ef1-58ab-9c7b-f97ede66e61d" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="c64fdd4e-330d-535e-bfde-ca85a0bc5658" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="186ed1e6-d1bd-5cbb-a6fa-4c7900533718" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="8d05d78d-2fa1-521b-94ac-7464d59f7d9e" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="30.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -3133,7 +3277,7 @@
     </selectionEntryGroup>
    </selectionEntryGroups>
    <costs>
-    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="165.0" />
+    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="140.0" />
    </costs>
   </selectionEntry>
   <selectionEntry id="2464cfc6-4925-518d-9e85-a3690e8a47fb" name="Battlecruiser - Armageddon-class" hidden="false" collective="false" import="true" type="unit">
@@ -3145,7 +3289,7 @@
      <characteristics>
       <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
-      <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
+      <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
       <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">10</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
@@ -3281,7 +3425,7 @@
             <categoryLink id="115ebc4c-678f-50d8-af39-0f944a60296e" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="6ed1af02-9e5f-53d4-bed6-0eabf872dfc3" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -3299,7 +3443,7 @@
             <categoryLink id="9e6cf299-45ca-5b20-a61f-e42b047e4ecd" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -3313,7 +3457,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="c4543a2f-9cae-5304-845b-d87971646dc5" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="fc8d1b78-c510-5a0e-9769-4eaf0699790f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="fc8d1b78-c510-5a0e-9769-4eaf0699790f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="f2e2163b-41fd-539a-a66d-f1338a3cb572" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -3332,6 +3476,21 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="73195560-6077-53f5-8132-7ca42fa3020e" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="839b1722-c651-5337-a903-bb4e5a84de4b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="c2bd9696-a84f-5894-818f-9c529963c9b2" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="60.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -3408,24 +3567,6 @@
       <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="e79daffb-49f8-5060-acac-95b3294749f0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="ea123b53-7dc3-5918-b35f-2c3e4bcad5be" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="378c3294-4308-555f-abb7-a3198054a7f8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="c8db901f-b047-5458-9ce7-0d3c9a7ff6e5" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="61b86450-ef0e-53f7-9e6d-5837575e7101" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="cb90f9ed-8b4b-5e08-83e7-ead64dd6667b" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="7ace06a7-d998-53b2-82f3-d89ae9435e3a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3433,7 +3574,7 @@
        <profiles>
         <profile id="70bdd768-e3a6-50a5-964b-8e6301bb9e10" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -3452,7 +3593,7 @@
        <profiles>
         <profile id="b330930d-cd19-5c96-8e88-85606a416b0c" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -3471,7 +3612,7 @@
        <profiles>
         <profile id="cf7de70e-41b4-5bc1-96a4-30883967ce3a" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -3498,7 +3639,7 @@
      <characteristics>
       <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
-      <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
+      <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
       <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">10</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
@@ -3649,7 +3790,7 @@
             <categoryLink id="9e31ff0b-b9ed-5f37-9018-baccf814b6de" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="d4f90ee0-d882-57b6-b106-139fd7a58ea2" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -3667,7 +3808,7 @@
             <categoryLink id="8d529ce7-2ce2-5676-8b32-63ca552f9e28" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -3681,7 +3822,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="7abf8d3e-3585-53b2-b19a-7755543a259b" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="7aa7b17c-08dc-5dd4-b0d3-1843883d6648" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="7aa7b17c-08dc-5dd4-b0d3-1843883d6648" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="a7249fe8-1a85-5f5c-9a4c-b2b04aefc581" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -3700,6 +3841,21 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="60.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="e31abb72-2c3c-5c3f-bdad-52e70f5f33a7" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="e6c29e01-8e3c-5e12-85e4-5ba587145955" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="9415c25b-6893-5745-afdc-fd3a79c9e086" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="50.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -3776,24 +3932,6 @@
       <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="feeb9747-1298-5e99-aaeb-a39820e92545" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="2b0a96ac-0715-5b21-bc38-66cb286d18b3" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="f97e209a-e756-56fe-8e85-0e3cff137619" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="c52d0293-54d9-5b38-ab1c-c870e105dd4f" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="62cd5c84-3e8c-555b-b387-119696ce0cdf" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="30471f3a-67c4-5b4f-9550-4fb2b0836acd" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="22b6109c-730a-575c-8f93-8fde73c44e71" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -3801,7 +3939,7 @@
        <profiles>
         <profile id="84a3f476-2b8c-57eb-8428-fdc0e117162c" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -3820,7 +3958,7 @@
        <profiles>
         <profile id="301c06b9-c95a-5d69-abf9-0f18f91c1f9e" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -3839,7 +3977,7 @@
        <profiles>
         <profile id="b1db649a-1399-563b-92b2-3181692bb941" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -3866,7 +4004,7 @@
      <characteristics>
       <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
-      <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
+      <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
       <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">10</characteristic>
       <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">1</characteristic>
@@ -4002,7 +4140,7 @@
             <categoryLink id="60828930-c968-54c4-a8ab-3dd1aaebb690" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="00fa4b3a-03f6-5e0a-89fd-f6ae9bec7a4c" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -4020,7 +4158,7 @@
             <categoryLink id="76e3a390-ce7a-53f0-836a-ee57a3e32945" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -4034,7 +4172,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="7820f0af-76a6-5a80-aa48-4717f50a5a42" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="564e70ab-13cf-5c3f-a5bf-ca046c4e45d6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="564e70ab-13cf-5c3f-a5bf-ca046c4e45d6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="066caec9-6598-56d0-b20e-606ebb128c22" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -4052,7 +4190,22 @@
         <categoryLink id="1ed2e7db-5a5e-52f2-895e-b392001d3221" name="Upgrade" hidden="false" targetId="7610de76-9ef1-58ab-9c7b-f97ede66e61d" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="60.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="50.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="4a4e3a1f-2bc2-5d37-83a0-6422f15f3a40" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="2c7c28d5-d6cf-5158-828d-8b7e7e4ed41d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="abe9536b-f916-56b9-98eb-2f8f46335cf7" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="40.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -4129,24 +4282,6 @@
       <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="23f9d532-1a1b-59a0-bb0b-52fa85277e5c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="db7d752c-b395-5327-b720-578b5ca80068" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="d5ccd657-51a8-5a93-a8c8-f5b80e7887ce" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="467e279c-2417-5c76-a898-315af64fced1" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="3d9dfd3b-0fb5-54fa-8eec-8cd605eb19dd" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="15edb9b5-f8e9-5ba2-80fa-663cb34a1da9" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="33f69652-4117-5244-8d86-370d20ae189e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4154,7 +4289,7 @@
        <profiles>
         <profile id="2ec49313-84d2-59af-97e0-15afaf8e3ca0" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -4173,7 +4308,7 @@
        <profiles>
         <profile id="3e9ef160-858b-5703-ab8a-31ad019f6428" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -4192,7 +4327,7 @@
        <profiles>
         <profile id="93c6632e-e3a3-5000-939c-152b80f4a4ad" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -4207,7 +4342,7 @@
     </selectionEntryGroup>
    </selectionEntryGroups>
    <costs>
-    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="235.0" />
+    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="200.0" />
    </costs>
   </selectionEntry>
   <selectionEntry id="a9bd0702-442e-5e31-8c37-a5fbb978eeec" name="Grand Cruiser - Avenger-class" hidden="false" collective="false" import="true" type="unit">
@@ -4355,7 +4490,7 @@
             <categoryLink id="d153707a-c734-5d4d-bef5-0dbf1d43ef91" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="1ed7698b-a0f3-5d2f-a352-588b3eabbbf7" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -4373,7 +4508,7 @@
             <categoryLink id="3a85b671-5440-5e14-b547-e64633babc81" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -4387,7 +4522,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="3d5a6398-61fb-5099-8e37-7e5b1bb2cfa1" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="adc2a3fb-690a-5a4a-965b-1c387bc0939d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="adc2a3fb-690a-5a4a-965b-1c387bc0939d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="35a08e84-9e75-5a37-bd5a-ff5bfaafd825" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -4405,7 +4540,22 @@
         <categoryLink id="f957ca4a-f450-5a4d-ae29-47cb3a180dcc" name="Upgrade" hidden="false" targetId="7610de76-9ef1-58ab-9c7b-f97ede66e61d" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="65.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="60.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="baa35a06-1212-5240-b4ee-92328634fa27" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="3ccea320-463e-5666-88f6-8e3b59361cee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="e62fbb02-2f08-56ff-9e6f-17c44eb6dcaa" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -4482,24 +4632,6 @@
       <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="b8dc1501-659b-54a5-a036-66f10535ce22" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="3c3d4175-cf38-55e5-9d4b-f1c4eaf5efa1" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="d9bb700d-1cb9-5e83-be6f-154a5818a673" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="7c9c7568-5f7a-5197-9261-274b747ab42b" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="6984b9f6-c476-56a2-a20c-16cf32e76b13" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="bd7ace46-4b00-592a-b598-bcb9276b8c9c" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="aba6ad28-48c1-5d9e-9f6e-84d37f3d33b6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -4507,7 +4639,7 @@
        <profiles>
         <profile id="efce9d2f-8879-5a64-8f69-012ff98b123c" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -4526,7 +4658,7 @@
        <profiles>
         <profile id="5a4846a8-4cc1-571d-8f7f-130864ad4816" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -4545,7 +4677,7 @@
        <profiles>
         <profile id="84afc511-3802-5dc9-8466-8c2055e3d563" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -4560,7 +4692,7 @@
     </selectionEntryGroup>
    </selectionEntryGroups>
    <costs>
-    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="260.0" />
+    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="230.0" />
    </costs>
   </selectionEntry>
   <selectionEntry id="e47c9b35-c5d3-5408-b271-9cdf081d78cd" name="Grand Cruiser - Exorcist-class" hidden="false" collective="false" import="true" type="unit">
@@ -4713,7 +4845,7 @@
             <categoryLink id="24deddf4-60f7-5c4d-914e-bdb2b3ce3b5e" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="4533b436-b768-5518-bc03-8c641cf00d59" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -4731,7 +4863,7 @@
             <categoryLink id="c3281bb5-5d06-58b0-84ea-6a91af03132e" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -4745,7 +4877,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="1c4c91f8-1402-509a-9f6b-e91ad6a50b01" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="0221a849-c8e2-5040-a388-40aaf1ce7fb0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="0221a849-c8e2-5040-a388-40aaf1ce7fb0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="f9a6e1be-16ce-5a20-8a2c-6531dc3b091b" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -4764,6 +4896,21 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="55.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="be3c62b2-9a10-59fe-88e7-7d4c1902345e" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="ed104931-73f4-534e-b057-bddcc018d32a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="58dfcc32-1b63-541d-914c-f4f9e7c7fcf4" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -4934,7 +5081,7 @@
         </profile>
         <profile id="c4b178df-e3df-53c3-8202-b6b2e3b6b6d3" name="Assault Ram" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Crew of boarders rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Boarding Parties rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5016,24 +5163,6 @@
       <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="bddb8ce5-bff7-5933-aa61-c38362451414" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="7746296a-c86a-5161-9c66-df63e57e3b34" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="99d29d97-3ec7-5fff-b85e-ac40ba12024d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="2e902d41-7d7b-5f9d-bcab-ff1827574a49" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="fdc4ebc2-74dc-5759-8806-1832838997d6" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="9ee2bc85-9b18-5d1c-b467-a0ddadd4f26c" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="d300110d-f4c3-5fab-abc6-562d43437e28" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5041,7 +5170,7 @@
        <profiles>
         <profile id="23e4253c-c0a2-5420-9d39-c39b7f69b367" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5060,7 +5189,7 @@
        <profiles>
         <profile id="6aaf0958-8ca3-500d-94c7-eb0a3e01adaa" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5079,7 +5208,7 @@
        <profiles>
         <profile id="c405f680-dc93-5255-92c2-99286b78a337" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5252,7 +5381,7 @@
             <categoryLink id="5f920e79-4876-5ec6-b257-9b8aa337bea0" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="9f3b7cf5-d3bd-5628-b980-ad51cda9c03a" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -5270,7 +5399,7 @@
             <categoryLink id="20a2148e-7fdf-5727-8a27-af605b7d01b3" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -5284,7 +5413,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="416d1b40-9a82-525b-83d3-920f9c28d5b6" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="f06ffa64-65a7-55a9-bfeb-c53d52285134" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="f06ffa64-65a7-55a9-bfeb-c53d52285134" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="0d57d613-e99d-567d-9b21-69397d352d13" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -5302,7 +5431,22 @@
         <categoryLink id="44f2e75c-e117-5726-bdfc-0249ec03dd47" name="Upgrade" hidden="false" targetId="7610de76-9ef1-58ab-9c7b-f97ede66e61d" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="85.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="cfbf2297-382d-59f8-980f-e82cdc66fc59" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="4397fbd8-1073-50bf-982b-a8c2ce8521fd" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="76d71419-c005-5fee-8032-66911089d044" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="60.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -5379,24 +5523,6 @@
       <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="3e13fcf2-9637-551c-8a60-9e9f5f2b8d2f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="c96ff391-d099-574c-9b95-a0348e1a0d62" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="865a73f0-a941-5684-b814-50cd64e7fbf2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="e84104d1-20a6-57f0-bf8f-2574d257ba31" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="a65b7ca9-f311-57a7-be99-c4253e759da8" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="3d48a15f-f3c7-5f6e-a1db-2e6c47e239c8" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="e8e93af2-bc68-5a92-84f3-5caef6618217" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5404,7 +5530,7 @@
        <profiles>
         <profile id="65204b1d-897f-5713-9774-dcdf1566602b" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5423,7 +5549,7 @@
        <profiles>
         <profile id="bb92b3f8-a8a0-56f2-bb61-cc38b7400d91" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5442,7 +5568,7 @@
        <profiles>
         <profile id="fd7ba672-5da3-5a3b-8b02-fd030a0d832a" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5457,7 +5583,7 @@
     </selectionEntryGroup>
    </selectionEntryGroups>
    <costs>
-    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="340.0" />
+    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="310.0" />
    </costs>
   </selectionEntry>
   <selectionEntry id="ba2dd8ab-9fe6-553d-9d3c-cd851d3fee46" name="Grand Cruiser - Vengeance-class" hidden="false" collective="false" import="true" type="unit">
@@ -5605,7 +5731,7 @@
             <categoryLink id="f8f459da-ea88-5bea-ba87-d282989d71b3" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="95d5aecc-4a91-5ce2-8395-d08292bc621e" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -5623,7 +5749,7 @@
             <categoryLink id="ebc5e2a5-c216-5f9e-bfc1-c75241c9cfcd" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -5637,7 +5763,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="b86d04f4-e4f7-5da7-92b6-18bac52bf6fb" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="c6d65978-661b-5cf5-ae3a-90e60a0d8e42" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="c6d65978-661b-5cf5-ae3a-90e60a0d8e42" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="e9999513-e985-5497-bace-fe182f35213e" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -5656,6 +5782,21 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="85.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="b4698a4a-cea2-5d5b-97df-f92c3d9172ae" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="5301bbaf-80cb-59db-9c27-25e85e82a10f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="9f472e78-bec3-5803-b713-87bcf3956948" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="70.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -5732,24 +5873,6 @@
       <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="ea326ca1-ead9-52f7-9154-2ad90e35f422" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="ac640644-19d5-5e17-9ea7-2fda91f41430" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="47878947-21a4-514a-8adc-8140062c822a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="28e864ed-fb3e-5082-b4c6-7af188189d3c" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="ef4305f6-9f5f-5eb9-8067-68341a4b03a5" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="b4fff94f-8db7-516a-85ee-44e3b432d385" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="7.0" field="selections" scope="parent" shared="false" id="4a48316c-4241-5767-8999-73a5b27957ab" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -5757,7 +5880,7 @@
        <profiles>
         <profile id="c783e4c1-7378-5b2f-8819-decb4ee5a1e0" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5776,7 +5899,7 @@
        <profiles>
         <profile id="ae9a24bb-1326-5641-97fb-7f4d7c705311" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5795,7 +5918,7 @@
        <profiles>
         <profile id="18933925-82bc-52dc-9fbb-5d739ab46480" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5834,7 +5957,7 @@
     </profile>
     <profile id="04042a13-f058-59b1-be3f-d2e721a332e8" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
-      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Crew point aboard counts as Legiones Astartes (+1), free; eligible for Astartes boarding upgrades.</characteristic>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Crew point aboard, and every Boarding Party carried, counts as Legiones Astartes (+1), free; eligible for Astartes boarding upgrades.</characteristic>
      </characteristics>
     </profile>
     <profile id="b671fdef-a72d-576e-94ce-fc91024bd73e" name="Assault Ramp" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -5988,7 +6111,7 @@
             <categoryLink id="82ee3afa-4d20-5c0f-965b-ab3c79ffeaf5" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="7ebc090f-6ed7-57ae-b091-414a16c97796" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -6006,7 +6129,7 @@
             <categoryLink id="688be0d9-01d2-5020-b120-f5c6920536c1" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -6020,7 +6143,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="37180929-20b3-53e8-8ba2-a8a2edb73e8f" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="5e534cba-48c8-5dce-9d44-1862539eb7ea" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="5e534cba-48c8-5dce-9d44-1862539eb7ea" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="87ec6ad2-5539-5fac-b7ec-72eddf907a77" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -6048,24 +6171,6 @@
       <constraint type="max" value="9.0" field="selections" scope="parent" shared="false" id="1ad9031f-c92d-5e66-92e2-5c55b19b1f6b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="ed47e324-ae2e-55cb-ac9d-6468934c2a27" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="9.0" field="selections" scope="parent" shared="false" id="4d2c0ba0-4479-5718-99ba-42b63ef92b3e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="05568eb8-b503-54b2-9782-fc7b2d2e7b3f" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="f45d3733-680a-5e46-b0a4-42ceeb4f451c" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="da6f975c-c1f9-54a0-aa94-ca26c36ec658" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="9.0" field="selections" scope="parent" shared="false" id="3fe0d478-923f-5c78-96d2-2b313d584370" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6073,7 +6178,7 @@
        <profiles>
         <profile id="bfcbf235-8805-53b1-9c65-1acfe1cd9c52" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6092,7 +6197,7 @@
        <profiles>
         <profile id="3aaa3aad-ff96-532e-a55d-c09cd6109ef1" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6111,7 +6216,7 @@
        <profiles>
         <profile id="89de1d0f-af8d-512e-a1e8-6997e595023b" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6200,7 +6305,7 @@
        <profiles>
         <profile id="77b374ca-6bdf-5631-b1cd-f30adc94bbdc" name="Dreadclaw Drop Pod" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Crew of boarders (+1 in the first round). Removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Boarding Party (+1 in the first round). Removed from play after its run.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6212,7 +6317,7 @@
        <profiles>
         <profile id="d0923c14-0818-5bda-bba3-bfc2a01c221f" name="Kharybdis Assault Claw" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. Takes 2 rails and locks automatically — melta cutters breach any hull — delivering 2 Crew of boarders (a Dreadnought filling both places). One Shot: removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. Takes 2 rails and locks automatically — melta cutters breach any hull — delivering 2 Boarding Parties (a Dreadnought filling both places). One Shot: removed from play after its run.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6248,7 +6353,7 @@
     </profile>
     <profile id="59bf67c5-9575-50b4-8c74-a1d32c9f1b78" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
-      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Crew point aboard counts as Legiones Astartes (+1), free; eligible for Astartes boarding upgrades.</characteristic>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Crew point aboard, and every Boarding Party carried, counts as Legiones Astartes (+1), free; eligible for Astartes boarding upgrades.</characteristic>
      </characteristics>
     </profile>
     <profile id="92adec92-9bfc-582c-a546-dc7e971f9d9c" name="Assault Ramp" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -6387,7 +6492,7 @@
             <categoryLink id="debdb747-7dcb-5598-932b-62504ce92c3f" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="ffcc8afe-1937-5ba5-9068-16b2437590fb" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -6405,7 +6510,7 @@
             <categoryLink id="1c9f2e84-3130-5aec-b48a-4735697946a9" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -6419,7 +6524,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="9e699359-b2ad-575b-8f6f-56d64d86f469" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="02bfd385-7331-58da-8f7a-afe76d4271e6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="02bfd385-7331-58da-8f7a-afe76d4271e6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="079949d6-69da-50bf-a44c-4e352c815c11" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -6608,7 +6713,7 @@
         </profile>
         <profile id="3d0bf5c7-1ae0-5904-8b0a-426218c1f6ff" name="Assault Ram" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Crew of boarders rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Boarding Parties rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6623,24 +6728,6 @@
       <constraint type="max" value="9.0" field="selections" scope="parent" shared="false" id="820c1019-c45c-5b09-932f-66cac90261fc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="47b8cf83-842f-5dd9-8656-5f0860071ac8" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="9.0" field="selections" scope="parent" shared="false" id="0cffda13-3976-5a44-805a-6446c462721e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="4eb6e99a-a0c9-5bbd-8805-0dd338bd0722" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="c1d3aab0-0304-51ec-b70e-066e8694c4a9" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="c5e7200d-1a95-5d08-8456-c4b98cf6cfa5" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="9.0" field="selections" scope="parent" shared="false" id="92a2bfdc-20c7-5773-b3ab-54694836d38a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -6648,7 +6735,7 @@
        <profiles>
         <profile id="8bd41e36-5921-51ff-86fe-66a460c33f58" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6667,7 +6754,7 @@
        <profiles>
         <profile id="c16bf51a-fe84-51b0-ab1a-eea4b40a70d9" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6686,7 +6773,7 @@
        <profiles>
         <profile id="d95ef20c-3ae8-57e4-8c42-fa60166a5d44" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6775,7 +6862,7 @@
        <profiles>
         <profile id="3465416b-fd24-5fe5-894c-f8363155a897" name="Dreadclaw Drop Pod" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Crew of boarders (+1 in the first round). Removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Boarding Party (+1 in the first round). Removed from play after its run.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6787,7 +6874,7 @@
        <profiles>
         <profile id="94a06587-8ff0-5fb4-b4d1-3f0b7f190e6b" name="Kharybdis Assault Claw" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. Takes 2 rails and locks automatically — melta cutters breach any hull — delivering 2 Crew of boarders (a Dreadnought filling both places). One Shot: removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. Takes 2 rails and locks automatically — melta cutters breach any hull — delivering 2 Boarding Parties (a Dreadnought filling both places). One Shot: removed from play after its run.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6823,7 +6910,7 @@
     </profile>
     <profile id="eb35c7ee-dff5-5441-a008-b39a54370970" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
-      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Crew point aboard counts as Legiones Astartes (+1), free; eligible for Astartes boarding upgrades.</characteristic>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Crew point aboard, and every Boarding Party carried, counts as Legiones Astartes (+1), free; eligible for Astartes boarding upgrades.</characteristic>
      </characteristics>
     </profile>
     <profile id="007ced94-842a-503e-986a-ed3aba4771eb" name="Assault Ramp" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -6982,7 +7069,7 @@
             <categoryLink id="7602d0ac-4d5a-513b-9bf2-5bf3cc10a6c1" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="52172416-79e3-5466-935e-58877603be61" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -7000,7 +7087,7 @@
             <categoryLink id="8fe687cb-4faf-5566-adaa-8710b02b93a2" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -7014,7 +7101,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="c8a58e9d-f78a-512f-a85f-152103fa0186" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="01579702-7880-5de5-bc84-4ffea26bf182" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="01579702-7880-5de5-bc84-4ffea26bf182" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="4ec65b8f-6219-55c8-86b7-fed3baff65d4" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -7203,7 +7290,7 @@
         </profile>
         <profile id="66cd79f6-2d67-5958-b128-606a408cf1a1" name="Assault Ram" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Crew of boarders rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Boarding Parties rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7218,24 +7305,6 @@
       <constraint type="max" value="9.0" field="selections" scope="parent" shared="false" id="15049259-71b0-5afe-9da0-dc795b8ed57e" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="ed444efa-8475-5b71-aa47-cd5246d1229b" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="9.0" field="selections" scope="parent" shared="false" id="92e484fe-1b3e-5dfc-9bdd-b81ebf9791b4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="eed49b07-2e72-593f-afc4-9d8b0b107ed2" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="6dad9160-71d2-5900-8972-6de307ae83a2" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="5e892128-3b10-515a-813f-8c9d105ec8e7" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="9.0" field="selections" scope="parent" shared="false" id="1a35aa89-2d31-5977-9b9f-5280adef1e38" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7243,7 +7312,7 @@
        <profiles>
         <profile id="44e20081-c50c-5ac5-8a32-7ff49ba18b1f" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7262,7 +7331,7 @@
        <profiles>
         <profile id="8c566db2-9fba-5ec5-bb2f-436152d3a0d7" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7281,7 +7350,7 @@
        <profiles>
         <profile id="45f99afe-57da-501f-ae4b-88743652ac04" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7370,7 +7439,7 @@
        <profiles>
         <profile id="b5f7c234-9763-52ad-b1cc-c6e6f006c2e0" name="Dreadclaw Drop Pod" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Crew of boarders (+1 in the first round). Removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Boarding Party (+1 in the first round). Removed from play after its run.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7382,7 +7451,7 @@
        <profiles>
         <profile id="4fc6109c-73bf-5808-858b-37fb0ac877f8" name="Kharybdis Assault Claw" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. Takes 2 rails and locks automatically — melta cutters breach any hull — delivering 2 Crew of boarders (a Dreadnought filling both places). One Shot: removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. Takes 2 rails and locks automatically — melta cutters breach any hull — delivering 2 Boarding Parties (a Dreadnought filling both places). One Shot: removed from play after its run.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7553,7 +7622,7 @@
             <categoryLink id="14d0dcfd-f6e0-587d-bd62-f846133fac66" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="f856629d-dc79-5d01-bd34-4f30bdf2f87b" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -7571,7 +7640,7 @@
             <categoryLink id="e930fac4-cf6a-5f39-88fd-d0ce86e10635" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -7585,7 +7654,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="d9c03b16-1af8-5227-8c53-85d1689f835f" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="e02a5196-38a1-576e-8e64-69660ec1c38b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="e02a5196-38a1-576e-8e64-69660ec1c38b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="04ee583d-c890-54cb-9122-919d0c129ce4" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -7606,6 +7675,21 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
        </costs>
       </selectionEntry>
+      <selectionEntry id="2a19ca6a-4726-5bea-9595-4ddb22d9fde3" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="cdc78a5b-8c6e-5997-9ee4-4b1672b90e6b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="82e93458-1a68-5d6c-b1af-1c3fcb2f1d60" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="95.0" />
+       </costs>
+      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Boarding Forces" id="f7263d5a-778d-5fc7-b2b1-69de4204f881" hidden="false" collective="false" import="true">
@@ -7613,24 +7697,6 @@
       <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="687580f0-029a-5c34-8fc2-fbcdf02b6a28" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="27f387f0-10f6-5003-b686-d9ad2bff9311" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="61dedb8d-5ff8-5d39-9319-db746023bd8f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="25d6c96a-c4f3-5292-873e-e0b68774e96b" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="bbeb9426-13cd-5e9e-b8fe-db8ae4f80786" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="1e04bb09-c166-5521-8b0c-00ec887b8060" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="00351c46-3331-5bd2-b7a6-bbb358cd7279" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -7638,7 +7704,7 @@
        <profiles>
         <profile id="573e0aa9-f470-5b2e-abcb-cac271dbf9ef" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7657,7 +7723,7 @@
        <profiles>
         <profile id="4bc3aa7e-4e40-53b9-9903-f18a9c844f05" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7676,7 +7742,7 @@
        <profiles>
         <profile id="3243c188-49be-5b08-974d-651b09c1fe0e" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7694,7 +7760,7 @@
        <profiles>
         <profile id="3ea8b1a4-5866-56b8-ac9b-7bdb00797edf" name="Varagyr Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. Wolf Guard: whenever an enemy ship attempts to Break Away from a Boarding action involving Varagyr Terminators, it rolls &lt;b&gt;2D6 and uses the lowest&lt;/b&gt; result. They gain no Boarding modifier, no additional Crew damage and no other bonus. Space Wolves Battleships and the Hrafnkel only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. Wolf Guard: &lt;b&gt;+1&lt;/b&gt; to its Boarding rolls, and whenever an enemy ship attempts to Break Away from a Boarding action involving Varagyr Terminators it rolls &lt;b&gt;2D6 and uses the lowest&lt;/b&gt; result. Space Wolves Battleships and the Hrafnkel only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7975,7 +8041,7 @@
             <categoryLink id="b49862ae-cfc9-5d5a-81c0-f91d37bc122b" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="84cb1efb-4918-5f0c-ae3f-212a5bb664f4" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -7993,7 +8059,7 @@
             <categoryLink id="a3660414-cef4-5cb6-918c-ed72c9488ecc" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -8007,7 +8073,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="331f72e7-b233-57a9-9264-6528554f728a" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="7d6d78b3-2549-5612-a285-2fb281a1873a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="7d6d78b3-2549-5612-a285-2fb281a1873a" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="6ca680e4-98c3-5dee-adcb-cedc39f0eb9d" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -8026,6 +8092,21 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="ba097482-1e17-5af2-808e-8cc700433daf" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="fe756a25-6b75-5569-9212-a1a0855a4e46" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="15765ce2-9aab-52f3-a664-56876f051bad" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="90.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -8196,7 +8277,7 @@
         </profile>
         <profile id="dca3d98a-6a14-5021-9bad-8fc8ccf3fe55" name="Assault Ram" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Crew of boarders rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Boarding Parties rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8211,24 +8292,6 @@
       <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="71eec145-df08-57a5-bd12-4d2d91d09918" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="670e88c2-6d61-56a6-a786-ba3f4c468d3d" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="6e0fb41a-b2e3-5893-9aad-b21db6673407" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="b6534220-fc8a-5b3a-beed-fabbf5ace33c" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="25751665-ac00-5eac-ac9e-b99c652d076e" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="c194fc7d-1c77-5a56-b7cf-473ad4920e2a" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="2fc7d7d5-8a8e-5433-868e-1b09ae0b9225" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8236,7 +8299,7 @@
        <profiles>
         <profile id="042f2f23-a05d-5c31-9c72-8a91f734e7dc" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8255,7 +8318,7 @@
        <profiles>
         <profile id="68dafa5b-b5fa-5e44-82c9-5031d817d6c5" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8274,7 +8337,7 @@
        <profiles>
         <profile id="5a437a2b-1be0-5a40-80a2-59b44d88ec55" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8292,7 +8355,7 @@
        <profiles>
         <profile id="03dc26e2-f301-50ec-b22d-55fd0286ff76" name="Varagyr Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. Wolf Guard: whenever an enemy ship attempts to Break Away from a Boarding action involving Varagyr Terminators, it rolls &lt;b&gt;2D6 and uses the lowest&lt;/b&gt; result. They gain no Boarding modifier, no additional Crew damage and no other bonus. Space Wolves Battleships and the Hrafnkel only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. Wolf Guard: &lt;b&gt;+1&lt;/b&gt; to its Boarding rolls, and whenever an enemy ship attempts to Break Away from a Boarding action involving Varagyr Terminators it rolls &lt;b&gt;2D6 and uses the lowest&lt;/b&gt; result. Space Wolves Battleships and the Hrafnkel only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8553,7 +8616,7 @@
             <categoryLink id="9aa63e7e-b0c9-5c44-9547-65c166469c46" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="96411916-786b-5992-89a4-b27bd296314e" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -8571,7 +8634,7 @@
             <categoryLink id="d77779d1-6800-5c42-b6b2-2e8a65645436" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -8585,7 +8648,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="49713fa3-a86c-5f83-a9b8-478e4397b0a7" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="465475d8-4e1e-5bf1-879b-fa91f1eb9b72" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="465475d8-4e1e-5bf1-879b-fa91f1eb9b72" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="c2a34f64-fea2-51bc-bba2-67434bd26762" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -8604,6 +8667,21 @@
        </categoryLinks>
        <costs>
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="1b6e9fce-ec50-5ca3-be49-128bef215682" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="fddf0e52-0f8f-5ddb-9eb5-13ceaccd0e0f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="e8300818-ab9e-5f1d-8708-17cc8771b709" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -8774,7 +8852,7 @@
         </profile>
         <profile id="66a5f9cb-7805-5de4-a2a6-2f8662cbd54e" name="Assault Ram" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Crew of boarders rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Boarding Parties rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8789,24 +8867,6 @@
       <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="308575c3-2a5e-57f2-beb4-49a59e222d0b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="2ca2fda8-06a8-5dff-83cf-33644a9e0642" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="37269f21-4e9a-5d0e-9a4a-1b7677c9822c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="7420b886-98a0-544f-acee-2c42c7bbd26b" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="567c034d-b30d-5e4d-adf8-851deedb03ac" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="e79a4e76-bcdf-5d3e-98e5-6a55bd3142d3" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="a425e898-e418-5150-bae1-5353fe4bec4d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -8814,7 +8874,7 @@
        <profiles>
         <profile id="fbc14c61-e974-565c-bd69-a88337963a69" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8833,7 +8893,7 @@
        <profiles>
         <profile id="5cbb1554-31eb-5fbe-84ee-ae5871d54d9c" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8852,7 +8912,7 @@
        <profiles>
         <profile id="83ccb7a0-7c1b-5d68-82d9-292de1dfb9ba" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8870,7 +8930,7 @@
        <profiles>
         <profile id="541d9227-ce55-545b-ace0-f915c096a9e1" name="Varagyr Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. Wolf Guard: whenever an enemy ship attempts to Break Away from a Boarding action involving Varagyr Terminators, it rolls &lt;b&gt;2D6 and uses the lowest&lt;/b&gt; result. They gain no Boarding modifier, no additional Crew damage and no other bonus. Space Wolves Battleships and the Hrafnkel only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. Wolf Guard: &lt;b&gt;+1&lt;/b&gt; to its Boarding rolls, and whenever an enemy ship attempts to Break Away from a Boarding action involving Varagyr Terminators it rolls &lt;b&gt;2D6 and uses the lowest&lt;/b&gt; result. Space Wolves Battleships and the Hrafnkel only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9101,7 +9161,7 @@
             <categoryLink id="aac7b714-f49b-549f-a476-82ed0b9690fd" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="775ba56b-fa20-5d71-8efc-6fac01194a18" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -9119,7 +9179,7 @@
             <categoryLink id="48fa5148-a580-5f99-b09f-097637bdf90b" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -9133,7 +9193,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="c6316b05-d76b-51a5-83e8-62f1f28e2f79" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="f823b5c3-d879-55bd-8b24-1f0ae896d948" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="f823b5c3-d879-55bd-8b24-1f0ae896d948" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="bc17fb98-8740-5c6c-9de8-b44187d52029" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -9154,6 +9214,21 @@
         <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="110.0" />
        </costs>
       </selectionEntry>
+      <selectionEntry id="fbadfd7e-3f8e-5d33-912c-163745bf62c9" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="f94f4d70-fc1f-5be9-b275-9538bbf162b4" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="61b330e7-8578-525a-bfef-e82ba0bf94e0" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="85.0" />
+       </costs>
+      </selectionEntry>
      </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup name="Boarding Forces" id="d673d3c2-bc8f-5937-8431-b7fa5fb803ba" hidden="false" collective="false" import="true">
@@ -9161,24 +9236,6 @@
       <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="6e2f8500-3915-5328-a451-6bed070f67b2" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="56b69838-ac57-5cba-960d-b8ab501a90f6" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="075682cc-3715-5c38-9130-1b69d950b7e3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="9a4b6d1f-4307-5039-b5ec-b6162f400170" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="d51110fc-1394-55d5-88c3-3e7dbcac10f1" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="6b8128fa-448b-5627-bf32-e86b47e6a33a" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="0ed8717f-5a33-5d4a-b388-2aad9095d0ee" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -9186,7 +9243,7 @@
        <profiles>
         <profile id="9405076a-28b3-5a2a-8d4c-38762c2cf5e3" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9205,7 +9262,7 @@
        <profiles>
         <profile id="036b2f8a-9516-5668-81b4-64942a9ff50d" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9224,7 +9281,7 @@
        <profiles>
         <profile id="1ff95038-59fd-5222-8e07-0a2060be31c0" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9242,7 +9299,7 @@
        <profiles>
         <profile id="f7bbfd3f-9101-5ae6-a3d1-4b81fc94c674" name="Varagyr Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. Wolf Guard: whenever an enemy ship attempts to Break Away from a Boarding action involving Varagyr Terminators, it rolls &lt;b&gt;2D6 and uses the lowest&lt;/b&gt; result. They gain no Boarding modifier, no additional Crew damage and no other bonus. Space Wolves Battleships and the Hrafnkel only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. Wolf Guard: &lt;b&gt;+1&lt;/b&gt; to its Boarding rolls, and whenever an enemy ship attempts to Break Away from a Boarding action involving Varagyr Terminators it rolls &lt;b&gt;2D6 and uses the lowest&lt;/b&gt; result. Space Wolves Battleships and the Hrafnkel only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9483,7 +9540,7 @@
             <categoryLink id="ae0b8383-443e-53c1-a4a9-0c8c6e9722c5" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
            </costs>
           </selectionEntry>
           <selectionEntry id="2129e5aa-83fc-5659-a896-7b39e1e1f893" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -9501,7 +9558,7 @@
             <categoryLink id="22a028c2-8ac3-5f99-8efa-89dc4b297633" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
            </categoryLinks>
            <costs>
-            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
            </costs>
           </selectionEntry>
          </selectionEntries>
@@ -9515,7 +9572,7 @@
     </selectionEntryGroup>
     <selectionEntryGroup name="Crew Upgrade" id="095935dd-21ff-5b54-b76e-c1e0cd43262b" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="3c7a6771-c026-520c-803e-6f562e3d02c9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="3c7a6771-c026-520c-803e-6f562e3d02c9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="8cf26821-b51d-5f70-9bbd-9c2ee8d4b372" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -9533,7 +9590,22 @@
         <categoryLink id="7e385691-ad5c-503e-a668-f2a5c21b31d2" name="Upgrade" hidden="false" targetId="7610de76-9ef1-58ab-9c7b-f97ede66e61d" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="100.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="6646730e-b19a-5722-a6f0-2e141e6a2fe1" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="4185ca6c-c9f0-52bc-b940-905ccf1b9165" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="db15eeba-dbb8-58f4-a5bb-f4d07278eb7c" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -9543,24 +9615,6 @@
       <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="1691cf1b-5c75-558e-bbab-c11896b4b9dc" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="40d43b7a-23ec-5168-bdf8-73f5ed03225a" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="419d7e86-0480-58e6-8cc0-5cc31110aab8" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="75a5a292-4262-57c2-b068-38364d782818" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="1bca78ea-cabd-5bfb-9277-6274cfc95b63" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="0010113f-b92e-530d-82ba-9c86dc0c4d83" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="8.0" field="selections" scope="parent" shared="false" id="c1e65428-32ad-5599-8f4f-1ec464ed45bb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -9568,7 +9622,7 @@
        <profiles>
         <profile id="bfeca2d4-6117-5dce-b2bf-35beaaf48e9b" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9587,7 +9641,7 @@
        <profiles>
         <profile id="b873f6c2-5771-5a09-bf57-bc42432323c8" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9606,7 +9660,7 @@
        <profiles>
         <profile id="c25afde0-3cbd-5520-b647-b98e0cd3df96" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9624,7 +9678,7 @@
        <profiles>
         <profile id="8c6c855b-d616-574f-b699-915991198b39" name="Varagyr Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. Wolf Guard: whenever an enemy ship attempts to Break Away from a Boarding action involving Varagyr Terminators, it rolls &lt;b&gt;2D6 and uses the lowest&lt;/b&gt; result. They gain no Boarding modifier, no additional Crew damage and no other bonus. Space Wolves Battleships and the Hrafnkel only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. Wolf Guard: &lt;b&gt;+1&lt;/b&gt; to its Boarding rolls, and whenever an enemy ship attempts to Break Away from a Boarding action involving Varagyr Terminators it rolls &lt;b&gt;2D6 and uses the lowest&lt;/b&gt; result. Space Wolves Battleships and the Hrafnkel only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9721,7 +9775,7 @@
     </selectionEntryGroup>
    </selectionEntryGroups>
    <costs>
-    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="470.0" />
+    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="410.0" />
    </costs>
   </selectionEntry>
   <selectionEntry id="16d468e5-2fb7-5e3f-a786-a06a8fb8d5b9" name="Gloriana - Hrafnkel" hidden="false" collective="false" import="true" type="unit">
@@ -9833,6 +9887,11 @@
       <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Hrafnkel has +1 Prow Armour, already included in her AV 15 Prow.</characteristic>
      </characteristics>
     </profile>
+    <profile id="6fa901e3-90a3-5a7c-aa6f-f2da48970c91" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Every Crew point aboard, and every Boarding Party carried, counts as Legiones Astartes (+1), free; eligible for Astartes boarding upgrades.</characteristic>
+     </characteristics>
+    </profile>
    </profiles>
    <infoLinks>
     <infoLink id="0b2b41b4-e7a5-5590-a4ab-95361bc9ac79" name="Void Shields" hidden="false" type="rule" targetId="770afd1f-4a8d-537a-8e05-7698eb2f9ed2" />
@@ -9845,7 +9904,7 @@
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="9ac9211b-c116-5759-bf2d-572549cc4007" hidden="false" collective="false" import="true">
      <constraints>
-      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="6db54434-2d2a-575f-9349-752805ddb9eb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="6db54434-2d2a-575f-9349-752805ddb9eb" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
       <selectionEntry id="f9c48152-d217-5134-a6b3-89aed1a77e26" name="Veteran Crew" hidden="false" collective="false" import="true" type="upgrade">
@@ -9863,7 +9922,7 @@
         <categoryLink id="0a7e24ef-d747-506a-861c-7536cadcd54b" name="Upgrade" hidden="false" targetId="7610de76-9ef1-58ab-9c7b-f97ede66e61d" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="190.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="215.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10034,7 +10093,7 @@
         </profile>
         <profile id="0befdcf6-2543-564e-a629-a70388ba4fd6" name="Assault Ram" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Crew of boarders rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Boarding Parties rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10083,7 +10142,7 @@
         <categoryLink id="ac9ee58f-b3d8-4cd2-8ecc-1985d11b6cdf" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="1014b1c1-96e5-418e-ba35-729e84497d3d" name="Bjorn the Fell-Handed" hidden="false" collective="false" import="true" type="upgrade">
@@ -10101,7 +10160,7 @@
         <categoryLink id="7bc83d1f-8e34-48a6-b586-f8d5ded572ea" name="Commander" hidden="false" targetId="6f3339ad-23a9-5687-b08f-3f11a43fe50b" primary="true" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="e64882ce-081e-4d81-aba3-77bc061ac521" name="Leman Russ" hidden="false" collective="false" import="true" type="upgrade">
@@ -10120,7 +10179,7 @@
         <categoryLink id="7d5b6732-9925-4afe-954c-7ee538e57522" name="Primarch" hidden="false" targetId="aa8f9cca-79d6-4483-b466-901fa59a2823" primary="false" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="300.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="275.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10130,24 +10189,6 @@
       <constraint type="max" value="12.0" field="selections" scope="parent" shared="false" id="f07637d1-635d-5d0c-8df4-b7ccc30896d9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
      </constraints>
      <selectionEntries>
-      <selectionEntry id="f9654ca1-ba42-5ef4-81ca-8779933f972f" name="Legiones Astartes Squad" hidden="false" collective="false" import="true" type="upgrade">
-       <constraints>
-        <constraint type="max" value="12.0" field="selections" scope="parent" shared="false" id="b222ef3c-731b-58d4-9446-52c2f385f999" percentValue="false" includeChildSelections="false" includeChildForces="false" />
-       </constraints>
-       <profiles>
-        <profile id="4f4317b7-5a92-55de-9fd0-2f885b6e01d2" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-         <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1 boarding modifier. Eligible Astartes hulls only.</characteristic>
-         </characteristics>
-        </profile>
-       </profiles>
-       <categoryLinks>
-        <categoryLink id="d0d67e29-d5aa-56ff-8796-9b9164c2f5b0" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
-       </categoryLinks>
-       <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="35.0" />
-       </costs>
-      </selectionEntry>
       <selectionEntry id="f51efcc1-2567-5baa-a402-4d0d3894e14c" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
        <constraints>
         <constraint type="max" value="12.0" field="selections" scope="parent" shared="false" id="8f18a054-76d9-51b5-b56d-72ff6d815582" percentValue="false" includeChildSelections="false" includeChildForces="false" />
@@ -10155,7 +10196,7 @@
        <profiles>
         <profile id="2d9abee5-834f-5b4e-953a-3736b3329359" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10174,7 +10215,7 @@
        <profiles>
         <profile id="acae5e0a-7cb6-5b58-b33d-e9664035be1b" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10193,7 +10234,7 @@
        <profiles>
         <profile id="aa728822-7c49-5f35-9138-1cb2c08a8d9d" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Crew; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10211,7 +10252,7 @@
        <profiles>
         <profile id="0a7c7033-fd9d-5f37-90e9-9c55657783f8" name="Varagyr Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Crew point. Wolf Guard: whenever an enemy ship attempts to Break Away from a Boarding action involving Varagyr Terminators, it rolls &lt;b&gt;2D6 and uses the lowest&lt;/b&gt; result. They gain no Boarding modifier, no additional Crew damage and no other bonus. Space Wolves Battleships and the Hrafnkel only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. Wolf Guard: &lt;b&gt;+1&lt;/b&gt; to its Boarding rolls, and whenever an enemy ship attempts to Break Away from a Boarding action involving Varagyr Terminators it rolls &lt;b&gt;2D6 and uses the lowest&lt;/b&gt; result. Space Wolves Battleships and the Hrafnkel only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10256,7 +10297,7 @@
         <categoryLink id="97929278-c98f-4ad9-877e-4b0a7c57acdf" name="Retinue Character" hidden="false" targetId="194a7f31-dced-445a-b273-cca4996c8570" primary="false" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="120.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="155.0" />
        </costs>
       </selectionEntry>
       <selectionEntry id="dd46b880-0b9d-45b9-8df4-eb1b8ce047af" name="Hvarl Red-Blade" hidden="false" collective="false" import="true" type="upgrade">
@@ -10279,7 +10320,7 @@
         <categoryLink id="841e0a35-2c7e-41bf-8dbb-652525facfe3" name="Retinue Character" hidden="false" targetId="194a7f31-dced-445a-b273-cca4996c8570" primary="false" />
        </categoryLinks>
        <costs>
-        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="130.0" />
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
        </costs>
       </selectionEntry>
      </selectionEntries>
@@ -10330,7 +10371,6 @@
     <infoLink id="f1a65368-1b10-57cf-9907-c12a8d6c240d" name="Keyword: Intervention" hidden="false" type="rule" targetId="40e07bd1-c998-5d85-8606-f2edc8a8ba53" />
     <infoLink id="1877ffde-ac3a-5fa4-8b49-58e6a7596866" name="Keyword: Melta Mines" hidden="false" type="rule" targetId="53724fbb-9c1d-536e-a6d9-551c39f36bcf" />
     <infoLink id="e9cfb22c-aa26-5280-bb71-eeedf7a6c4eb" name="Keyword: One Shot" hidden="false" type="rule" targetId="1a32e3f1-d7f0-5438-84b0-1894a56b4f63" />
-    <infoLink id="0b26592f-a3c0-55e9-aaad-6bc9eb721510" name="Keyword: Quad Warp Lance Turret" hidden="false" type="rule" targetId="9a9f5faa-7186-5bdc-ae2c-fccd347364f0" />
     <infoLink id="7c2c5fde-ced8-5728-9c3d-5bcc2136517c" name="Keyword: Reload (X)" hidden="false" type="rule" targetId="a46e50ef-8ede-570d-b475-c0d9d2c54d97" />
     <infoLink id="3b85b80a-9e53-5d74-82a9-52ba34f856ec" name="Keyword: Scout" hidden="false" type="rule" targetId="0e7ca2ca-e842-5d41-9283-7ff6f4a91c6f" />
     <infoLink id="8be02f3d-7253-5812-8129-b97d8eccd5ff" name="Keyword: Screen" hidden="false" type="rule" targetId="ece6c29e-b985-5b05-a686-24be8061af13" />
