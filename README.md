@@ -62,7 +62,7 @@ weapon-by-weapon construction: a Lunar is a Lunar, printed as it was built.
 | Battle Barge – Standard pattern | 260 | 12 | 1 | 13 | 6 | 8″ | 90° | 9 |
 | Battle Barge – Bombardment pattern | 300 | 12 | 1 | 13 | 6 | 8″ | 90° | 9 |
 | Battleship – Oberon-class | 410 | 16 | 2 | 13 | 8 | 6″ | 90° | 8 |
-| Battleship – Retribution-class | 430 | 16 | 2 | 13 | 8 | 6″ | 90° | 8 |
+| Battleship – Retribution-class | 420 | 16 | 2 | 13 | 8 | 6″ | 90° | 8 |
 | Battleship – Emperor-class | 440 | 16 | 2 | 13 | 10 | 6″ | 90° | 8 |
 | Battleship – Victory-class | 470 | 16 | 2 | 13 | 8 | 6″ | 90° | 8 |
 | Battleship – Apocalypse-class | 480 | 16 | 2 | 13 | 8 | 6″ | 90° | 8 |
