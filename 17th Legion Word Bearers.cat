@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f329b4f7-8129-5f70-a3cd-df4aa49c439e" name="17th Legion Word Bearers" revision="77" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="55" library="false">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="f329b4f7-8129-5f70-a3cd-df4aa49c439e" name="17th Legion Word Bearers" revision="80" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="57" library="false">
  <selectionEntries>
   <selectionEntry id="4a44411a-38fe-53f4-ad89-591997e07fd4" name="Destroyer - Cobra-class Squadron" hidden="false" collective="false" import="true" type="unit">
    <constraints>
@@ -1184,12 +1184,12 @@
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">4</characteristic>
      </characteristics>
     </profile>
-    <profile id="8dd42e6a-d812-5036-98ff-f46c3626c01f" name="Torpedo Tube" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="8dd42e6a-d812-5036-98ff-f46c3626c01f" name="Torpedo Tube ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
@@ -1603,7 +1603,7 @@
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 pod/rail</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">18″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail.</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail. A launched pod attaches on a 3+; on a failure it is destroyed with all aboard</characteristic>
      </characteristics>
     </profile>
     <profile id="6481467b-fc30-5a92-8dd1-129e35153f5c" name="Lance Turret ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
@@ -1746,7 +1746,7 @@
        <profiles>
         <profile id="aa91ea02-794a-5357-8019-73406085be9e" name="Caestus Assault Ram" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
          <characteristics>
-          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">4</characteristic>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">The Caestus Assault Ram is a boarding craft, not a gunship: bought into a Launch Bay for 60 pts, Armour 10, Speed 20″. It carries &lt;b&gt;4 Boarding Parties&lt;/b&gt; rather than 1, and its magna-melta bore opens the hull directly — boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. It &lt;b&gt;attaches on a 2+&lt;/b&gt; and may not be fired on by Overwatch on the round it strikes.</characteristic>
           <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">10</characteristic>
           <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
           <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">20″</characteristic>
@@ -1851,7 +1851,7 @@
        <profiles>
         <profile id="8b841d3d-b4f1-5bc5-8015-5ee376658024" name="Dreadclaw Drop Pod" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Boarding Party (+1 in the first round). Removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted. A surviving pod &lt;b&gt;attaches on a 3+&lt;/b&gt;; on a failure it is destroyed with all aboard.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -1902,15 +1902,15 @@
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 pod/rail</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">18″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail.</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail. A launched pod attaches on a 3+; on a failure it is destroyed with all aboard</characteristic>
      </characteristics>
     </profile>
-    <profile id="bb1b6562-da38-50f9-b5d5-e05a0c55480c" name="Torpedo Tube" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="bb1b6562-da38-50f9-b5d5-e05a0c55480c" name="Torpedo Tube ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
@@ -2055,7 +2055,7 @@
        <profiles>
         <profile id="14fc1e64-e3ca-5fef-9ec8-387d63a2d1c8" name="Caestus Assault Ram" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
          <characteristics>
-          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">4</characteristic>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">The Caestus Assault Ram is a boarding craft, not a gunship: bought into a Launch Bay for 60 pts, Armour 10, Speed 20″. It carries &lt;b&gt;4 Boarding Parties&lt;/b&gt; rather than 1, and its magna-melta bore opens the hull directly — boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. It &lt;b&gt;attaches on a 2+&lt;/b&gt; and may not be fired on by Overwatch on the round it strikes.</characteristic>
           <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">10</characteristic>
           <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
           <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">20″</characteristic>
@@ -2160,7 +2160,7 @@
        <profiles>
         <profile id="f0e379fd-e9fb-50fb-baad-568768200661" name="Dreadclaw Drop Pod" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Boarding Party (+1 in the first round). Removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted. A surviving pod &lt;b&gt;attaches on a 3+&lt;/b&gt;; on a failure it is destroyed with all aboard.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -2319,7 +2319,7 @@
        <profiles>
         <profile id="8367555f-bbc5-5468-ad03-a556fb7d76c0" name="Caestus Assault Ram" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
          <characteristics>
-          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">4</characteristic>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">The Caestus Assault Ram is a boarding craft, not a gunship: bought into a Launch Bay for 60 pts, Armour 10, Speed 20″. It carries &lt;b&gt;4 Boarding Parties&lt;/b&gt; rather than 1, and its magna-melta bore opens the hull directly — boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. It &lt;b&gt;attaches on a 2+&lt;/b&gt; and may not be fired on by Overwatch on the round it strikes.</characteristic>
           <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">10</characteristic>
           <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
           <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">20″</characteristic>
@@ -2479,12 +2479,12 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Prow only. Devastating (3)</characteristic>
      </characteristics>
     </profile>
-    <profile id="2e16f55b-f300-5bb3-b00c-9d38d661f5d2" name="Torpedo Tube" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="2e16f55b-f300-5bb3-b00c-9d38d661f5d2" name="Torpedo Tube ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
@@ -2684,12 +2684,12 @@
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">5</characteristic>
      </characteristics>
     </profile>
-    <profile id="d9a375e7-90df-5c52-9e16-ad85a9c32d76" name="Torpedo Tube" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="d9a375e7-90df-5c52-9e16-ad85a9c32d76" name="Torpedo Tube ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
@@ -4364,7 +4364,7 @@
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">7</characteristic>
      </characteristics>
     </profile>
-    <profile id="33855a2e-e165-538d-a428-9c5269cea499" name="Torpedo Tube ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="33855a2e-e165-538d-a428-9c5269cea499" name="Torpedo Tube ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
@@ -4714,7 +4714,7 @@
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">7</characteristic>
      </characteristics>
     </profile>
-    <profile id="6329b425-7cfb-55b7-86c8-fe4c2df87d90" name="Torpedo Tube ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="6329b425-7cfb-55b7-86c8-fe4c2df87d90" name="Torpedo Tube ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
@@ -5072,7 +5072,7 @@
        <profiles>
         <profile id="7fbbd578-9b65-5592-b9bd-23fad8da80cf" name="Caestus Assault Ram" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
          <characteristics>
-          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">4</characteristic>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">The Caestus Assault Ram is a boarding craft, not a gunship: bought into a Launch Bay for 60 pts, Armour 10, Speed 20″. It carries &lt;b&gt;4 Boarding Parties&lt;/b&gt; rather than 1, and its magna-melta bore opens the hull directly — boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. It &lt;b&gt;attaches on a 2+&lt;/b&gt; and may not be fired on by Overwatch on the round it strikes.</characteristic>
           <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">10</characteristic>
           <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
           <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">20″</characteristic>
@@ -5255,12 +5255,12 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Ram weapon — resolved as part of a Ram, at Strength equal to this ship's Prow Armour Value. Devastating (3); Armourbane.</characteristic>
      </characteristics>
     </profile>
-    <profile id="cae42cf3-66e4-5d42-a56f-6f65c322372a" name="Torpedo Tube" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="cae42cf3-66e4-5d42-a56f-6f65c322372a" name="Torpedo Tube ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
@@ -5605,7 +5605,7 @@
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">7</characteristic>
      </characteristics>
     </profile>
-    <profile id="daa316cb-feab-5ecc-8ab8-2d847800cb56" name="Torpedo Tube ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="daa316cb-feab-5ecc-8ab8-2d847800cb56" name="Torpedo Tube ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
@@ -5972,10 +5972,10 @@
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 pod/rail</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">18″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail.</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail. A launched pod attaches on a 3+; on a failure it is destroyed with all aboard</characteristic>
      </characteristics>
     </profile>
-    <profile id="fbbec274-df46-5fca-83e2-bacb744510ef" name="Torpedo Tube ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="fbbec274-df46-5fca-83e2-bacb744510ef" name="Torpedo Tube ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
@@ -6305,7 +6305,7 @@
        <profiles>
         <profile id="b3dca9f7-1cb0-5d86-88fa-da68cad7cd89" name="Dreadclaw Drop Pod" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Boarding Party (+1 in the first round). Removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted. A surviving pod &lt;b&gt;attaches on a 3+&lt;/b&gt;; on a failure it is destroyed with all aboard.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6317,7 +6317,7 @@
        <profiles>
         <profile id="0a38caae-52e0-54c4-9891-52d4775da45f" name="Kharybdis Assault Claw" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. Takes 2 rails and locks automatically — melta cutters breach any hull — delivering 2 Boarding Parties (a Dreadnought filling both places). One Shot: removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. &lt;b&gt;Takes 1 rail&lt;/b&gt;, delivering &lt;b&gt;2 Boarding Parties&lt;/b&gt; (a Dreadnought filling both places). Launched at a target within 18″, striking the same turn. &lt;b&gt;Attaches on a 2+&lt;/b&gt; — its melta cutters breach any hull; on a failure it is destroyed with all aboard. One Shot: removed from play after its run.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6368,7 +6368,7 @@
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 pod/rail</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">18″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail.</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail. A launched pod attaches on a 3+; on a failure it is destroyed with all aboard</characteristic>
      </characteristics>
     </profile>
     <profile id="e4e68e52-1cfb-5569-88a5-26c953719648" name="Lance Turret ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
@@ -6704,7 +6704,7 @@
        <profiles>
         <profile id="e34dfc82-9434-5952-831e-fc078b805237" name="Caestus Assault Ram" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
          <characteristics>
-          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">4</characteristic>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">The Caestus Assault Ram is a boarding craft, not a gunship: bought into a Launch Bay for 60 pts, Armour 10, Speed 20″. It carries &lt;b&gt;4 Boarding Parties&lt;/b&gt; rather than 1, and its magna-melta bore opens the hull directly — boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. It &lt;b&gt;attaches on a 2+&lt;/b&gt; and may not be fired on by Overwatch on the round it strikes.</characteristic>
           <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">10</characteristic>
           <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
           <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">20″</characteristic>
@@ -6862,7 +6862,7 @@
        <profiles>
         <profile id="30fc6979-a42f-5553-9bae-e36957f3ba82" name="Dreadclaw Drop Pod" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Boarding Party (+1 in the first round). Removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted. A surviving pod &lt;b&gt;attaches on a 3+&lt;/b&gt;; on a failure it is destroyed with all aboard.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6874,7 +6874,7 @@
        <profiles>
         <profile id="c5d4a5f5-2235-5552-ba6a-8a4c3a88f644" name="Kharybdis Assault Claw" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. Takes 2 rails and locks automatically — melta cutters breach any hull — delivering 2 Boarding Parties (a Dreadnought filling both places). One Shot: removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. &lt;b&gt;Takes 1 rail&lt;/b&gt;, delivering &lt;b&gt;2 Boarding Parties&lt;/b&gt; (a Dreadnought filling both places). Launched at a target within 18″, striking the same turn. &lt;b&gt;Attaches on a 2+&lt;/b&gt; — its melta cutters breach any hull; on a failure it is destroyed with all aboard. One Shot: removed from play after its run.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6925,15 +6925,15 @@
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 pod/rail</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">18″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail.</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail. A launched pod attaches on a 3+; on a failure it is destroyed with all aboard</characteristic>
      </characteristics>
     </profile>
-    <profile id="c0ea3cd5-d343-5629-a5ee-bdda8feba61b" name="Torpedo Tube" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="c0ea3cd5-d343-5629-a5ee-bdda8feba61b" name="Torpedo Tube ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
-      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
      </characteristics>
@@ -7281,7 +7281,7 @@
        <profiles>
         <profile id="87d4069e-085f-5b6b-af20-e60dc965e0a9" name="Caestus Assault Ram" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
          <characteristics>
-          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">4</characteristic>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">The Caestus Assault Ram is a boarding craft, not a gunship: bought into a Launch Bay for 60 pts, Armour 10, Speed 20″. It carries &lt;b&gt;4 Boarding Parties&lt;/b&gt; rather than 1, and its magna-melta bore opens the hull directly — boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. It &lt;b&gt;attaches on a 2+&lt;/b&gt; and may not be fired on by Overwatch on the round it strikes.</characteristic>
           <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">10</characteristic>
           <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
           <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">20″</characteristic>
@@ -7439,7 +7439,7 @@
        <profiles>
         <profile id="94812b73-1e46-5ff9-9c08-874b847ddfde" name="Dreadclaw Drop Pod" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted; a surviving pod locks on 2+, and on a failure is destroyed with all aboard. Delivers 1 Boarding Party (+1 in the first round). Removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 8, Speed 30″/round. Takes 1 rail. Launched at a target within 18″, striking the same turn. One Shot. Counts as aircraft and may be intercepted. A surviving pod &lt;b&gt;attaches on a 3+&lt;/b&gt;; on a failure it is destroyed with all aboard.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7451,7 +7451,7 @@
        <profiles>
         <profile id="7e8f2019-e407-5d64-997e-4f48a86aaa82" name="Kharybdis Assault Claw" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. Takes 2 rails and locks automatically — melta cutters breach any hull — delivering 2 Boarding Parties (a Dreadnought filling both places). One Shot: removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. &lt;b&gt;Takes 1 rail&lt;/b&gt;, delivering &lt;b&gt;2 Boarding Parties&lt;/b&gt; (a Dreadnought filling both places). Launched at a target within 18″, striking the same turn. &lt;b&gt;Attaches on a 2+&lt;/b&gt; — its melta cutters breach any hull; on a failure it is destroyed with all aboard. One Shot: removed from play after its run.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7495,7 +7495,7 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Prow only. Devastating (3)</characteristic>
      </characteristics>
     </profile>
-    <profile id="cdcf1ff4-26ca-5dd5-b65f-b2627060c019" name="Torpedo Tube ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="cdcf1ff4-26ca-5dd5-b65f-b2627060c019" name="Torpedo Tube ×4" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
@@ -7894,7 +7894,7 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Prow only. Devastating (3)</characteristic>
      </characteristics>
     </profile>
-    <profile id="3cbc91ed-2345-5fe8-ad5a-a2d6e54847cd" name="Torpedo Tube ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="3cbc91ed-2345-5fe8-ad5a-a2d6e54847cd" name="Torpedo Tube ×4" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
@@ -8268,7 +8268,7 @@
        <profiles>
         <profile id="09954c65-e81f-51d5-bbe1-84730b0006c1" name="Caestus Assault Ram" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
          <characteristics>
-          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">4</characteristic>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">The Caestus Assault Ram is a boarding craft, not a gunship: bought into a Launch Bay for 60 pts, Armour 10, Speed 20″. It carries &lt;b&gt;4 Boarding Parties&lt;/b&gt; rather than 1, and its magna-melta bore opens the hull directly — boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. It &lt;b&gt;attaches on a 2+&lt;/b&gt; and may not be fired on by Overwatch on the round it strikes.</characteristic>
           <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">10</characteristic>
           <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
           <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">20″</characteristic>
@@ -8484,7 +8484,7 @@
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Prow only. Devastating (3)</characteristic>
      </characteristics>
     </profile>
-    <profile id="31d864f1-38c5-5649-9ac1-5cd7794b63bf" name="Torpedo Tube ×3" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+    <profile id="31d864f1-38c5-5649-9ac1-5cd7794b63bf" name="Torpedo Tube ×4" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
      <characteristics>
       <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Prow</characteristic>
       <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
@@ -8843,7 +8843,7 @@
        <profiles>
         <profile id="f253f166-f352-5733-aaec-3a5911329ded" name="Caestus Assault Ram" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
          <characteristics>
-          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">4</characteristic>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">The Caestus Assault Ram is a boarding craft, not a gunship: bought into a Launch Bay for 60 pts, Armour 10, Speed 20″. It carries &lt;b&gt;4 Boarding Parties&lt;/b&gt; rather than 1, and its magna-melta bore opens the hull directly — boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. It &lt;b&gt;attaches on a 2+&lt;/b&gt; and may not be fired on by Overwatch on the round it strikes.</characteristic>
           <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">10</characteristic>
           <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
           <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">20″</characteristic>
@@ -9849,7 +9849,7 @@
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 pod/rail</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">18″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail.</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail. A launched pod attaches on a 3+; on a failure it is destroyed with all aboard</characteristic>
      </characteristics>
     </profile>
     <profile id="64fb77d8-5dd9-5522-9372-e80f903ae119" name="Heavy Macro-Cannon Battery ×6" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
@@ -9869,7 +9869,7 @@
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 pod/rail</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">18″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail.</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail. A launched pod attaches on a 3+; on a failure it is destroyed with all aboard</characteristic>
      </characteristics>
     </profile>
     <profile id="a76836fe-c797-5f3a-a80b-d4d9f59d4d8b" name="Launch Bays (6)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -10104,7 +10104,7 @@
        <profiles>
         <profile id="441d95fb-b488-57e4-97cd-71948c0b4ca3" name="Caestus Assault Ram" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
          <characteristics>
-          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">4</characteristic>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">The Caestus Assault Ram is a boarding craft, not a gunship: bought into a Launch Bay for 60 pts, Armour 10, Speed 20″. It carries &lt;b&gt;4 Boarding Parties&lt;/b&gt; rather than 1, and its magna-melta bore opens the hull directly — boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. It &lt;b&gt;attaches on a 2+&lt;/b&gt; and may not be fired on by Overwatch on the round it strikes.</characteristic>
           <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">10</characteristic>
           <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
           <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">20″</characteristic>
@@ -10287,7 +10287,7 @@
        <profiles>
         <profile id="c50ea281-b3d5-51ec-8a7b-ea4e5d6a9adf" name="Kharybdis Assault Claw" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. Takes 2 rails and locks automatically — melta cutters breach any hull — delivering 2 Boarding Parties (a Dreadnought filling both places). One Shot: removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. &lt;b&gt;Takes 1 rail&lt;/b&gt;, delivering &lt;b&gt;2 Boarding Parties&lt;/b&gt; (a Dreadnought filling both places). Launched at a target within 18″, striking the same turn. &lt;b&gt;Attaches on a 2+&lt;/b&gt; — its melta cutters breach any hull; on a failure it is destroyed with all aboard. One Shot: removed from play after its run.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10423,7 +10423,7 @@
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 pod/rail</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">18″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail.</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail. A launched pod attaches on a 3+; on a failure it is destroyed with all aboard</characteristic>
      </characteristics>
     </profile>
     <profile id="8069a8fc-c7ef-55a1-8ac1-31d9823a1ef5" name="Heavy Macro-Cannon Battery ×10" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
@@ -10443,7 +10443,7 @@
       <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 pod/rail</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">18″</characteristic>
-      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail.</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One pod per rail. A launched pod attaches on a 3+; on a failure it is destroyed with all aboard</characteristic>
      </characteristics>
     </profile>
     <profile id="521b3d6c-ef0d-5cc4-b5ed-c95659e6c516" name="Launch Bays (10)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -10673,7 +10673,7 @@
        <profiles>
         <profile id="3d8ef50b-75ae-5ca2-af13-920849bf5228" name="Caestus Assault Ram" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
          <characteristics>
-          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">4</characteristic>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">The Caestus Assault Ram is a boarding craft, not a gunship: bought into a Launch Bay for 60 pts, Armour 10, Speed 20″. It carries &lt;b&gt;4 Boarding Parties&lt;/b&gt; rather than 1, and its magna-melta bore opens the hull directly — boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. It &lt;b&gt;attaches on a 2+&lt;/b&gt; and may not be fired on by Overwatch on the round it strikes.</characteristic>
           <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">10</characteristic>
           <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
           <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">20″</characteristic>
@@ -10837,7 +10837,7 @@
        <profiles>
         <profile id="bdc95803-64bc-5b41-92f5-bc27b67ca093" name="Kharybdis Assault Claw" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. Takes 2 rails and locks automatically — melta cutters breach any hull — delivering 2 Boarding Parties (a Dreadnought filling both places). One Shot: removed from play after its run.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Boarding pod, Armour 9, Speed 30″/round. &lt;b&gt;Takes 1 rail&lt;/b&gt;, delivering &lt;b&gt;2 Boarding Parties&lt;/b&gt; (a Dreadnought filling both places). Launched at a target within 18″, striking the same turn. &lt;b&gt;Attaches on a 2+&lt;/b&gt; — its melta cutters breach any hull; on a failure it is destroyed with all aboard. One Shot: removed from play after its run.</characteristic>
          </characteristics>
         </profile>
        </profiles>
