@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2d83fc75-51eb-5e7a-92bc-9e7c06d6ffd5" name="4th Legion Iron Warriors" revision="100" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="67" library="false">
+<catalogue xmlns="http://www.battlescribe.net/schema/catalogueSchema" id="2d83fc75-51eb-5e7a-92bc-9e7c06d6ffd5" name="4th Legion Iron Warriors" revision="110" battleScribeVersion="2.03" gameSystemId="86405571-5289-597b-b308-a9a2d68c00b9" gameSystemRevision="74" library="false">
  <selectionEntries>
   <selectionEntry id="e0dfc01a-2d47-562a-b927-033905e7845f" name="Destroyer - Cobra-class Squadron" hidden="false" collective="false" import="true" type="unit">
    <constraints>
@@ -17,7 +17,7 @@
      <profiles>
       <profile id="c50ef45e-2267-51bc-a752-d248f100d42f" name="Destroyer - Cobra-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
        <characteristics>
-        <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+        <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
         <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">11</characteristic>
         <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">10</characteristic>
         <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">9</characteristic>
@@ -92,9 +92,15 @@
       <infoLink id="210d133f-42d7-53fd-95b3-675961d8b619" name="Keyword: Scout" hidden="false" type="rule" targetId="0e7ca2ca-e842-5d41-9283-7ff6f4a91c6f" />
       <infoLink id="d32d075b-ba2f-5d0c-9a3d-3c66fa5b3d11" name="Torpedo Specialist" hidden="false" type="rule" targetId="e53681bd-6055-58a6-9f45-c5d227450411" />
       <infoLink id="f0c41622-9f8d-53ef-955d-8f4f7960907c" name="Keyword: Squadron" hidden="false" type="rule" targetId="a4e9ca53-b7b7-5495-8ea0-8617a07b917e" />
+      <infoLink id="102cc3ec-4291-54fb-ae0e-3e50fbccc219" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+      <infoLink id="20b086ed-7e90-5489-b24d-0e99c1880235" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+      <infoLink id="3626d473-9c86-5797-979a-21a13b647402" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+      <infoLink id="1c44717d-e1a6-5f7f-b0fa-605e63f1e9b2" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+      <infoLink id="9ec979c7-baa0-5710-9238-97994c9f343a" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
      </infoLinks>
      <categoryLinks>
       <categoryLink id="af6f6cea-a9e1-5f23-bf09-aa310f439777" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+      <categoryLink id="3e5bdb0d-ea99-540e-918e-032b45089f8d" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
      </categoryLinks>
      <selectionEntryGroups>
       <selectionEntryGroup name="Crew Upgrade" id="0b98f4c5-48ca-5ddf-a021-c5377d65e546" hidden="false" collective="false" import="true">
@@ -109,7 +115,7 @@
          <profiles>
           <profile id="a9975b93-b78d-5a0c-99ef-0217eb2e4563" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
            <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
            </characteristics>
           </profile>
          </profiles>
@@ -205,7 +211,7 @@
        <profiles>
         <profile id="2501ec07-ee7e-52d3-b6bc-8fb502d04a34" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. On a Triple Lance Turret ship the weapon's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. The Triple Lance Turret's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -251,7 +257,7 @@
      <profiles>
       <profile id="711102c2-27a5-567c-b063-6625b085c7d5" name="Destroyer - Viper-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
        <characteristics>
-        <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+        <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
         <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">11</characteristic>
         <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">10</characteristic>
         <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">9</characteristic>
@@ -316,9 +322,15 @@
       <infoLink id="43f8315c-0985-5c60-8d29-bd89dc4b64c7" name="Keyword: Scout" hidden="false" type="rule" targetId="0e7ca2ca-e842-5d41-9283-7ff6f4a91c6f" />
       <infoLink id="e54dc410-8d56-50ec-b267-b3e982986789" name="Torpedo Specialist" hidden="false" type="rule" targetId="e53681bd-6055-58a6-9f45-c5d227450411" />
       <infoLink id="1fa78d40-74ce-5d97-9863-718710e7cad1" name="Keyword: Squadron" hidden="false" type="rule" targetId="a4e9ca53-b7b7-5495-8ea0-8617a07b917e" />
+      <infoLink id="2dd6f2a6-b74a-5037-a305-e36ffb1efaef" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+      <infoLink id="379fa934-44a6-595c-9185-deefab015469" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+      <infoLink id="ad9de32e-45db-58df-8824-94b4d0d8e736" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+      <infoLink id="8657d187-2ab1-5f57-900d-cfd7cd274ef9" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+      <infoLink id="6c480093-dace-51f8-af83-849c5cc8ad4a" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
      </infoLinks>
      <categoryLinks>
       <categoryLink id="15fd02e2-93c2-5c30-870f-3085be9bd221" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+      <categoryLink id="a6fa6bd8-8c54-5622-aa16-2a201ed545bb" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
      </categoryLinks>
      <selectionEntryGroups>
       <selectionEntryGroup name="Crew Upgrade" id="4abdd752-add5-5018-acef-98adf8e09c59" hidden="false" collective="false" import="true">
@@ -333,7 +345,7 @@
          <profiles>
           <profile id="da451170-500c-5b17-819b-1ea8ca2b3330" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
            <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
            </characteristics>
           </profile>
          </profiles>
@@ -429,7 +441,7 @@
        <profiles>
         <profile id="a8e7c5f7-adee-5074-ae25-d6d32f6e09f7" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. On a Triple Lance Turret ship the weapon's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. The Triple Lance Turret's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -475,7 +487,7 @@
      <profiles>
       <profile id="f0aefca2-492a-51eb-a4ee-5b1775297b87" name="Frigate - Falchion-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
        <characteristics>
-        <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+        <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
         <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">11</characteristic>
         <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">10</characteristic>
         <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">9</characteristic>
@@ -558,9 +570,15 @@
       <infoLink id="3f449ef6-e3cb-5f3c-9beb-1a3b8ef93e31" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
       <infoLink id="55bff560-c937-530b-838c-1ff4c97b683f" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
       <infoLink id="ca3fdb72-f63e-5842-aa1a-358af41ecfdc" name="Keyword: Squadron" hidden="false" type="rule" targetId="a4e9ca53-b7b7-5495-8ea0-8617a07b917e" />
+      <infoLink id="8d772e27-e3ec-563f-8a45-92f4b75f1ac8" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+      <infoLink id="b52287cb-8db6-508e-b19f-19cbec08d607" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+      <infoLink id="219586f9-b0c8-5dab-ba75-3d89c71a172f" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+      <infoLink id="6c8d2264-77c2-5381-b69c-ee0cace3f29f" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+      <infoLink id="b79fb848-af98-554e-b2a8-04f77734c2f0" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
      </infoLinks>
      <categoryLinks>
       <categoryLink id="fb2dc17f-c487-5f39-aeec-589a4bf2e413" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+      <categoryLink id="b70b4c80-d15c-5434-8a4b-3c5fe38fb0b9" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
      </categoryLinks>
      <selectionEntryGroups>
       <selectionEntryGroup name="Crew Upgrade" id="3c0cac6f-5ff2-5677-a40e-eea3e10a0402" hidden="false" collective="false" import="true">
@@ -575,7 +593,7 @@
          <profiles>
           <profile id="353d359b-679c-5595-a7b0-77bce257e381" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
            <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
            </characteristics>
           </profile>
          </profiles>
@@ -671,7 +689,7 @@
        <profiles>
         <profile id="90ae3cc7-bde9-5ef2-82e2-15b12ca8cf12" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. On a Triple Lance Turret ship the weapon's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. The Triple Lance Turret's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -717,7 +735,7 @@
      <profiles>
       <profile id="3e5ba47b-2f1b-549c-a1ce-64ba74ac09cc" name="Frigate - Firestorm-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
        <characteristics>
-        <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+        <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
         <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">11</characteristic>
         <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">10</characteristic>
         <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">9</characteristic>
@@ -790,9 +808,15 @@
       <infoLink id="dda630c1-6c07-53e4-acc7-f8177d9823a7" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
       <infoLink id="1a13475f-4d5a-5c5b-afaf-5b89d794565e" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
       <infoLink id="544a8092-9ac3-56ce-b4d0-e15dc57d9534" name="Keyword: Squadron" hidden="false" type="rule" targetId="a4e9ca53-b7b7-5495-8ea0-8617a07b917e" />
+      <infoLink id="eed50519-b8a5-55e8-abd1-b1592372c714" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+      <infoLink id="51370275-4f23-5b1d-9902-006871dd627f" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+      <infoLink id="59192929-ed49-513b-a01d-dfc2b14e5c7d" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+      <infoLink id="45e43f97-2760-5ca9-bf8c-72467d473d34" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+      <infoLink id="12bdb619-fb3d-577f-8fcd-82bcc1bdffff" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
      </infoLinks>
      <categoryLinks>
       <categoryLink id="eb6e42e3-f770-5bbb-bdee-09eb63115a7f" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+      <categoryLink id="e016d28d-94ab-5060-8f0e-f7a979ce06d0" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
      </categoryLinks>
      <selectionEntryGroups>
       <selectionEntryGroup name="Crew Upgrade" id="5063ae09-9323-5290-84d4-5d5b4f2576da" hidden="false" collective="false" import="true">
@@ -807,7 +831,7 @@
          <profiles>
           <profile id="7e03fac9-5a31-5fc3-a70b-4196869f01fe" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
            <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
            </characteristics>
           </profile>
          </profiles>
@@ -903,7 +927,7 @@
        <profiles>
         <profile id="75d72edb-170c-543f-869f-823e6381b2b4" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. On a Triple Lance Turret ship the weapon's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. The Triple Lance Turret's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -949,7 +973,7 @@
      <profiles>
       <profile id="ed9f47b0-77a5-52bb-ad71-e11b1f525ee6" name="Frigate - Sword-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
        <characteristics>
-        <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+        <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
         <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">11</characteristic>
         <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">10</characteristic>
         <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">9</characteristic>
@@ -1022,9 +1046,15 @@
       <infoLink id="b697c31f-b5d7-5b62-91fb-0a08281dbdd1" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
       <infoLink id="116347f7-d579-53d1-b0d6-3e4c2e9f768a" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
       <infoLink id="3e9a51d5-e331-5991-b25a-c62822034780" name="Keyword: Squadron" hidden="false" type="rule" targetId="a4e9ca53-b7b7-5495-8ea0-8617a07b917e" />
+      <infoLink id="4e6162a4-fee2-5056-a235-18f9d0229cd4" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+      <infoLink id="599f9cfc-c613-58d9-8912-edf4814faac6" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+      <infoLink id="6d2bf2ff-b5ae-5c7b-a7b9-3e926a64198e" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+      <infoLink id="c4adacc1-c931-5aaf-8a52-a2bed5e7a9f4" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+      <infoLink id="5d6e7b83-dc57-59db-b8ed-b505d3f150b1" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
      </infoLinks>
      <categoryLinks>
       <categoryLink id="7c65be05-04b5-5ced-8c5d-8225fac48e82" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+      <categoryLink id="ec803ad7-246d-5478-b3bc-13407ed3673f" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
      </categoryLinks>
      <selectionEntryGroups>
       <selectionEntryGroup name="Crew Upgrade" id="57c30717-a4e8-5686-88cc-248c162ca01e" hidden="false" collective="false" import="true">
@@ -1039,7 +1069,7 @@
          <profiles>
           <profile id="b0d1b381-a939-50b9-b95d-8c4339c52146" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
            <characteristics>
-            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+            <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
            </characteristics>
           </profile>
          </profiles>
@@ -1135,7 +1165,7 @@
        <profiles>
         <profile id="905fe452-78c7-5f0d-88c2-2573e48938e6" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. On a Triple Lance Turret ship the weapon's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. The Triple Lance Turret's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -1172,7 +1202,7 @@
    <profiles>
     <profile id="da4ca926-bc04-59b8-aff3-23f2592ed5a0" name="Light Cruiser - Dauntless-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">10</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
@@ -1254,9 +1284,15 @@
     <infoLink id="cf181de0-c388-517b-867b-43c56c8ae758" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="c5ce402a-c9a4-574f-bf60-93b244c706ca" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
     <infoLink id="5f8866cb-adc3-5318-a531-1a6e4207123d" name="Independent Warship" hidden="false" type="rule" targetId="453c43bc-dcd6-5f6e-b2e0-4be80234e30c" />
+    <infoLink id="4dac8525-eff8-5edc-9a70-dcd62192a561" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="beaab671-b2cd-537b-ba5e-20e443b1c8d3" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="744d0005-aca1-5034-a138-6379a0bffa31" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="5b0348b1-b84e-52c3-943f-5765c9b45579" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="6ad5b4ad-21d3-5361-86d7-7c0ca4b495e2" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="8ed449f1-41ef-5419-8c2b-61fe8b2b6f6a" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+    <categoryLink id="eb5deca4-7b45-5a64-9682-aa76ebac9bbf" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
    </categoryLinks>
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="ba3a55bf-7266-55dc-b668-4d164161d2aa" hidden="false" collective="false" import="true">
@@ -1271,7 +1307,7 @@
        <profiles>
         <profile id="2201723e-a35e-56b9-881e-1beefaf31ebd" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -1378,7 +1414,7 @@
    <profiles>
     <profile id="be3ef36e-f3aa-57e2-be95-2b99ef4acb47" name="Light Cruiser - Endeavour-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">10</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
@@ -1450,9 +1486,15 @@
     <infoLink id="f9adbfc6-a204-58aa-813a-fed69a44e19d" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="25483d52-4dbf-5881-89dc-fd56e32bd6f5" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
     <infoLink id="a7c3929e-9b94-58cf-9d0c-46d98fea28e2" name="Independent Warship" hidden="false" type="rule" targetId="453c43bc-dcd6-5f6e-b2e0-4be80234e30c" />
+    <infoLink id="73d34824-b4ae-52af-b275-ca488870cc1f" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="871f0512-4922-5a62-81b4-1b036fd9020a" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="8a86fc2b-b8d6-5253-81cc-daf50b31e765" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="75c8c0f7-b940-54b7-9845-27a5d7490af4" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="d0dd6d33-d3c4-53ce-a8f1-9aac114884e4" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="5d7bd459-30ef-5a27-8bd3-17aa52157b59" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+    <categoryLink id="92a4cd86-480f-5e18-969e-b3fcb94f5da9" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
    </categoryLinks>
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="5fe29169-c076-5d68-bfa6-cc3336e4890d" hidden="false" collective="false" import="true">
@@ -1467,7 +1509,7 @@
        <profiles>
         <profile id="fd9b1076-1c40-5dfd-a48f-e30374d594d4" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -1574,7 +1616,7 @@
    <profiles>
     <profile id="bdcbcb9c-b250-5cd4-b9dc-b0e631978adb" name="Strike Cruiser - Nova pattern" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
@@ -1670,9 +1712,15 @@
     <infoLink id="cb70faf9-2901-539b-8790-489e5927fd3d" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="e5969ad6-e2ee-5511-a871-cbdc1b95a8c7" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="4148da1e-e1e7-5142-83d6-6cbaeec00cd1" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="3cdeb4f8-c92b-50ec-8000-33529dd9b455" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="540b1840-3fd1-57f6-b544-c89c8372ab09" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="0a2b03fc-5fb9-57c6-bedd-3e31433e7ae0" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="45ef2bc3-66f9-5ff5-9983-1aaf428cc3a5" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="3418e240-7d83-56f4-9cd8-5477a5627021" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="6aadf838-a354-5941-a418-deef5312df79" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+    <categoryLink id="e011b300-73ea-5095-8373-f8d16983de07" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
    </categoryLinks>
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="3e9d33b7-a23d-507d-9fde-53289fb54251" hidden="false" collective="false" import="true">
@@ -1687,7 +1735,7 @@
        <profiles>
         <profile id="4771ab6b-f12b-5f49-a0ab-a66e456ace46" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -1873,7 +1921,7 @@
    <profiles>
     <profile id="db0fb83f-453e-56cc-8ce5-73ac0cc537fd" name="Strike Cruiser - Vanguard pattern" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
@@ -1979,9 +2027,15 @@
     <infoLink id="c0f4eb62-b71f-550b-a4e9-454cc42657e9" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="2d53fac7-9a32-5830-a912-38f0cab710f2" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="cb8653a2-c811-5816-afe5-617a1d3e0a7e" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="d6fc1c29-8e44-5310-a275-833def1bf305" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="12156c45-ccd1-5674-81d8-20e689eefe16" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="9ed8fed1-388c-5f96-a9d9-6e89dc9d4b96" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="6447c98e-27ba-56a4-9067-50ba9bdb98cd" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="d808de1c-338a-5b13-add9-3fbefd657555" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="477408f4-c0bd-5d10-90e3-adf3f7487a49" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+    <categoryLink id="7a56c7f2-26d4-591a-b179-286cc788a460" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
    </categoryLinks>
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="b0782d6f-7f66-5f3e-9d83-062bd81eb22d" hidden="false" collective="false" import="true">
@@ -1996,7 +2050,7 @@
        <profiles>
         <profile id="4f9760c5-abc6-512b-90d4-a54d09c558c6" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -2182,7 +2236,7 @@
    <profiles>
     <profile id="8956ee5e-79ca-51cb-a442-fd0e23749187" name="Cruiser - Dictator-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
@@ -2268,9 +2322,15 @@
     <infoLink id="824e8c28-f05b-5f54-bd22-93ca520d89b3" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="9ca76e75-3313-57e0-a14e-101860df40e5" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="a5a3259e-fde1-5bc1-a3a3-b65965534bf3" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="0b2bad57-7c77-5751-b66e-c82d945a8eb0" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="b8da1583-fb71-50b9-9781-a642d25990dc" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="cba5e2ad-9bfb-55b0-84b8-d44be6e3a32c" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="14baf27c-fdbf-575b-9dd8-0df8b960d1f6" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="ad1b1eda-8ec8-5c00-adca-afe2ce6cefd4" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="469fb39f-2064-5b42-aacf-3296a532eac6" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+    <categoryLink id="798a5561-29d2-5582-9e8a-26368ddfb3b3" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
    </categoryLinks>
    <selectionEntryGroups>
     <selectionEntryGroup name="Launch Bay Loadout" id="29f9e45b-c4c9-56bd-a7dd-538c5f490a64" hidden="false" collective="false" import="true">
@@ -2350,7 +2410,7 @@
        <profiles>
         <profile id="2caf3bc3-d86e-52fe-ba2f-c68ca5fd9ab0" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -2457,7 +2517,7 @@
    <profiles>
     <profile id="53099c85-47de-5005-8676-1f811ab218fc" name="Cruiser - Dominator-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
@@ -2526,7 +2586,7 @@
     </profile>
     <profile id="be4f0e20-c76d-5aeb-9cb9-952866ae85e4" name="Firing Position" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
-      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Pattern: Dominator-class. Firing Position: if this ship does not move during the Movement step, it gains &lt;b&gt;+1 BS&lt;/b&gt; for that battle round. No ship exceeds BS 5.</characteristic>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Pattern: Dominator-class. Firing Position: if this ship does not move during the Movement step, it gains &lt;b&gt;+1 BS&lt;/b&gt; for that battle round. No ship improves beyond BS 2.</characteristic>
      </characteristics>
     </profile>
     <profile id="e80d9a66-b444-52fe-9904-ca0f199412fb" name="Defence Batteries (4)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -2548,9 +2608,15 @@
     <infoLink id="b651dcf1-eb55-5306-b637-5326bc7e5a4c" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="ad9c1fa5-08b5-582f-96d1-138156baf121" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="0db8d2a9-2b23-54ef-9c2e-0c4a770f6f05" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="0e961a22-02d8-5a47-a156-5b23d5c8f4a1" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="91163cff-4863-5175-b078-e5d17257fa17" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="90483cad-d26a-5417-aa16-aa2195b99c48" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="ec938602-bf25-542b-a10f-bd8a6dde27ed" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="be79d7db-debf-5d92-851b-56f73975c1a9" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="0be6712c-6f08-56fd-ada6-302b562c69e4" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+    <categoryLink id="91ffdb36-126c-503e-8efb-06f706a27d14" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
    </categoryLinks>
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="8eb1b2bd-556e-505d-818f-99c571699b6c" hidden="false" collective="false" import="true">
@@ -2565,7 +2631,7 @@
        <profiles>
         <profile id="2431ddee-7a03-53ff-92ba-c6a79a9270df" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -2672,7 +2738,7 @@
    <profiles>
     <profile id="a42f03ba-fe72-5a8c-b759-9aa221d858f7" name="Cruiser - Gothic-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
@@ -2753,9 +2819,15 @@
     <infoLink id="4730bd46-c8ab-5031-b89c-1a369c3c5dfb" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="98336a9c-d2ad-5593-b439-d10f95ff3207" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="22cf9485-57d8-54f6-830b-f1dafbfdcf8c" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="4a5c42d8-f99e-53b4-a24c-01fb44b94037" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="7a6381b1-1739-5299-a88b-76d3c989649c" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="483ab2e3-8efd-5b6f-868f-27d8310ae198" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="4ebdefe8-2834-5ed4-950b-085d571afa6a" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="b16b6509-bd26-5ca3-954b-3e45146f9424" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="61f73121-a7a3-5b07-b409-eab65281922d" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+    <categoryLink id="e3a81f80-a601-504d-802e-36b8173668de" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
    </categoryLinks>
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="97f44573-1851-5d01-a385-9fcc99b9bc1c" hidden="false" collective="false" import="true">
@@ -2770,7 +2842,7 @@
        <profiles>
         <profile id="7f43e716-968e-51ef-bcc7-7a947ef87bd5" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -2877,7 +2949,7 @@
    <profiles>
     <profile id="149b463e-9982-50ec-9618-b921a8002b1d" name="Cruiser - Lunar-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
@@ -2958,9 +3030,15 @@
     <infoLink id="bd477659-4d8b-5d97-b8fd-05d04c5c8b36" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="6d31ca89-2d8e-50f3-ad2b-ca5233fd9978" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="30d0cc87-2b5a-5479-ae04-91809133cdc1" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="6df81a28-6eeb-5689-8220-30ada287a43a" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="c8590948-022b-508c-8005-0048908bfb2a" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="dcaf13a6-7836-5b36-8956-842b54998715" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="60823856-705c-5bb2-9bfd-030ac7983451" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="de254a14-27af-5275-97a1-a287f722663b" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="b14abcf2-ae71-5e17-8bf3-98b20e24a927" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+    <categoryLink id="22f25d43-ca02-53f3-8830-e716e027773c" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
    </categoryLinks>
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="fec454d1-81c8-5854-a2d0-f4ef77787d4e" hidden="false" collective="false" import="true">
@@ -2975,7 +3053,7 @@
        <profiles>
         <profile id="b3156381-f59b-5ff7-9ffd-432d0fde3c11" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -3082,7 +3160,7 @@
    <profiles>
     <profile id="7006ef20-fe74-5c49-8271-22d3e99abb4b" name="Cruiser - Tyrant-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">12</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">11</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
@@ -3163,9 +3241,15 @@
     <infoLink id="b0980c5f-5f42-5641-948b-996b4de45cdd" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="e45c4d39-9dc9-580c-804d-9451edc1de2f" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="b66ac387-dae9-5fae-b6d5-b7d663f5c962" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="4afe0eb1-e7dd-5e09-9695-8b04e9d66f9f" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="834e6d79-2ebd-5eba-89bf-2934e415e81b" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="f5ee5078-04b0-5f9c-8017-6b56dd081104" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="15c0d5a6-9a6a-5618-aa9a-2e6c2cea28b3" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="7da9e226-b551-5eda-bccd-f25b8221860c" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="275ec30c-f825-5480-9e88-f8baf34b767f" name="Line" hidden="false" targetId="96572996-e9b1-54a7-a2a9-2108e1dfc993" primary="true" />
+    <categoryLink id="8640a6f7-2287-5d42-b138-a1c8efb859f0" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
    </categoryLinks>
    <selectionEntryGroups>
     <selectionEntryGroup name="Crew Upgrade" id="d357a326-6df3-57c5-b83d-85ade7d3f952" hidden="false" collective="false" import="true">
@@ -3180,7 +3264,7 @@
        <profiles>
         <profile id="6c91a0a4-a7f3-5729-bc66-4976cbc963dc" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -3287,7 +3371,7 @@
    <profiles>
     <profile id="f2afb822-c643-5a66-9542-ce1051215e11" name="Battlecruiser - Armageddon-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
@@ -3368,6 +3452,11 @@
     <infoLink id="ff4cc154-bb60-5dfa-a6dd-e1f745a8dcab" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="3b19fcc4-337b-57db-9b3f-99bfca9408b6" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="a02994b3-56a1-5fbb-b778-6e74f263401b" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="e1b64412-7226-527a-a643-87783b01c068" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="9d1de2ea-6e20-5aa0-b38c-8375a9877ef2" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="e62007b2-3330-55ee-bce9-6fc52d5a8184" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="5f3696b3-dc1f-5a6c-a0b8-e51957aa1311" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="d3843aa9-2b97-5063-bcb4-8ce7b9dde56f" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="ad220098-025d-5007-b89c-913e8b4a2844" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -3467,7 +3556,7 @@
        <profiles>
         <profile id="fb533dcd-2882-5bfc-b63c-fa002fe73a73" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -3593,7 +3682,7 @@
        <profiles>
         <profile id="bf9b567f-6fb9-57ae-96e5-edd3aac509db" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -3637,7 +3726,7 @@
    <profiles>
     <profile id="07fd99bf-370d-546f-9e10-3f3d862fe661" name="Battlecruiser - Mars-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
@@ -3733,6 +3822,11 @@
     <infoLink id="5f2d942b-c257-5c4e-8f67-93249ec8681b" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="b31c4424-4bb3-5372-b0c8-cc56cb3ee215" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="36ffca02-4a55-5bcc-b3b2-12512f9db70d" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="8d21a76b-4583-550b-87fa-0947c76edf25" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="8f9cdfc2-0f4f-55ce-b50e-a8ebf191d2cb" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="1ad9ebe5-52ca-5fb3-bd5a-faaeb579febd" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="16f955ba-b5e0-573e-bf5c-47c3fda8db46" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="d7085aa7-8bdd-59e4-bd59-7f366416a258" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="25f1009a-3dbc-5029-bf49-e539d6aa4962" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -3832,7 +3926,7 @@
        <profiles>
         <profile id="05232f6a-649e-5109-bfca-51be50b6094f" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -3958,7 +4052,7 @@
        <profiles>
         <profile id="49cbce98-6aeb-5472-905c-91f9a76b222c" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -4002,7 +4096,7 @@
    <profiles>
     <profile id="1253cff9-5f83-5979-9cb6-349a589b2c90" name="Battlecruiser - Overlord-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">10</characteristic>
@@ -4061,7 +4155,7 @@
     </profile>
     <profile id="47e74f23-643f-513e-9a6a-30ad61177ae9" name="Fire Superiority" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
      <characteristics>
-      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Pattern: Overlord-class. Fire Superiority: this ship gains &lt;b&gt;+1 BS&lt;/b&gt; when targeting Destroyers or Frigates. No ship exceeds BS 5.</characteristic>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Ship Pattern: Overlord-class. Fire Superiority: this ship gains &lt;b&gt;+1 BS&lt;/b&gt; when targeting Destroyers or Frigates. No ship improves beyond BS 2.</characteristic>
      </characteristics>
     </profile>
     <profile id="08c76c1c-edfc-58d1-acd7-2a4fdd62d31f" name="Defence Batteries (5)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -4083,6 +4177,11 @@
     <infoLink id="ff8bbe65-c7b7-59f3-9140-3d804a695e90" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="e7f0d4aa-610c-507d-a97c-a3fa687bca34" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="73ac94d0-c81b-59ef-a5b6-ebf9e00b8455" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="c838d172-0f00-5853-ac5f-187988eb298b" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="a47e191c-2f7c-51cb-8766-784c1a6a0afd" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="b59628b8-219f-51d0-a25e-9f5003f6c853" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="e1007406-b013-50ec-980a-b283b18f1ff7" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="2eff3c4e-7b91-5c3d-82bb-1604d5fca0a5" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="a53266c9-1489-5bcf-a724-8342e464e910" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -4182,7 +4281,7 @@
        <profiles>
         <profile id="8f60236b-5c59-5652-971b-ce303ef14b5a" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -4308,7 +4407,7 @@
        <profiles>
         <profile id="b3e3ed2c-d20f-5a36-8b41-2e32245919b8" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -4352,7 +4451,7 @@
    <profiles>
     <profile id="fde99355-5d01-5b7d-afb5-0357646f1726" name="Grand Cruiser - Avenger-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">11</characteristic>
@@ -4433,6 +4532,11 @@
     <infoLink id="0e7b768a-229d-5e67-9af9-eb6b63480d1a" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="336227c5-093c-544b-9dca-d85f033a4f6a" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="b77682d4-8644-5eb5-9642-0d53f7b936e3" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="0edfbd55-2468-534e-9097-fa50b11959cf" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="533bf95b-5932-527f-9f4f-4ef61673ef24" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="ed71f0ec-c7f0-564f-84f0-9b3adaff8ae1" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="dec17b39-bcab-5f77-bc86-51bf78ae4065" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="95e8d3b1-8ce6-56e3-b7c5-ec7bee5ff59c" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="0fec0c3d-f0b7-55e2-8bdf-7ab81d329277" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -4532,7 +4636,7 @@
        <profiles>
         <profile id="7fa9b1ec-612c-5f30-9365-e3a6422bbc61" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -4658,7 +4762,7 @@
        <profiles>
         <profile id="d3d17068-802f-5641-9be0-c32a8ecd3de8" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -4702,7 +4806,7 @@
    <profiles>
     <profile id="4c994e68-673e-58c0-adda-a08b6bf35762" name="Grand Cruiser - Exorcist-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">11</characteristic>
@@ -4788,6 +4892,11 @@
     <infoLink id="da050790-a4b1-5daf-8986-3ccd19c58169" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="e7cf8f8a-717e-54ef-a16a-f287b43eb004" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="9b65cfc4-dd2e-516b-aa6e-8550360d951e" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="ff58ea34-08e3-5eb5-85ea-8b0d175f6ba1" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="dab62885-12d2-5750-b25a-e0d26139698e" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="44df08fc-d5be-5560-abb4-6fde626607f0" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="4fac9114-784d-5f17-a52f-2491f2d9678d" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="03546a5b-afed-5b8f-99ac-12d219d472f1" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="90a012e3-fa0f-5b39-93d7-3dc3b5dc3872" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -4887,7 +4996,7 @@
        <profiles>
         <profile id="e05534c2-4450-5d10-b395-0d47c70590b8" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5189,7 +5298,7 @@
        <profiles>
         <profile id="2a9e746e-205a-5eae-ab7e-5d0506e8f3b5" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5233,7 +5342,7 @@
    <profiles>
     <profile id="b251c2cd-cb3c-511b-adeb-bf9294e79e2f" name="Grand Cruiser - Repulsive-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">11</characteristic>
@@ -5324,6 +5433,11 @@
     <infoLink id="d187f385-acf3-5023-afb7-c3f151ede3d7" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="ce5b2139-013a-56a6-b392-84d4d117612d" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="64987395-38ae-5c58-b315-8524c8d7910a" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="c78d6722-da2d-5afb-9ef7-e90a42b12bc8" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="107dcfd9-4d93-51a8-84a2-f29cf9f10da3" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="5f1f5079-ce76-5ae2-8a42-11401db5c7b4" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="cbc138eb-8242-529f-a22b-1437f054b46c" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="b9bfe54e-bd8f-5d42-a6df-f37079b155ea" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="c22e3899-7dbc-53a8-bff9-061b66a80050" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -5423,7 +5537,7 @@
        <profiles>
         <profile id="28f8692e-b725-557f-929b-5df12d5f0a18" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5549,7 +5663,7 @@
        <profiles>
         <profile id="cb8d6ffe-9c97-5d52-934e-d41e6052d41a" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5593,7 +5707,7 @@
    <profiles>
     <profile id="7cf2c070-455d-59d3-ae12-f6aa5cfbe9a6" name="Grand Cruiser - Vengeance-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">11</characteristic>
@@ -5674,6 +5788,11 @@
     <infoLink id="e6d9c2fc-976b-53e6-852a-08f4f5a0cf11" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="4bd40062-8d5b-56e7-aea4-3053a7e6675b" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="d7534fe7-4401-5725-99b7-3c0f8439e253" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="f2208713-29cf-59e5-b9ca-8e64092e4380" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="899aa3df-19e8-55dd-895c-3a300d0faadc" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="8555d467-59cd-5dd6-86c2-f1cc3f0ccf2c" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="2c575cc3-557c-5a17-abe4-188cd9097dc0" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="0231fdbd-4371-5781-ae5b-8db7a3ccef5d" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="cfa6b068-eed9-5515-bdd3-77292c5cf53f" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -5773,7 +5892,7 @@
        <profiles>
         <profile id="bd6015ec-105c-50b4-8d1e-6294acee35f9" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5899,7 +6018,7 @@
        <profiles>
         <profile id="21ddf055-c7d3-5453-8cb1-56594f31fc1e" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -5943,7 +6062,7 @@
    <profiles>
     <profile id="12fbb06b-664a-5deb-a1e5-84fa09a5cd58" name="Battle Barge - Bombardment pattern" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">11</characteristic>
@@ -6054,6 +6173,11 @@
     <infoLink id="b84b2230-f1ec-5198-8130-601f9c438321" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="234589e8-a1aa-5bf1-be05-722acbdc8c98" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="5b2be633-9047-58f7-8858-b8dde849ecd0" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="6aa8ebbd-7cf3-5b5c-ba25-6211aef5c455" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="5ef39ddf-6f79-5cc1-8a01-87756d5b42d1" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="c2eea9ca-d9e3-5d17-9984-868407635d09" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="6858271a-0fa7-53e0-b7c0-e8303005e133" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="db8f8ef6-e5d4-50e2-8d1e-35c025d2f29a" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="9e36f0fd-a05e-57c7-80fb-f8905ab70480" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -6153,7 +6277,7 @@
        <profiles>
         <profile id="a78e62af-26ac-5b12-a931-a2184242e5a0" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6197,7 +6321,7 @@
        <profiles>
         <profile id="be9225d1-e17b-56ce-b6b5-e7392acddfea" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6339,7 +6463,7 @@
    <profiles>
     <profile id="b3160055-ca0b-508a-ac5c-35223bdca542" name="Battle Barge - Invasion pattern" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">11</characteristic>
@@ -6435,6 +6559,11 @@
     <infoLink id="051afeab-d8a8-53f3-b363-432530455588" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="732aad09-e9be-5954-8c22-7ee7c03d41ec" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="93542398-28ab-5bac-9d59-228fec628889" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="03d2ea0b-3928-5808-bde7-42e50e5f68ed" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="a9662c4a-cc75-500d-9e65-33e0dcd05326" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="54835ddb-0ad3-59bf-b1c0-13ddc948e889" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="3a7dc97b-1b35-5d00-80ab-a507ae9a3e7c" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="acf08574-65a1-5a9f-8ee1-b9d2b528ff75" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="e6f6c924-2bf8-5ac0-b424-7d217a0b6eee" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -6534,7 +6663,7 @@
        <profiles>
         <profile id="409d5407-53c3-5742-b409-56ce1f3a2cf5" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6754,7 +6883,7 @@
        <profiles>
         <profile id="e1646fe1-b64a-5eef-9709-d748999e5130" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -6896,7 +7025,7 @@
    <profiles>
     <profile id="0e3527c8-a85c-5460-a0cc-63131c4a317f" name="Battle Barge - Standard pattern" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">12</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">11</characteristic>
@@ -7012,6 +7141,11 @@
     <infoLink id="231015b8-abf6-5dda-8a4f-88f9a821af68" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="67ac7700-a480-595c-b81b-5df1b40b377d" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="40f04a8f-f671-58b7-824e-65bdf5b880aa" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="280922aa-abbd-5644-ad08-4e6e97b2decc" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="37803068-3784-58bc-8952-f70842ff3987" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="b7ac13f2-ebd6-5c83-90fb-d3ea2040a56d" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="5644da9b-171e-507a-9558-b4b4459b95f1" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="5f9355b5-5561-505d-9eed-11e99a82b84a" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="8f9c3d32-4d0c-5263-ab3e-8ae38f08b6be" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -7111,7 +7245,7 @@
        <profiles>
         <profile id="fc5312a7-5704-52b6-b4d7-27a177db52a1" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7331,7 +7465,7 @@
        <profiles>
         <profile id="6f33aae5-cdb8-54ad-873b-7f60569816e3" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7473,7 +7607,7 @@
    <profiles>
     <profile id="5d5f8b2d-a4b6-57b8-ba79-dcfdac58ad24" name="Battleship - Apocalypse-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">14</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">13</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">12</characteristic>
@@ -7564,6 +7698,11 @@
     <infoLink id="c3964182-a257-59d0-a4d3-3be4df45d90c" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="e56993a9-03a7-54c5-9ba0-8ec4d5ee6d66" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="ca4dfa4b-a634-5756-af62-67d75eadb262" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="d8fee5ad-f2ee-5a60-9f7c-309e316c033a" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="51040d6f-aa2a-5b4b-a826-7436b9549686" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="f67345a4-31ec-5489-a18f-5f6b3d70499e" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="2ee078fb-dedd-5a82-a0c6-af7b03ff906e" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="caeee680-43b3-568a-b552-8aa6827ce6c1" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="87c51aa4-08d1-5aef-9da9-85fe18909319" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -7664,7 +7803,7 @@
        <profiles>
         <profile id="ab64706f-770c-5ef4-9ee1-7e3922b8cbc3" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7723,7 +7862,7 @@
        <profiles>
         <profile id="715a2768-a8e6-5fb3-b981-996c1296de26" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7760,7 +7899,7 @@
        <profiles>
         <profile id="89856024-19f9-5298-860c-582557d1b4a2" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Iron Blood only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships, the Iron Blood and the Defence Station only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7830,7 +7969,7 @@
        <profiles>
         <profile id="c42d8a53-869b-5129-9443-987927839804" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. On a Triple Lance Turret ship the weapon's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. The Triple Lance Turret's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -7867,7 +8006,7 @@
    <profiles>
     <profile id="fb88542f-634e-526d-9296-dbb705760e69" name="Battleship - Emperor-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">14</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">13</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">12</characteristic>
@@ -7968,6 +8107,11 @@
     <infoLink id="30561c2f-38e0-5cd0-9aa0-5412594a00a9" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="86a2e815-fccc-5297-82d6-6b15e38c351f" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="c93075d3-9259-5e56-8ebc-63d8b0def411" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="d3de2353-b45f-5189-8ef9-b1da672856a6" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="fbc351fd-22c6-5a94-9758-2503232ec0ec" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="d6290f59-4fd9-53f1-9c32-187d7bc2d738" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="1a7d1461-7874-55df-b13a-d19a6becbda5" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="e3c47c00-77bb-5461-b9b3-e851262d270e" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="2ab34857-90d1-5501-93f1-b335ad7dfd7d" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -8083,7 +8227,7 @@
        <profiles>
         <profile id="346a29e7-2478-55e9-95d0-42cfce8868ed" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8318,7 +8462,7 @@
        <profiles>
         <profile id="07973aa9-e19b-5384-a284-96586759dca7" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8355,7 +8499,7 @@
        <profiles>
         <profile id="6c6636ff-d150-5916-b99c-a92d504b047f" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Iron Blood only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships, the Iron Blood and the Defence Station only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8425,7 +8569,7 @@
        <profiles>
         <profile id="0976fcc4-4a8c-55ed-8b38-6d2753cdd6d9" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. On a Triple Lance Turret ship the weapon's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. The Triple Lance Turret's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8462,7 +8606,7 @@
    <profiles>
     <profile id="a7f0dad5-ecb2-58fb-b616-f13b0e458b94" name="Battleship - Oberon-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">14</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">13</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">12</characteristic>
@@ -8558,6 +8702,11 @@
     <infoLink id="633e9378-efef-5c6d-8759-647b9f72daca" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="1c93dbb9-84c2-5e28-8d65-254ce6ee2930" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="6db5a759-c0d1-5d73-b892-66639750bfcd" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="6da6d822-8855-56c0-bade-ee8ced41d357" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="7f96a612-6d2b-5ee3-a683-c9c0c2147843" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="cd49bf37-bab9-5e53-bec6-406e30b252fe" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="bd6196f9-3e3e-5984-8518-b5c152e66110" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="ace96976-95d5-55fa-b5a6-328e78ef242d" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="e69860bb-45f8-50e9-aba7-24e535b62ccd" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -8658,7 +8807,7 @@
        <profiles>
         <profile id="79afb064-a4c4-56fd-ba63-b398ce28e14b" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8893,7 +9042,7 @@
        <profiles>
         <profile id="89a9a081-2b96-5af9-af5e-57c80447c42a" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -8930,7 +9079,7 @@
        <profiles>
         <profile id="98afbcbe-a098-52fb-bd9f-8e0c5d581761" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Iron Blood only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships, the Iron Blood and the Defence Station only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9022,7 +9171,7 @@
    <profiles>
     <profile id="df5080f5-d714-52c0-ad56-a2ba552cc090" name="Battleship - Retribution-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">15</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">13</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">12</characteristic>
@@ -9103,6 +9252,11 @@
     <infoLink id="69644407-eb32-57f0-90be-62fe686bdb83" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="fa744a2e-0b1e-5d53-b4ba-1d38059a01cb" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="2ea20f62-b177-5f6d-b7eb-47e35ffabbe3" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="708493d9-9264-5816-8c37-410f31078639" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="893fbea1-896c-56f5-8e5e-88f6854f3b1e" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="6406e6a4-8af8-5fab-804f-97f71c070ea5" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="0b51f387-d33f-5b56-8543-9f43dae7dd21" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="3fb71f7f-17cc-5a3d-bb05-d8e47434f803" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="66f90042-0b0e-5445-8fcd-80bb29468e00" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -9203,7 +9357,7 @@
        <profiles>
         <profile id="0a71afbb-5f5d-5efd-a482-8999a72d5d6b" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9262,7 +9416,7 @@
        <profiles>
         <profile id="ee5772fd-08b8-55d6-9d2e-1cd276006b69" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9299,7 +9453,7 @@
        <profiles>
         <profile id="fed6bd00-ff7e-5f3b-bd7f-83cbba868644" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Iron Blood only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships, the Iron Blood and the Defence Station only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9391,7 +9545,7 @@
    <profiles>
     <profile id="c4a82ca2-61a1-5a98-a03f-0a8d62725fa5" name="Battleship - Victory-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">14</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">13</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">12</characteristic>
@@ -9482,6 +9636,11 @@
     <infoLink id="52b7d9e1-ac38-526e-b511-79b2057e59f7" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
     <infoLink id="2376f8be-7c02-5578-aac2-90425b5e124d" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
     <infoLink id="f1ac723c-9ba7-500b-a3a4-1decec8701b5" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
+    <infoLink id="6a98ead6-e8e9-5424-ab81-2b1835e4bfbd" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="12e25ed1-52ec-5233-bc1d-9177c17bd839" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="715b6b71-7996-59be-a35f-9e64785b3765" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="c0871dce-4087-56ed-ab54-2e5873a2d57d" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="855c6e1e-deda-5f87-8fba-5154befe4594" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="1a62b405-fa31-506a-98c6-3654c7f81cb7" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="true" />
@@ -9582,7 +9741,7 @@
        <profiles>
         <profile id="638da3aa-6629-59e7-93d8-1d032945da8b" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9641,7 +9800,7 @@
        <profiles>
         <profile id="740c51b7-d4e1-58d5-8bf0-06a1b5afad01" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9678,7 +9837,7 @@
        <profiles>
         <profile id="c3d9b01d-255c-5717-8821-ea3c75c94595" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Iron Blood only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships, the Iron Blood and the Defence Station only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9748,7 +9907,7 @@
        <profiles>
         <profile id="6528535c-c7f4-5e05-9e83-76e9de291f14" name="Blast-Shielded Magazines" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt; or a &lt;b&gt;Quad Warp Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. On a Triple Lance Turret ship the weapon's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Available only to a ship mounting a &lt;b&gt;Triple Lance Turret&lt;/b&gt;. A Magazine Explosion costs this ship &lt;b&gt;1 less Hull Point and 1 less Crew&lt;/b&gt;, each to a minimum of 0. A Magazine Explosion normally costs &lt;b&gt;2 Hull Points and 2 Crew&lt;/b&gt;; with this upgrade it costs 1 and 1. The Triple Lance Turret's additional Hull Point is still suffered, so the total is 2 Hull Points and 1 Crew. Once per ship.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -9785,7 +9944,7 @@
    <profiles>
     <profile id="e7d4da1c-5070-5b39-b597-0f16864909ad" name="Gloriana - Iron Blood" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
      <characteristics>
-      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">3</characteristic>
       <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">15</characteristic>
       <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">14</characteristic>
       <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">13</characteristic>
@@ -9795,11 +9954,6 @@
       <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">7″</characteristic>
       <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90°</characteristic>
       <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">10</characteristic>
-     </characteristics>
-    </profile>
-    <profile id="429e0b9e-3a1e-5894-8155-198190857315" name="Master of Siege" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
-     <characteristics>
-      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">+2 on Damage Table against Anchorage, Defence Stations, and immobile/Adrift ships. Launch Bays (2).</characteristic>
      </characteristics>
     </profile>
     <profile id="8b0a1697-9457-5017-9d7e-946e1ba225e2" name="Olympia Siege Cannon ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
@@ -9830,6 +9984,11 @@
       <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
       <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
       <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2). Magazine Explosion costs this ship 1 additional Hull Point</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="429e0b9e-3a1e-5894-8155-198190857315" name="Master of Siege" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Whenever the Iron Blood rolls an &lt;b&gt;unmodified 5 or 6&lt;/b&gt; on an Armour Penetration roll, immediately make &lt;b&gt;one additional Armour Penetration roll&lt;/b&gt; against the same target. Additional rolls generated this way cannot themselves generate further rolls.</characteristic>
      </characteristics>
     </profile>
     <profile id="ec4bd984-a913-588c-9faf-db15bfcfbd93" name="Launch Bays (2)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
@@ -9880,6 +10039,11 @@
    </profiles>
    <infoLinks>
     <infoLink id="e14bf59b-9bab-59b3-8d69-4b01c8c9fd57" name="Void Shields" hidden="false" type="rule" targetId="770afd1f-4a8d-537a-8e05-7698eb2f9ed2" />
+    <infoLink id="d600a616-f866-5d97-9a61-85f5791d7ce5" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="22546134-44ee-5939-9c2c-013aa2a2e212" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="f273cb2e-0ce7-52ff-9c3d-5d36cf484b69" name="State: Immobilised" hidden="false" type="rule" targetId="6d4d5a18-1a2c-5915-be2b-7e3ff4fdccca" />
+    <infoLink id="c3155814-1c4c-5bfe-8d5d-a2c05ee93d1a" name="Defence Batteries" hidden="false" type="rule" targetId="fd18b9a4-8b98-55ad-b01d-9e16c40db49a" />
+    <infoLink id="a01c520d-74f3-51ce-a034-8d47e284a43d" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
    </infoLinks>
    <categoryLinks>
     <categoryLink id="2518e134-18d0-5b5e-9803-5801678642f0" name="Capital" hidden="false" targetId="bd422ebf-10b3-5085-89cc-263568c40fe0" primary="false" />
@@ -9899,7 +10063,7 @@
        <profiles>
         <profile id="d7be4068-0b60-531f-b8bb-d2f5853d38d0" name="Veteran Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, to maximum BS 5.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Once per ship. +1 BS, improving to a minimum of BS 2.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10155,7 +10319,7 @@
        <profiles>
         <profile id="ee83d303-5f16-414a-ba58-a4571453055c" name="Perturabo" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Primarch. The Logos: all friendly Iron Warriors ships gain &lt;b&gt;+1 Ballistic Skill&lt;/b&gt;. Fleet-wide. No ship exceeds BS 5. Perturabo does not modify Calculated Bombardment. Perturabo grants the normal Primarch allowance of 3 Fleet Orders per battle round.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Primarch. The Logos: all friendly Iron Warriors ships gain &lt;b&gt;+1 Ballistic Skill&lt;/b&gt;. Fleet-wide. No ship improves beyond BS 2. Perturabo grants the normal Primarch allowance of 3 Fleet Orders per battle round.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10200,7 +10364,7 @@
        <profiles>
         <profile id="d56e4c7c-2c7a-5fa7-9920-8dfa366f4f1c" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx 4.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10237,7 +10401,7 @@
        <profiles>
         <profile id="714014f5-51ed-512d-a06f-a7917f480e90" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
          <characteristics>
-          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships and the Iron Blood only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships, the Iron Blood and the Defence Station only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
          </characteristics>
         </profile>
        </profiles>
@@ -10310,6 +10474,503 @@
     <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="1000.0" />
    </costs>
   </selectionEntry>
+  <selectionEntry id="9ff180a5-06de-5e1a-a380-556e0398e2e8" name="Defence Station - Bastion-class" hidden="false" collective="false" import="true" type="unit">
+   <constraints>
+    <constraint type="max" value="3.0" field="selections" scope="roster" shared="false" id="1bac628d-85bc-58b6-a7a8-5fdaa0bac1d0" percentValue="false" includeChildSelections="false" includeChildForces="true" />
+   </constraints>
+   <profiles>
+    <profile id="818e5212-295c-59cd-b486-63aa5586351d" name="Defence Station - Bastion-class" hidden="false" typeId="806f9ff1-fd51-5ddb-b005-ce73a5d09d65" typeName="Ship">
+     <characteristics>
+      <characteristic name="BS" typeId="d130e705-611e-5a0a-bd7d-ea8e848fdb2e">4</characteristic>
+      <characteristic name="Prow" typeId="84a55377-edbc-5825-a2bf-70c6155018f2">13</characteristic>
+      <characteristic name="Side" typeId="5f595433-7397-5c4b-9d4a-8f35d83a2b29">13</characteristic>
+      <characteristic name="Stern" typeId="cd9ec76e-f959-5560-8845-9ab242f16e71">13</characteristic>
+      <characteristic name="HP" typeId="ef713781-2034-5fb4-83d1-e49d1d683694">20</characteristic>
+      <characteristic name="VS" typeId="84309751-688d-50ef-8940-d8d042261a56">0</characteristic>
+      <characteristic name="Shield AV" typeId="a4ea0950-7ff5-5955-bca9-c19d25fe10cf">—</characteristic>
+      <characteristic name="Speed" typeId="25d0e01e-8e74-55b3-8a2a-17773c881625">0″</characteristic>
+      <characteristic name="Turn" typeId="899e9c58-70ef-5da5-8495-5bf6a8b7f8f0">90° every 2 rounds</characteristic>
+      <characteristic name="Crew" typeId="2f6312dd-493e-53c6-96e2-d901afca0e81">12</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="b4fec716-3ecd-5a0a-83d3-494f0d46ce1a" name="Heavy Macro-Cannon Battery" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+     <characteristics>
+      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Port</characteristic>
+      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
+      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">36</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">30″</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="47efba92-1b6b-57d6-8f62-8ea221e8f96a" name="Triple Lance Turret ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+     <characteristics>
+      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Port</characteristic>
+      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
+      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2). Magazine Explosion costs this ship 1 additional Hull Point</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="c11ac649-a0e0-56be-a18a-ebff973a4758" name="Heavy Macro-Cannon Battery" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+     <characteristics>
+      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Starboard</characteristic>
+      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
+      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">36</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">30″</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="fb4ffe04-8a5b-5c55-a36f-13b7b176b6c0" name="Triple Lance Turret ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+     <characteristics>
+      <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Starboard</characteristic>
+      <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
+      <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
+      <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3 each</characteristic>
+      <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
+      <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2). Magazine Explosion costs this ship 1 additional Hull Point</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="698cd3c0-8b82-583e-a34a-51351c528f18" name="Launch Bays (6)" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">This station carries 6 Launch Bays. Each holds one aircraft squadron, bought separately. See Launch Bays &amp; Aircraft.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="82a515e7-3298-51eb-b970-6a7d6e332966" name="Stationary" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The Defence Station cannot move, ram or otherwise voluntarily change position. It may turn up to 90° when it would move, no more than once every two battle rounds, counted from deployment. It never counts as having held station.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="ff9852e4-9ddc-55f8-aaac-a0f99e3ec0a0" name="Fortification" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The Defence Station has AV 13 on all facings.</characteristic>
+     </characteristics>
+    </profile>
+    <profile id="0b99ac8a-eec9-56f3-8c37-860c84dedd7c" name="Defence Installation" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+     <characteristics>
+      <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The Defence Station is a fortification and does not count as a Capital or Line ship for normal fleet composition requirements. It cannot be the Flagship.</characteristic>
+     </characteristics>
+    </profile>
+   </profiles>
+   <infoLinks>
+    <infoLink id="ef764a08-79c6-5430-b065-349da0f185b6" name="Keyword: Reload (X)" hidden="false" type="rule" targetId="a46e50ef-8ede-570d-b475-c0d9d2c54d97" />
+    <infoLink id="4146323a-5071-5bf1-be84-1057e4b5bcc5" name="Keyword: Devastating (X)" hidden="false" type="rule" targetId="790e7556-1cf0-5ae8-94c9-0203fea91707" />
+    <infoLink id="171de300-bf0b-53ed-9e0c-887479aa2796" name="Keyword: Armourbane" hidden="false" type="rule" targetId="05ae4944-6daa-593c-ab8c-235a2cf6a82b" />
+    <infoLink id="fcee343e-1d71-53ef-a7ca-7c90a8918ea9" name="Point-Blank Broadsides" hidden="false" type="rule" targetId="d34ecc22-1164-5127-b7e2-8920923aba83" />
+    <infoLink id="ad731ad9-087e-5100-82da-cf534512f38b" name="Mounts &amp; Arcs" hidden="false" type="rule" targetId="c4f5cd0b-d93e-5739-ad8c-8864871f02c5" />
+    <infoLink id="e4725629-d160-5a87-a094-2cf5958e591c" name="Launch Bays &amp; Aircraft" hidden="false" type="rule" targetId="376ec6ef-6bf3-5d5b-864a-318bd6c21cdf" />
+    <infoLink id="4cefff9f-1850-57dd-9467-f4f789a284c7" name="Fleet Construction" hidden="false" type="rule" targetId="73f4d3d5-5d46-57ba-8784-a05013d88da4" />
+    <infoLink id="9dc60f71-bc97-5729-86e8-c607b1951330" name="State: Crippled" hidden="false" type="rule" targetId="fba82662-553a-53f2-bf5a-de7261575b17" />
+    <infoLink id="44199630-ffd5-5530-94c7-759b27011874" name="State: Depleted" hidden="false" type="rule" targetId="85930585-cb37-569b-83a9-8246d9f1462b" />
+    <infoLink id="dc8af3b2-9f69-502e-b6e1-ba896ee304a6" name="State: Locked" hidden="false" type="rule" targetId="0b9b7bff-e2cf-5d83-b77a-5069ca6554eb" />
+    <infoLink id="5e5a6691-bc97-589c-9365-7b2554807616" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
+    <infoLink id="dbd0cc67-9ab7-5bb8-b666-30563a09220e" name="State: Wreck" hidden="false" type="rule" targetId="0a89f24f-731f-5f67-81d4-55dbaaccfd13" />
+    <infoLink id="d580a477-4e3c-5630-8961-2bc29bc45b03" name="Natural 1" hidden="false" type="rule" targetId="b072aa6e-62f4-5e11-b2cc-f1319dbf74cc" />
+    <infoLink id="fc4e548e-15ff-5932-93b5-1e1636d1a59f" name="Attaching to a Target" hidden="false" type="rule" targetId="a43fdb4a-56e1-5273-bf92-5d6d0bbeda33" />
+    <infoLink id="d62e4583-1913-5548-9192-9a070e84bb65" name="Break Away" hidden="false" type="rule" targetId="a6010b43-17e5-5331-a2e7-697687c6c80c" />
+   </infoLinks>
+   <categoryLinks>
+    <categoryLink id="e0374d0f-bdff-54dd-9f83-175d0235d420" name="Defence Station" hidden="false" targetId="56a4df28-b35e-5a06-9b58-8989d9709b5f" primary="true" />
+   </categoryLinks>
+   <selectionEntries>
+    <selectionEntry id="25f62a95-7946-5e35-9bc2-0937e65ebd85" name="Line Credit" hidden="false" collective="true" import="true" type="upgrade">
+     <constraints>
+      <constraint type="min" value="2.0" field="selections" scope="parent" shared="false" id="a783f2c7-beb8-5be6-a8a5-89d89060ea8c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+      <constraint type="max" value="2.0" field="selections" scope="parent" shared="false" id="ba915f4a-2618-5c12-b148-cf9820cc34df" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+     </constraints>
+     <profiles>
+      <profile id="38bd3557-713f-50ee-8afa-945017690765" name="Line Credit" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+       <characteristics>
+        <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as one Line Ship when determining the Capital allowance, and for nothing else. The Defence Station carries two. See Fleet Construction.</characteristic>
+       </characteristics>
+      </profile>
+     </profiles>
+     <categoryLinks>
+      <categoryLink id="ec0dc3bb-1cf7-5a94-bac8-e6b2a483a16f" name="Line Credit" hidden="false" targetId="8a3312a4-3776-5054-88be-22c3337908da" primary="false" />
+     </categoryLinks>
+     <costs>
+      <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="0.0" />
+     </costs>
+    </selectionEntry>
+   </selectionEntries>
+   <selectionEntryGroups>
+    <selectionEntryGroup name="Crew Upgrade" id="1441e2b4-6d36-53c3-820d-fda3f2e7c90f" hidden="false" collective="false" import="true">
+     <constraints>
+      <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="bbdac623-ace1-5b93-9987-fb0441c16a99" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+     </constraints>
+     <selectionEntries>
+      <selectionEntry id="534aed3b-75e7-5e4d-a2e5-6163b0c25e3c" name="Astartes Crew" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="da74bea8-b9de-592c-8e8e-847175a193f5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="3c7ac18f-ba1e-521c-9dbc-2cb0235c1329" name="Astartes Crew" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">The ship's entire complement is replaced by Legion Astartes. &lt;b&gt;Every Crew point aboard counts as Legiones Astartes (+1)&lt;/b&gt; when it fights, in attack and in defence alike, and the ship becomes eligible for Astartes boarding upgrades. It costs &lt;b&gt;20% of the ship's own points value&lt;/b&gt;, rounded to the nearest 5. Once per ship. Strike Cruisers, Battle Barges and Gloriana class vessels already carry Astartes Crew and may not buy it again.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="160.0" />
+       </costs>
+      </selectionEntry>
+     </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Boarding Forces" id="3b7bad58-1fb5-566b-b0ba-79e1c3e5ecfe" hidden="false" collective="false" import="true">
+     <constraints>
+      <constraint type="max" value="12.0" field="selections" scope="parent" shared="false" id="0e2f66b6-4d8a-541b-8e7a-0e179278cdae" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+     </constraints>
+     <selectionEntries>
+      <selectionEntry id="a5fb6117-f8da-555a-aa0c-cb9896a4a1b5" name="Astartes Breacher Squad" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="12.0" field="selections" scope="parent" shared="false" id="d1b7bb7a-df90-543f-b12c-f4d280bdcc12" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="71306914-a5e3-5dbc-80ae-c1547fb6efbe" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +1, and −1 to the enemy die it faces when defending its own ship.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <categoryLinks>
+        <categoryLink id="1e5d8452-a2ba-54ef-a7be-b36038c6c7d1" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
+       </categoryLinks>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="45.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="1449f712-c85a-538b-83af-5ff0f03fed56" name="Terminator Squad" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="4.0" field="selections" scope="parent" shared="false" id="3332ab30-9967-5c26-9b70-c69e1d366c2c" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+        <constraint type="max" value="12.0" field="selections" scope="parent" shared="false" id="f15fc571-a47c-527d-8b1e-30d212e9b617" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="adcbf84a-8a68-5816-b442-fc40b8dffde9" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party; +2. Limits: Line 1, Capital 2, Gloriana/Phalanx/Defence Station 4.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <categoryLinks>
+        <categoryLink id="9144b34f-ac50-5153-94a5-8225902770e1" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
+       </categoryLinks>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="65.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="01ddf66f-f08f-528a-8181-badb87d9c5a6" name="Contemptor Dreadnought" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="4.0" field="selections" scope="parent" shared="false" id="4a223926-67ea-5e00-af9c-e93ace8f4362" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+        <constraint type="max" value="12.0" field="selections" scope="parent" shared="false" id="9b8c1aa5-b6ff-58ed-b5c5-e815248ab72f" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="05987395-8225-56da-8b99-04e5347573f1" name="Boarding Force" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Counts as 2 Boarding Parties; fights as one warrior at +2 and gives −1 to the enemy die it faces. Limits as Terminators.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <categoryLinks>
+        <categoryLink id="e1f14773-2b20-54ec-98b2-b062271616e2" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
+       </categoryLinks>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="80.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="a80242f4-a267-546e-9833-f750a69f4348" name="Tyrant Siege Terminators" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="b1dbbdda-7df4-57fb-8f08-3eb087b90dd0" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="24539ba4-32a9-509c-88ad-5050329bee65" name="Tyrant Siege Terminators" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">One Boarding Party. +2 to its boarding die, and each successful boarding roll inflicts 2 Crew casualties instead of 1. Enemy ships suffer −1 to Break Away rolls against this ship. Tyrant Siege Terminators may not deploy by Drop Pod; they board by Hull Assault, Assault Ram or Assault Claw only. Battleships, the Iron Blood and the Defence Station only. Maximum 1 per ship, and it does not count against the Terminator limit.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <categoryLinks>
+        <categoryLink id="cde710f9-c83f-5a4c-a5bc-c28b08afb1d6" name="Boarding Force" hidden="false" targetId="4d94b920-d5bc-5fd7-a967-4ba346019f56" primary="true" />
+       </categoryLinks>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+       </costs>
+      </selectionEntry>
+     </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Launch Bay Loadout" id="0baaaa48-2931-5457-bc90-52bbb84e9176" hidden="false" collective="false" import="true">
+     <constraints>
+      <constraint type="max" value="6.0" field="selections" scope="parent" shared="false" id="74b92f53-d3c4-5bf3-9ded-2dc256e72621" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+     </constraints>
+     <selectionEntries>
+      <selectionEntry id="91d3df65-74fe-52e0-ab4d-ab5ec68a309a" name="Fury Interceptor Squadron" hidden="false" collective="false" import="true" type="unit">
+       <constraints>
+        <constraint type="max" value="6.0" field="selections" scope="parent" shared="false" id="d6e1bc9c-d4e1-5e92-a12f-8b655e6aded3" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="8f71bb3c-4e0a-59e2-bb98-957e98027dfe" name="Fury Interceptor" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
+         <characteristics>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">4</characteristic>
+          <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">8</characteristic>
+          <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
+          <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">25″</characteristic>
+          <characteristic name="Role" typeId="9cb8fe2b-5c68-5d51-97e2-ac2508c0ac11">Fighter</characteristic>
+         </characteristics>
+        </profile>
+        <profile id="f0c19e73-1686-53a7-a80c-f03db4b2e150" name="Long-barrel Lascannons" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+         <characteristics>
+          <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Anti-craft only</characteristic>
+          <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">5</characteristic>
+          <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
+          <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2</characteristic>
+          <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">6″</characteristic>
+          <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Anti-craft only</characteristic>
+         </characteristics>
+        </profile>
+        <profile id="3198a23c-573e-5ef2-ace1-051612c85b6c" name="Special Rules" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Dogfighter; squadron of 3.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <categoryLinks>
+        <categoryLink id="98bab5b8-3b78-5ee1-bfe0-4dc7a49ddfb6" name="Aircraft" hidden="false" targetId="7cd71328-c157-589e-aab5-17a0288b00a6" primary="true" />
+       </categoryLinks>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="10.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="c876ad5a-b083-5d35-b00e-5852bf2d91c6" name="Xiphon Interceptor Squadron" hidden="false" collective="false" import="true" type="unit">
+       <constraints>
+        <constraint type="max" value="6.0" field="selections" scope="parent" shared="false" id="0439191d-4484-503a-98c8-3acf861a52a9" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="138be4da-96e9-5f22-b103-eed57cd3b60a" name="Xiphon Interceptor" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
+         <characteristics>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">5</characteristic>
+          <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">8</characteristic>
+          <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
+          <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">30″</characteristic>
+          <characteristic name="Role" typeId="9cb8fe2b-5c68-5d51-97e2-ac2508c0ac11">Fighter</characteristic>
+         </characteristics>
+        </profile>
+        <profile id="d5b5a406-3438-54ff-a2ca-d1ce81ab1ba2" name="Lascannon array &amp; rotary missiles" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+         <characteristics>
+          <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Anti-craft only</characteristic>
+          <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">5</characteristic>
+          <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
+          <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2</characteristic>
+          <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">6″</characteristic>
+          <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Anti-craft only</characteristic>
+         </characteristics>
+        </profile>
+        <profile id="bb182b82-9605-5bfd-b003-cabbc6397d1b" name="Special Rules" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Dogfighter; squadron of 3. Relentless Pursuit: destroys enemy craft on 2+; after dogfight may move 6″.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <categoryLinks>
+        <categoryLink id="bd06de8a-850b-522f-b6d0-c1393aa46e85" name="Aircraft" hidden="false" targetId="7cd71328-c157-589e-aab5-17a0288b00a6" primary="true" />
+       </categoryLinks>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="15.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="6cd3d012-28a5-5254-9588-0e509e3797d0" name="Starhawk Bomber Squadron" hidden="false" collective="false" import="true" type="unit">
+       <constraints>
+        <constraint type="max" value="6.0" field="selections" scope="parent" shared="false" id="2e81f806-75a3-57d0-abd9-aa1f0a3f8205" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="529dd041-aaa5-519b-96cb-456fd918332e" name="Starhawk Bomber" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
+         <characteristics>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">4</characteristic>
+          <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">8</characteristic>
+          <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
+          <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">20″</characteristic>
+          <characteristic name="Role" typeId="9cb8fe2b-5c68-5d51-97e2-ac2508c0ac11">Bomber</characteristic>
+         </characteristics>
+        </profile>
+        <profile id="b4702179-af9c-5b53-be7c-8aa5c5e9dd70" name="Plasma bomb payload" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+         <characteristics>
+          <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Contact</characteristic>
+          <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
+          <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
+          <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2/craft, one use</characteristic>
+          <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">contact</characteristic>
+          <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Armourbane; bombing run</characteristic>
+         </characteristics>
+        </profile>
+        <profile id="7e3dfca2-32c1-560d-a513-d9d7f4d90865" name="Special Rules" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Squadron of 3; bombs resolve against crossed facing and normal shields; must return to a free Launch Bay to re-arm.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <categoryLinks>
+        <categoryLink id="0f2c2b24-5238-54a9-a83e-e0aa0b212149" name="Aircraft" hidden="false" targetId="7cd71328-c157-589e-aab5-17a0288b00a6" primary="true" />
+       </categoryLinks>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="20.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="e613503c-1d89-5a23-a316-60cea089219d" name="Thunderhawk Gunship Squadron" hidden="false" collective="false" import="true" type="unit">
+       <constraints>
+        <constraint type="max" value="6.0" field="selections" scope="parent" shared="false" id="1b153749-203a-50ed-810f-55c34b9e694b" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="154a904d-e90e-5a7d-9f3e-5861c638cd56" name="Thunderhawk Gunship" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
+         <characteristics>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">5</characteristic>
+          <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">9</characteristic>
+          <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
+          <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">20″</characteristic>
+          <characteristic name="Role" typeId="9cb8fe2b-5c68-5d51-97e2-ac2508c0ac11">Landing craft / Gunship</characteristic>
+         </characteristics>
+        </profile>
+        <profile id="9467bf1e-4eb8-53e7-80e4-d40a66cb0749" name="Turbo-laser destructor" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+         <characteristics>
+          <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">Contact</characteristic>
+          <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">7</characteristic>
+          <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">—</characteristic>
+          <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1/craft</characteristic>
+          <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">contact</characteristic>
+          <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Fired on approach</characteristic>
+         </characteristics>
+        </profile>
+        <profile id="7b966218-331d-5f37-900b-2bd5b620134f" name="Special Rules" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Squadron of 3; attaches on 4+; each attached craft delivers 1 Crew; also carries one-use Hunter-Killer Missiles.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <categoryLinks>
+        <categoryLink id="85142d72-32d5-5b8a-b19f-262c6d8ec61d" name="Aircraft" hidden="false" targetId="7cd71328-c157-589e-aab5-17a0288b00a6" primary="true" />
+       </categoryLinks>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="30.0" />
+       </costs>
+      </selectionEntry>
+      <selectionEntry id="944c9dc4-9781-5ca5-9a66-f234089a35de" name="Caestus Assault Ram" hidden="false" collective="false" import="true" type="upgrade">
+       <profiles>
+        <profile id="ac25c9a4-be89-5eac-aacc-a88b7662b79b" name="Caestus Assault Ram" hidden="false" typeId="34b870bf-d65e-538e-b38c-9249374e6af1" typeName="Aircraft">
+         <characteristics>
+          <characteristic name="BS" typeId="019df8fe-0c3f-558c-89a4-b7a49b64f590">The Caestus Assault Ram is a boarding craft, not a gunship: bought into a Launch Bay for 60 pts, Armour 10, Speed 20″. It carries &lt;b&gt;4 Boarding Parties&lt;/b&gt; rather than 1, and its magna-melta bore opens the hull directly — boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. It &lt;b&gt;attaches on a 2+&lt;/b&gt; and may not be fired on by Overwatch on the round it strikes.</characteristic>
+          <characteristic name="Armour" typeId="6bfd9f72-afab-5f34-a9f6-e242ff5141db">10</characteristic>
+          <characteristic name="HP" typeId="e3dc3cb8-361b-5f3c-80c3-b2e01c0d7bcb">1</characteristic>
+          <characteristic name="Speed" typeId="fda54bef-6895-5a9c-a945-d8493bbf9c2e">20″</characteristic>
+          <characteristic name="Role" typeId="9cb8fe2b-5c68-5d51-97e2-ac2508c0ac11">Boarding ram</characteristic>
+         </characteristics>
+        </profile>
+        <profile id="ec076be0-99f7-5835-aa93-ee220cdee702" name="Assault Ram" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">Carries 4 Boarding Parties rather than 1. Its magna-melta bore opens the hull directly: boarders it delivers ignore the −1 for a Hull Assault and land as though delivered by craft. Armour 10 and it may not be intercepted by Defence Batteries on the round it strikes.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="50.0" />
+       </costs>
+      </selectionEntry>
+     </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Defence Platforms" id="fb73555a-7e24-592a-8ed5-4b4932dee47e" hidden="false" collective="false" import="true">
+     <constraints>
+      <constraint type="max" value="6.0" field="selections" scope="parent" shared="false" id="8c4ee5ce-a331-53f9-a830-c191b314f180" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+     </constraints>
+     <selectionEntries>
+      <selectionEntry id="152dfdfc-383a-55b6-b686-95efc5697ef7" name="Defence Platform" hidden="false" collective="false" import="true" type="upgrade">
+       <constraints>
+        <constraint type="max" value="6.0" field="selections" scope="parent" shared="false" id="09ff4e07-5386-594c-a28c-48c311c5afa5" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+       </constraints>
+       <profiles>
+        <profile id="d36f11a9-7a5b-5b2f-a741-44aa9bedc5d4" name="Defence Platform" hidden="false" typeId="3ec9b61c-f3d1-5fe4-adb4-6104872812e1" typeName="Ability">
+         <characteristics>
+          <characteristic name="Description" typeId="5e1f6242-764b-516f-9c81-5659b132c092">A separate defensive emplacement associated with the Defence Station. It may be equipped with one weapon system, bought in addition to the platform. Its weapon is mounted All-round; a Torpedo Turret fires in every arc, not straight ahead.</characteristic>
+         </characteristics>
+        </profile>
+       </profiles>
+       <selectionEntryGroups>
+        <selectionEntryGroup name="Platform Weapon" id="b1feec04-5747-5a56-96fc-efd03bbcfdfc" hidden="false" collective="false" import="true">
+         <constraints>
+          <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="cdef2c93-f00a-56e5-9887-4393c5f6d480" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+         </constraints>
+         <selectionEntries>
+          <selectionEntry id="ae9ea410-3ac3-5265-81d6-cba1946ecbc5" name="Twin Lance Turret" hidden="false" collective="false" import="true" type="upgrade">
+           <constraints>
+            <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="9b094a8d-d5fa-5383-bcb4-619b45282b23" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+           </constraints>
+           <profiles>
+            <profile id="da6ade76-7d23-53b0-bc72-6ae560f3d403" name="Twin Lance Turret" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+             <characteristics>
+              <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
+              <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
+              <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">2</characteristic>
+              <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">2</characteristic>
+              <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">40″</characteristic>
+              <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">Reload (1); Devastating (2)</characteristic>
+             </characteristics>
+            </profile>
+           </profiles>
+           <costs>
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="75.0" />
+           </costs>
+          </selectionEntry>
+          <selectionEntry id="226fc9b2-8157-52f0-8759-70a26f825c04" name="Torpedo Turret" hidden="false" collective="false" import="true" type="upgrade">
+           <constraints>
+            <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="ad8ecacc-e099-5b4d-bd3c-c008e0777e5d" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+           </constraints>
+           <profiles>
+            <profile id="696881d2-87f6-5c7c-b86d-e9c48f08cd71" name="Torpedo Tube ×2" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+             <characteristics>
+              <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
+              <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">10</characteristic>
+              <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
+              <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">1 each</characteristic>
+              <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">20″</characteristic>
+              <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">One Use. One torpedo per tube. Bypasses Void Shields; Armourbane</characteristic>
+             </characteristics>
+            </profile>
+           </profiles>
+           <costs>
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="50.0" />
+           </costs>
+          </selectionEntry>
+          <selectionEntry id="285c3bbe-38ae-55ad-8b20-021a036e1834" name="Heavy Macro Turret" hidden="false" collective="false" import="true" type="upgrade">
+           <constraints>
+            <constraint type="max" value="1.0" field="selections" scope="parent" shared="false" id="ab091e9b-5ad8-589c-aa88-9ab63fb411e6" percentValue="false" includeChildSelections="false" includeChildForces="false" />
+           </constraints>
+           <profiles>
+            <profile id="1b9468d9-1659-50d9-a14c-4150ccfbf3ee" name="Heavy Macro-Cannon Battery" hidden="false" typeId="9e230bf6-0ca5-5105-b10d-a29e26b36da4" typeName="Weapon">
+             <characteristics>
+              <characteristic name="Mount" typeId="a7d4d3c1-fadb-52b5-b9c2-4ca7010a2a7f">All-round</characteristic>
+              <characteristic name="Str" typeId="909e3bc8-34f7-50eb-8079-4e717af82c39">9</characteristic>
+              <characteristic name="AP" typeId="1086c466-d9ef-5b28-afb0-8d806ff0f9c2">1</characteristic>
+              <characteristic name="Shots" typeId="f85124c6-e75b-574a-befd-08cd1968bedf">3</characteristic>
+              <characteristic name="Range" typeId="f06bbe8e-b4ee-55fe-a54c-c6fda727a7fd">30″</characteristic>
+              <characteristic name="Special" typeId="59853d0d-663c-56dc-9957-cd236b62b380">—</characteristic>
+             </characteristics>
+            </profile>
+           </profiles>
+           <costs>
+            <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="25.0" />
+           </costs>
+          </selectionEntry>
+         </selectionEntries>
+        </selectionEntryGroup>
+       </selectionEntryGroups>
+       <costs>
+        <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="150.0" />
+       </costs>
+      </selectionEntry>
+     </selectionEntries>
+    </selectionEntryGroup>
+   </selectionEntryGroups>
+   <costs>
+    <cost name="pts" typeId="570b7f63-4fc7-515c-9c96-5b5c25501f85" value="800.0" />
+   </costs>
+  </selectionEntry>
   <selectionEntry id="e723804f-ad14-5fa0-86fc-cb28be08db6a" name="4th Legion - Calculated Bombardment" hidden="false" collective="false" import="true" type="upgrade">
    <infoLinks>
     <infoLink id="43b42ee7-e879-5a7c-93fd-024444d0668d" name="4th Legion - Calculated Bombardment" hidden="false" type="rule" targetId="73d63a56-7bcd-5f15-a3a7-4250c266b22b" />
@@ -10347,7 +11008,6 @@
     <infoLink id="7289e97d-7adf-5463-ad10-ed9241e93ebb" name="Keyword: Caestus Assault Ram" hidden="false" type="rule" targetId="84ae4fff-db0c-5d03-88d0-5a974e478c6a" />
     <infoLink id="2e31ee38-7dc8-528f-85b1-5a932f180fbf" name="Keyword: Destroyer (D)" hidden="false" type="rule" targetId="72c83722-42a4-5b47-b361-df40e57ed6e2" />
     <infoLink id="cfac1162-5262-53a2-85c9-97e40a6b75a0" name="Keyword: Devastating (X)" hidden="false" type="rule" targetId="790e7556-1cf0-5ae8-94c9-0203fea91707" />
-    <infoLink id="4006ea4e-1c4f-5d50-b41c-81c8b8ef3336" name="Keyword: Interceptor" hidden="false" type="rule" targetId="5cd591fe-92a6-5e71-b14b-a33270e7ce22" />
     <infoLink id="0039051e-1510-5088-8899-ea01acc6c634" name="Keyword: Intervention" hidden="false" type="rule" targetId="40e07bd1-c998-5d85-8606-f2edc8a8ba53" />
     <infoLink id="ba749e45-4717-591d-b4fc-d52c4e77deed" name="Keyword: Melta Mines" hidden="false" type="rule" targetId="53724fbb-9c1d-536e-a6d9-551c39f36bcf" />
     <infoLink id="d10b869d-e8cb-522f-833f-a6821f7daefd" name="Keyword: One Shot" hidden="false" type="rule" targetId="1a32e3f1-d7f0-5438-84b0-1894a56b4f63" />
@@ -10363,7 +11023,6 @@
     <infoLink id="f02c78e6-ad13-5384-89ae-bc58c906aac6" name="State: Crippled" hidden="false" type="rule" targetId="fba82662-553a-53f2-bf5a-de7261575b17" />
     <infoLink id="cb589043-563a-56b0-a7ed-be9411ffa8ee" name="State: Depleted" hidden="false" type="rule" targetId="85930585-cb37-569b-83a9-8246d9f1462b" />
     <infoLink id="acefa23c-4371-558c-afa3-fa760502f546" name="State: Engaged" hidden="false" type="rule" targetId="5a6291fd-05f0-5e71-9f5f-e9f0afbad8aa" />
-    <infoLink id="9bb8f373-cb4b-5b9f-9357-d971b6b8a242" name="State: Engines Crippled" hidden="false" type="rule" targetId="196a170e-0740-58bf-800e-bf17147d19a5" />
     <infoLink id="af7f6aae-76f9-5e1f-8cc8-068feeaf80e2" name="State: Held station" hidden="false" type="rule" targetId="b70976f6-0e8e-57ad-a05e-b91f7ac71cfc" />
     <infoLink id="2d8f396c-f38b-5858-aa47-2fc0e1f03a0f" name="State: Locked" hidden="false" type="rule" targetId="0b9b7bff-e2cf-5d83-b77a-5069ca6554eb" />
     <infoLink id="2fbe7741-43ef-5dbe-9511-bd49edddccdf" name="State: Snap Shots" hidden="false" type="rule" targetId="701a11a2-3702-5752-a5a1-a6dced21839f" />
@@ -10439,7 +11098,7 @@
  <sharedSelectionEntryGroups />
  <sharedRules>
   <rule id="73d63a56-7bcd-5f15-a3a7-4250c266b22b" name="4th Legion - Calculated Bombardment" hidden="false">
-   <description>Whenever a friendly Iron Warriors ship rolls an &lt;b&gt;unmodified 6 to hit&lt;/b&gt;, that hit &lt;b&gt;automatically penetrates&lt;/b&gt; — no Armour Penetration roll is made, whatever the target's Armour Value. It then rolls on the &lt;b&gt;Damage Table&lt;/b&gt; as a natural 6 does, applying the weapon's AP modifier as normal. • Fleet-wide, every ship, every weapon, every round. • Nothing is nominated and nothing is tracked. • Void Shields still stop the hit first: a shot that collapses a shield does not reach the hull. • An AP D weapon is Reactor Struck as usual. Iron Warriors gunners do not fire at a ship; they fire at the seam in its plating.</description>
+   <description>Every friendly Iron Warriors &lt;b&gt;Capital Ship&lt;/b&gt; fires its Lance and Macro weapons at &lt;b&gt;+1 Strength&lt;/b&gt; — Lance Turrets, Twin Lance Turrets, Triple Lance Turrets, Macro-Cannon Batteries and Heavy Macro-Cannon Batteries. • Fleet-wide, always in effect; it changes no printed Strength. • Line Ships do not benefit, nor does the Defence Station, which is not a Capital Ship.</description>
   </rule>
  </sharedRules>
 </catalogue>

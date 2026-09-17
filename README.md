@@ -69,8 +69,9 @@ weapon-by-weapon construction: a Lunar is a Lunar, printed as it was built.
 | Gloriana | 695–945 | 20 | 3 | 14 | 10–12 | 7–9″ | 90° | 10–14 |
 | Abyss – Furious Abyss | 1,100 | 25 | 4 | 14 | 12 | 6″ | 90° | 12 |
 | Void Fortress – Phalanx | 1,230 | 30 | 6 | 14 | 24 | 3″ | 90° | 20 |
+| Defence Station – Bastion-class | 800 | 20 | 0 | — | — | 0″ | 90° / 2 rounds | 12 |
 
-All thirty standard datasheets, plus the eighteen Glorianas, the Abyss and the Phalanx. Squadron classes are taken
+All thirty standard datasheets, plus the eighteen Glorianas, the Abyss and the Phalanx. The Defence Station is a stationary fortification available to every Legion, with up to six Defence Platforms at 150 pts each. Squadron classes are taken
 1–3 at a time.
 
 ### Ship Types
@@ -114,6 +115,7 @@ shields-up and shields-down phases, adjusted for reload period, firing arc and r
 ## Fleet construction
 
 - **Capital allowance**: 1 Capital Ship per 4 Line Ships in the fleet
+- **Defence Station**: counts as 2 Line Ships for the Capital allowance only; it is not a Line Ship, sits in its own category and cannot be the Flagship
 - **Roster limits**: 5 of any Line class, 3 of any Capital class, 1 of any Gloriana, the
   Abyss or the Phalanx
 - No single ship above 50% of the fleet's points
@@ -206,6 +208,12 @@ safety, duplicate wrapper blocks, modifier targets and cross-catalogue id reuse.
 | `tools/add_caestus_and_terminators.py` | Caestus Assault Ram and Legion elites |
 | `tools/purge_v9_2.py` | Rules consolidation and obsolescence purge (v9.2) |
 | `tools/update_v9_3.py` | Consolidated current update (v9.3) |
+| `tools/defence_station_v9_70.py` | Defence Station datasheet, Line Credits and its printable card |
+| `tools/defence_station_v9_70_1.py` | Defence Station rulings: platform mounts, costs, Terminator limit |
+| `tools/iron_warriors_station_v9_71.py` | Iron Warriors trait (+1 Strength, Capital Lance and Macro); Station turning count |
+| `tools/iron_blood_v9_71_1.py` | Removes the Iron Blood's Master of Siege Damage Table bonus |
+| `tools/iron_blood_v9_71_2.py` | Iron Blood Master of Siege: additional penetration roll on 5+ |
+| `tools/check_defence_station.py` | Verifies the Defence Station and the Capital allowance |
 | `tools/hooks/pre-commit` | Blocks commits that would not import |
 
 ---
